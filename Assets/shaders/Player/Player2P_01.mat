@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u96FB\u8166_\u767C\u5149"
-  m_Shader: {fileID: -6465566751694194690, guid: 035e9663bbf1d5d4894a1233da0c86a7,
+  m_Name: Player2P_01
+  m_Shader: {fileID: -6465566751694194690, guid: 876784e90bf237e4ab2cf0e032db1fb5,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,8 +20,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Emission:
-        m_Texture: {fileID: 2800000, guid: 86e61f465a0c9774180c51f5fcbf66bc, type: 3}
+    - Texture2D_112CA77D:
+        m_Texture: {fileID: 2800000, guid: a8cdbb0fd41a01948aa01730944c2e29, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_1E7816B3:
+        m_Texture: {fileID: 2800000, guid: ec4da56d606f3ba428dc1f6b5714a975, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -30,4 +34,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_4FB6AAF3: {r: 0.069597736, g: 0.6415094, b: 0.4418588, a: 1}
+    - Color_54C854D3: {r: 0, g: 0, b: 0, a: 0}
+    - Color_778D7566: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 11.35166, g: 0, b: 0.19980612, a: 0}
+    - _MainColor2: {r: 0, g: 1.1122594, b: 2.3091474, a: 0}
