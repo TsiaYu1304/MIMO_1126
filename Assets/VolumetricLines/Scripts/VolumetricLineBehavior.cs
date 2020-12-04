@@ -364,6 +364,16 @@ namespace VolumetricLines
 			CreateMaterial();
 			// TODO: Need to set vertices before assigning new Mesh to the MeshFilter's mesh property => Why?
 		}
+		public void SetStartPoint(float f_x, float f_y) {
+			
+			m_startPos = new Vector3(f_x, f_y, m_startPos.z);
+			Debug.Log(m_startPos.x);
+			Debug.Log(m_startPos.y);
+		}
+
+		public void SetEndPoint(float f_x, float f_y) {
+			transform.position = new Vector2(f_x, f_y);
+		}
 
 		void OnDestroy()
 		{
