@@ -21,7 +21,7 @@ public class Camera_ver2 : MonoBehaviour
 
     private void Start()
     {
-        Gateobject.transform.parent = null;
+        //Gateobject.transform.parent = null;
         movePoint.parent = null;
     }
 
@@ -40,18 +40,48 @@ public class Camera_ver2 : MonoBehaviour
             StartClock();
         }
         if (canmove) {
-            float diff = transform.position.x - movePoint.position.x;
-            transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 5.0f*Time.deltaTime);
-            if (diff < 0.05f) {
-                transform.position = movePoint.position;
-                canmove = false; 
+           // float diff = transform.position.x - movePoint.position.x;
+            if (Camerakind == 0)
+            {
+                float diff = transform.position.x - movePoint.position.x;
+                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 5.0f * Time.deltaTime);
+                if (diff < 0.05f)
+                {
+                    transform.position = movePoint.position;
+                    
+                    canmove = false;
+                }
             }
+            else if (Camerakind == 1)
+            {
+                float diff = transform.position.y - movePoint.position.y;
+                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 13.5f * Time.deltaTime);
+                if (diff < 0.05f)
+                {
+                    transform.position = movePoint.position;
+
+                    canmove = false;
+                }
+            }
+            else if (Camerakind == 2)
+            {
+                float diff = movePoint.position.x - transform.position.x;
+                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 5.0f * Time.deltaTime);
+                if (diff < 0.05f)
+                {
+                    transform.position = movePoint.position;
+
+                    canmove = false;
+                }
+            }
+
         }
 
     }
 
     public void starttomove(){
         canmove = true;
+        //lastCamera.SetActive(false);
     }
 
 

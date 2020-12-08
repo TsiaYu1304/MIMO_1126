@@ -4,34 +4,28 @@ using UnityEngine;
 
 public class LaserTut : MonoBehaviour
 {
-    public GameObject Laser;
-    public LineRenderer linerender;
-    public Transform firePoint;
-    public Transform ToPoint;
-    // Start is called before the first frame update
+    private LineRenderer lr;
+    // Use this for initialization
     void Start()
     {
-        //linerender.enabled = true;
-        //UpdateLaser();
-        //DisableLLaser();
+        lr = GetComponent<LineRenderer>();
     }
 
-    //void UpdateLaser()
-    //{
-    //    linerender.SetPosition(0, firePoint.position);
-    //    linerender.SetPosition(1, ToPoint.position);
-    //}
-
-    
-    public void EnableLaser() {
-        //linerender.enabled = true;
-       // UpdateLaser();
-        //Laser.SetActive(true);
+    // Update is called once per frame
+    void Update()
+    {
+        //lr.SetPosition(0, transform.position);
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
+        {
+            Debug.Log("Hit");
+            if (hit.collider)
+            {
+                Debug.Log("collision");
+                lr.SetPosition(1, hit.point);
+            }
+        }
+        //else lr.SetPosition(1, transform.forward * 5000);
     }
 
-
-    public void DisableLLaser() {
-        //linerender.enabled = false;
-        Laser.SetActive(false);
-    }
 }

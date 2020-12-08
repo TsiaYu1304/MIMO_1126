@@ -6,11 +6,14 @@ public class RoomTrigger : MonoBehaviour
 {
     public GameObject Room;
     public GameObject cvcamera;
+    public GameObject lastCamera;
+    int camerakind;
     int player = 0;
     // Start is called before the first frame update
     private void Start()
     {
         transform.parent = null;
+        camerakind = Room.GetComponent<Camera_ver2>().Camerakind;
     }
 
     // Update is called once per frame
@@ -18,8 +21,8 @@ public class RoomTrigger : MonoBehaviour
     {
         if (player == 2) {
             cvcamera.SetActive(true);
-            Room.GetComponent<Camera_ver2>().OpenCamera();
-
+            if (camerakind != 1) Room.GetComponent<Camera_ver2>().OpenCamera();
+            else { lastCamera.SetActive(false); }
             player = 0;
         }
     }
@@ -32,13 +35,17 @@ public class RoomTrigger : MonoBehaviour
             player = player + 1;
 
         }
+
+        if (collision.CompareTag("CombinePlayer") && !collision.isTrigger) {
+            player = 2;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !collision.isTrigger)
         {
-            player = player - 1;
+            //player = player - 1;
 
         }
     }

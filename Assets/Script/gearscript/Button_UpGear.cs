@@ -19,14 +19,14 @@ public class Button_UpGear : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)  //踩到的話就上升
     {
-        if (collision.tag == "Player" && !collision.isTrigger) {
+        if ((collision.tag == "Player" || collision.tag == "CombinePlayer") && !collision.isTrigger) {
             controllUpGear.GetComponent<UpGear>().changeUp();
             rend.sprite = Down_Sprite;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && !collision.isTrigger)
+        if ((collision.tag == "Player"|| collision.tag == "CombinePlayer" )&& !collision.isTrigger)
         {
             controllUpGear.GetComponent<UpGear>().changeDown();
             rend.sprite = Up_Sprite;

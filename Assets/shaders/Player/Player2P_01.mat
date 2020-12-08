@@ -36,5 +36,5 @@ Material:
     m_Colors:
     - Color_54C854D3: {r: 0, g: 0, b: 0, a: 0}
     - Color_778D7566: {r: 0, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 18.153347, g: 1.7767106, b: 0, a: 0}
-    - _MainColor2: {r: 0, g: 15.813397, b: 8.858814, a: 0}
+    - _MainColor: {r: 11.984314, g: 1.1921569, b: 0, a: 0}
+    - _MainColor2: {r: 0, g: 1.0039216, b: 11.984314, a: 0}

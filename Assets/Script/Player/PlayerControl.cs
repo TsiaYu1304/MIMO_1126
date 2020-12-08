@@ -12,6 +12,9 @@ public class PlayerControl : MonoBehaviour
     [Header("狀態")]
     bool canTurnoffLight = false;
     bool canTurnoffLaser = false;
+    bool canPushFloatButton = false;
+    bool EatMagnet = false;
+    public bool Magnetic = true;
 
     [Header("漂浮變數")]
     bool floatup = true;   //往上還是往下
@@ -19,6 +22,7 @@ public class PlayerControl : MonoBehaviour
     float f_floatupPoint, f_floatDoenPoint;
     public float FloatSpeed = 1f;
     public float Floatforce = 10f;
+    public float rbgravity = 0.1f;
 
     [Header("環境檢測")]
     public LayerMask groundLayer;
@@ -39,10 +43,11 @@ public class PlayerControl : MonoBehaviour
         FloatTrigger = true;
         f_floatupPoint = upY;
         f_floatDoenPoint = downY;
-        rb.gravityScale = 0.02f;
-        rb.gravityScale = 0.02f;
+        rb.gravityScale = rbgravity;
         floatup = true;
     }
+
+   
 
     public void Float() {
 
@@ -54,7 +59,7 @@ public class PlayerControl : MonoBehaviour
             if (transform.position.y > f_floatupPoint)
             {
                 floatup = false;
-                rb.gravityScale = 0.022f;
+                rb.gravityScale = rbgravity;
             }
         }
         else
@@ -87,7 +92,11 @@ public class PlayerControl : MonoBehaviour
         //}
     }
 
-   
+    public void setstopFloat()
+    {
+        rb.gravityScale = 5;
+        FloatTrigger = false;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -100,9 +109,13 @@ public class PlayerControl : MonoBehaviour
             canTurnoffLaser = true;
             GearTriggering = collision.gameObject;
         }
+        if (collision.tag == "Button_Float")
+        {
+            canPushFloatButton = true;
+            GearTriggering = collision.gameObject;
+        }
 
-        
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -110,6 +123,15 @@ public class PlayerControl : MonoBehaviour
         if (collision.tag == "Button_DetectLight")
         {
             canTurnoffLight = false;
+            GearTriggering = null;
+        }
+        if (collision.tag == "LaserTrigger")
+        {
+            canTurnoffLaser = false;
+            GearTriggering = null;
+        }
+        if (collision.tag == "Button_Float") {
+            canPushFloatButton = false;
             GearTriggering = null;
         }
     }
@@ -131,14 +153,14 @@ public class PlayerControl : MonoBehaviour
             {
                 GearTriggering.GetComponent<Button_LaserControll>().TriggerLaser();
             }
+
+            if (canPushFloatButton) {
+                GearTriggering.GetComponent<button_Floatcontrol>().PushFloatButton();
+            }
         }
 
 
     }
 
-    public void setstopFloat()
-    {
-        rb.gravityScale = 1;
-        FloatTrigger = false;
-    }
+    
 }

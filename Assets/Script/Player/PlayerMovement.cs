@@ -159,9 +159,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnCombine(CallbackContext context)
     {
-        Debug.Log("Combine");
-
-
         if (context.performed && canCombine)
         {
             Transform combinePosition = AnotherPlayer.transform;

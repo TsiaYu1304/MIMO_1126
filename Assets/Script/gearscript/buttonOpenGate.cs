@@ -9,6 +9,9 @@ public class buttonOpenGate : MonoBehaviour
     [Header("控制物件")]
     public GameObject workGear;
     public bool b_controllGear;
+    public bool b_controlTrigger;
+
+    public GameObject Trigger_L, Trigger_R;
     [Header("狀態變數")]
     bool isOpening = false;
     bool isDown = false;
@@ -53,6 +56,10 @@ public class buttonOpenGate : MonoBehaviour
                 isOpening = false;
                 transform.position = new Vector3( transform.position.x, OpenPoint.position.y, transform.position.z);
                 if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisOpen();
+                if (b_controlTrigger) {
+                    Trigger_L.SetActive(false);
+                    Trigger_R.SetActive(false);
+                }
 
             }
             else
@@ -69,7 +76,6 @@ public class buttonOpenGate : MonoBehaviour
                 isOpening = false;
                 transform.position = new Vector3(OpenPoint.position.x, transform.position.y, transform.position.z);
                 if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisOpen();
-
             }
             else
             {
@@ -96,6 +102,11 @@ public class buttonOpenGate : MonoBehaviour
 
                 transform.position = transform.position - new Vector3(0, stepSpeed * Time.deltaTime, 0);
                 if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisnotOpen();
+                if (b_controlTrigger)
+                {
+                    Trigger_L.SetActive(true);
+                    Trigger_R.SetActive(true);
+                }
             }
         }
         else {

@@ -139,6 +139,8 @@ public class UpGear : MonoBehaviour
         {
             AITrigger_Self_L.SetActive(false);
             AITrigger_Self_R.SetActive(false);
+            AITrigger_Beneath_L.SetActive(false);
+            AITrigger_Beneath_R.SetActive(false);
         }
         else if (i_kind == 3)
         {
@@ -157,6 +159,11 @@ public class UpGear : MonoBehaviour
         else if (i_kind == 3)
         {
             AITrigger_Beneath_L.SetActive(true);
+        }
+        else if (i_kind == 2)
+        {
+            AITrigger_Beneath_L.SetActive(true);
+            AITrigger_Beneath_R.SetActive(true);
         }
     }
 

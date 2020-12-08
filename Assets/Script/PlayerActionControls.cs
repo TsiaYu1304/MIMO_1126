@@ -191,6 +191,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7547ffd-ba5d-4254-a9cc-146ef239497c"",
+                    ""path"": ""<Keyboard>/rightCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PushButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -371,6 +382,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62999b36-ab86-4a9f-a9d7-1ed11961d7fd"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PushButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -425,6 +447,38 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Useprops_Mi_L"",
+                    ""type"": ""Button"",
+                    ""id"": ""b844d3dd-b10d-4310-8f0c-4e62ec0ad741"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mi_R"",
+                    ""type"": ""Button"",
+                    ""id"": ""702922c2-e2d7-48c3-aac5-c871a1050bd0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mo_L"",
+                    ""type"": ""Button"",
+                    ""id"": ""8373287d-12f6-483c-89a7-c206cbdd98ac"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mo_R"",
+                    ""type"": ""Button"",
+                    ""id"": ""2f4ecdac-ce73-4463-a396-c58a0f3dbff2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
                 }
             ],
             ""bindings"": [
@@ -581,6 +635,50 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""Normal_Discombine"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8810f266-15de-4392-b097-41e012331f38"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mi_L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74d0dd7b-4a2e-4c88-9afe-cbfc70d0820d"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mi_R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ead0c92-4f55-4bb3-b889-4c81cf255df8"",
+                    ""path"": ""<HID::54C-5C4>/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mo_L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c7a8be9-7acc-4b9d-80ee-97dcd5bcac2b"",
+                    ""path"": ""<HID::54C-5C4>/button6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mo_R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -635,6 +733,38 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Useprops_Mi_L"",
+                    ""type"": ""Button"",
+                    ""id"": ""8fd6c9d8-cb78-42f9-b5a5-de8af4b2b86f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mi_R"",
+                    ""type"": ""Button"",
+                    ""id"": ""30e3294c-099d-4b78-9ed6-937ca6e89ec2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mo_L"",
+                    ""type"": ""Button"",
+                    ""id"": ""e22f3688-de34-4282-bec4-95c8daaba8dd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
+                },
+                {
+                    ""name"": ""Useprops_Mo_R"",
+                    ""type"": ""Button"",
+                    ""id"": ""03cfeb61-3bae-4d3c-a24d-b858b1ed382f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold""
                 }
             ],
             ""bindings"": [
@@ -791,6 +921,50 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""Bang_Discombine"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""802c4456-13bc-46c8-918b-b38919cd6df2"",
+                    ""path"": ""<HID::54C-5C4>/button6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mo_R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""89657dc3-30fe-4a73-af70-918a63001ba8"",
+                    ""path"": ""<HID::54C-5C4>/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mo_L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a92d7655-6cbe-42a2-a697-bdadfbdc1473"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mi_R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""35ad1c3d-c1a4-4f48-a2b9-5828c39e6c39"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Useprops_Mi_L"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -819,6 +993,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_CombineMi_Discombine = m_CombineMi.FindAction("Discombine", throwIfNotFound: true);
         m_CombineMi_Bang_Discombine = m_CombineMi.FindAction("Bang_Discombine", throwIfNotFound: true);
         m_CombineMi_Normal_Discombine = m_CombineMi.FindAction("Normal_Discombine", throwIfNotFound: true);
+        m_CombineMi_Useprops_Mi_L = m_CombineMi.FindAction("Useprops_Mi_L", throwIfNotFound: true);
+        m_CombineMi_Useprops_Mi_R = m_CombineMi.FindAction("Useprops_Mi_R", throwIfNotFound: true);
+        m_CombineMi_Useprops_Mo_L = m_CombineMi.FindAction("Useprops_Mo_L", throwIfNotFound: true);
+        m_CombineMi_Useprops_Mo_R = m_CombineMi.FindAction("Useprops_Mo_R", throwIfNotFound: true);
         // CombineMo
         m_CombineMo = asset.FindActionMap("CombineMo", throwIfNotFound: true);
         m_CombineMo_Move = m_CombineMo.FindAction("Move", throwIfNotFound: true);
@@ -827,6 +1005,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_CombineMo_Discombine = m_CombineMo.FindAction("Discombine", throwIfNotFound: true);
         m_CombineMo_Normal_Discombine = m_CombineMo.FindAction("Normal_Discombine", throwIfNotFound: true);
         m_CombineMo_Bang_Discombine = m_CombineMo.FindAction("Bang_Discombine", throwIfNotFound: true);
+        m_CombineMo_Useprops_Mi_L = m_CombineMo.FindAction("Useprops_Mi_L", throwIfNotFound: true);
+        m_CombineMo_Useprops_Mi_R = m_CombineMo.FindAction("Useprops_Mi_R", throwIfNotFound: true);
+        m_CombineMo_Useprops_Mo_L = m_CombineMo.FindAction("Useprops_Mo_L", throwIfNotFound: true);
+        m_CombineMo_Useprops_Mo_R = m_CombineMo.FindAction("Useprops_Mo_R", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1012,6 +1194,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_CombineMi_Discombine;
     private readonly InputAction m_CombineMi_Bang_Discombine;
     private readonly InputAction m_CombineMi_Normal_Discombine;
+    private readonly InputAction m_CombineMi_Useprops_Mi_L;
+    private readonly InputAction m_CombineMi_Useprops_Mi_R;
+    private readonly InputAction m_CombineMi_Useprops_Mo_L;
+    private readonly InputAction m_CombineMi_Useprops_Mo_R;
     public struct CombineMiActions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1022,6 +1208,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Discombine => m_Wrapper.m_CombineMi_Discombine;
         public InputAction @Bang_Discombine => m_Wrapper.m_CombineMi_Bang_Discombine;
         public InputAction @Normal_Discombine => m_Wrapper.m_CombineMi_Normal_Discombine;
+        public InputAction @Useprops_Mi_L => m_Wrapper.m_CombineMi_Useprops_Mi_L;
+        public InputAction @Useprops_Mi_R => m_Wrapper.m_CombineMi_Useprops_Mi_R;
+        public InputAction @Useprops_Mo_L => m_Wrapper.m_CombineMi_Useprops_Mo_L;
+        public InputAction @Useprops_Mo_R => m_Wrapper.m_CombineMi_Useprops_Mo_R;
         public InputActionMap Get() { return m_Wrapper.m_CombineMi; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1049,6 +1239,18 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Normal_Discombine.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
                 @Normal_Discombine.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
                 @Normal_Discombine.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
+                @Useprops_Mi_L.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_L.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_L.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_R.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mi_R.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mi_R.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mo_L.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_L.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_L.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_R.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
+                @Useprops_Mo_R.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
+                @Useprops_Mo_R.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
             }
             m_Wrapper.m_CombineMiActionsCallbackInterface = instance;
             if (instance != null)
@@ -1071,6 +1273,18 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Normal_Discombine.started += instance.OnNormal_Discombine;
                 @Normal_Discombine.performed += instance.OnNormal_Discombine;
                 @Normal_Discombine.canceled += instance.OnNormal_Discombine;
+                @Useprops_Mi_L.started += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_L.performed += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_L.canceled += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_R.started += instance.OnUseprops_Mi_R;
+                @Useprops_Mi_R.performed += instance.OnUseprops_Mi_R;
+                @Useprops_Mi_R.canceled += instance.OnUseprops_Mi_R;
+                @Useprops_Mo_L.started += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_L.performed += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_L.canceled += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_R.started += instance.OnUseprops_Mo_R;
+                @Useprops_Mo_R.performed += instance.OnUseprops_Mo_R;
+                @Useprops_Mo_R.canceled += instance.OnUseprops_Mo_R;
             }
         }
     }
@@ -1085,6 +1299,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_CombineMo_Discombine;
     private readonly InputAction m_CombineMo_Normal_Discombine;
     private readonly InputAction m_CombineMo_Bang_Discombine;
+    private readonly InputAction m_CombineMo_Useprops_Mi_L;
+    private readonly InputAction m_CombineMo_Useprops_Mi_R;
+    private readonly InputAction m_CombineMo_Useprops_Mo_L;
+    private readonly InputAction m_CombineMo_Useprops_Mo_R;
     public struct CombineMoActions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1095,6 +1313,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Discombine => m_Wrapper.m_CombineMo_Discombine;
         public InputAction @Normal_Discombine => m_Wrapper.m_CombineMo_Normal_Discombine;
         public InputAction @Bang_Discombine => m_Wrapper.m_CombineMo_Bang_Discombine;
+        public InputAction @Useprops_Mi_L => m_Wrapper.m_CombineMo_Useprops_Mi_L;
+        public InputAction @Useprops_Mi_R => m_Wrapper.m_CombineMo_Useprops_Mi_R;
+        public InputAction @Useprops_Mo_L => m_Wrapper.m_CombineMo_Useprops_Mo_L;
+        public InputAction @Useprops_Mo_R => m_Wrapper.m_CombineMo_Useprops_Mo_R;
         public InputActionMap Get() { return m_Wrapper.m_CombineMo; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1122,6 +1344,18 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Bang_Discombine.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
                 @Bang_Discombine.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
                 @Bang_Discombine.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
+                @Useprops_Mi_L.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_L.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_L.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
+                @Useprops_Mi_R.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mi_R.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mi_R.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
+                @Useprops_Mo_L.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_L.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_L.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
+                @Useprops_Mo_R.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
+                @Useprops_Mo_R.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
+                @Useprops_Mo_R.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
             }
             m_Wrapper.m_CombineMoActionsCallbackInterface = instance;
             if (instance != null)
@@ -1144,6 +1378,18 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Bang_Discombine.started += instance.OnBang_Discombine;
                 @Bang_Discombine.performed += instance.OnBang_Discombine;
                 @Bang_Discombine.canceled += instance.OnBang_Discombine;
+                @Useprops_Mi_L.started += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_L.performed += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_L.canceled += instance.OnUseprops_Mi_L;
+                @Useprops_Mi_R.started += instance.OnUseprops_Mi_R;
+                @Useprops_Mi_R.performed += instance.OnUseprops_Mi_R;
+                @Useprops_Mi_R.canceled += instance.OnUseprops_Mi_R;
+                @Useprops_Mo_L.started += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_L.performed += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_L.canceled += instance.OnUseprops_Mo_L;
+                @Useprops_Mo_R.started += instance.OnUseprops_Mo_R;
+                @Useprops_Mo_R.performed += instance.OnUseprops_Mo_R;
+                @Useprops_Mo_R.canceled += instance.OnUseprops_Mo_R;
             }
         }
     }
@@ -1172,6 +1418,10 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnDiscombine(InputAction.CallbackContext context);
         void OnBang_Discombine(InputAction.CallbackContext context);
         void OnNormal_Discombine(InputAction.CallbackContext context);
+        void OnUseprops_Mi_L(InputAction.CallbackContext context);
+        void OnUseprops_Mi_R(InputAction.CallbackContext context);
+        void OnUseprops_Mo_L(InputAction.CallbackContext context);
+        void OnUseprops_Mo_R(InputAction.CallbackContext context);
     }
     public interface ICombineMoActions
     {
@@ -1181,5 +1431,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnDiscombine(InputAction.CallbackContext context);
         void OnNormal_Discombine(InputAction.CallbackContext context);
         void OnBang_Discombine(InputAction.CallbackContext context);
+        void OnUseprops_Mi_L(InputAction.CallbackContext context);
+        void OnUseprops_Mi_R(InputAction.CallbackContext context);
+        void OnUseprops_Mo_L(InputAction.CallbackContext context);
+        void OnUseprops_Mo_R(InputAction.CallbackContext context);
     }
 }

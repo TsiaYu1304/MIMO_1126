@@ -178,6 +178,17 @@
                     "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7547ffd-ba5d-4254-a9cc-146ef239497c",
+                    "path": "<Keyboard>/rightCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PushButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -358,6 +369,17 @@
                     "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62999b36-ab86-4a9f-a9d7-1ed11961d7fd",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PushButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -412,6 +434,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Useprops_Mi_L",
+                    "type": "Button",
+                    "id": "b844d3dd-b10d-4310-8f0c-4e62ec0ad741",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mi_R",
+                    "type": "Button",
+                    "id": "702922c2-e2d7-48c3-aac5-c871a1050bd0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mo_L",
+                    "type": "Button",
+                    "id": "8373287d-12f6-483c-89a7-c206cbdd98ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mo_R",
+                    "type": "Button",
+                    "id": "2f4ecdac-ce73-4463-a396-c58a0f3dbff2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
                 }
             ],
             "bindings": [
@@ -568,6 +622,50 @@
                     "action": "Normal_Discombine",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8810f266-15de-4392-b097-41e012331f38",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mi_L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74d0dd7b-4a2e-4c88-9afe-cbfc70d0820d",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mi_R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ead0c92-4f55-4bb3-b889-4c81cf255df8",
+                    "path": "<HID::54C-5C4>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mo_L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c7a8be9-7acc-4b9d-80ee-97dcd5bcac2b",
+                    "path": "<HID::54C-5C4>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mo_R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -622,6 +720,38 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Useprops_Mi_L",
+                    "type": "Button",
+                    "id": "8fd6c9d8-cb78-42f9-b5a5-de8af4b2b86f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mi_R",
+                    "type": "Button",
+                    "id": "30e3294c-099d-4b78-9ed6-937ca6e89ec2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mo_L",
+                    "type": "Button",
+                    "id": "e22f3688-de34-4282-bec4-95c8daaba8dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Useprops_Mo_R",
+                    "type": "Button",
+                    "id": "03cfeb61-3bae-4d3c-a24d-b858b1ed382f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
                 }
             ],
             "bindings": [
@@ -776,6 +906,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Bang_Discombine",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "802c4456-13bc-46c8-918b-b38919cd6df2",
+                    "path": "<HID::54C-5C4>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mo_R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89657dc3-30fe-4a73-af70-918a63001ba8",
+                    "path": "<HID::54C-5C4>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mo_L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a92d7655-6cbe-42a2-a697-bdadfbdc1473",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mi_R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35ad1c3d-c1a4-4f48-a2b9-5828c39e6c39",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Useprops_Mi_L",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

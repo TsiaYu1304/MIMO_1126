@@ -22,7 +22,7 @@ public class Button_UpGate : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)  //踩到的話就上升
     {
-        if (collision.tag == "Player" || collision.tag == "EnemyAI")
+        if (collision.tag == "Player" || collision.tag == "EnemyAI" || collision.tag == "CombinePlayer")
         {
             controllUpGate.GetComponent<buttonOpenGate>().changetoOpen();
             rend.sprite = Down_Sprite;
@@ -31,7 +31,7 @@ public class Button_UpGate : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player" || collision.tag == "EnemyAI")
+        if (collision.tag == "Player" || collision.tag == "EnemyAI" || collision.tag == "CombinePlayer")
         {
             controllUpGate.GetComponent<buttonOpenGate>().changetoDown();
             rend.sprite = Up_Sprite;

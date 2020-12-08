@@ -7,12 +7,12 @@ using UnityEngine;
 public class EnemyControlltest : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Collider2D coll;
+    public Collider2D coll;
     GameObject Gearobject;
     Transform GearPos;
 
     [Header("移動參數")]
-    public float speed = 1.0f;
+    public float speed = 2.0f;
     float f_y = 0;
 
    [Header("狀態")]
@@ -27,18 +27,20 @@ public class EnemyControlltest : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        coll = gameObject.GetComponent<BoxCollider2D>();
-    }
+        //coll = gameObject.GetComponent<BoxCollider2D>();
 
-    // Update is called once per frame
+        // Update is called once per frame
+    }
    
     private void FixedUpdate()
     {
         Move();
+        //isTouchingTriggerLayer();
         if (Have_GearMove && TriggerGear)
         {
             OntheGear();
         }
+        
     }
 
     void OntheGear() {
@@ -59,14 +61,14 @@ public class EnemyControlltest : MonoBehaviour
         if (leftDirection)  //準備變成右邊
         {
             leftDirection = false;
-            speed = 1.0f;
-            transform.localScale = new Vector2(-1, 1);
+            speed = 2.0f;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
             
         }
         else {  //準備變成左邊
             leftDirection = true;
-            speed = -1.0f;
-            transform.localScale = new Vector2(1, 1);
+            speed = -2.0f;
+            transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
     }
 
@@ -78,10 +80,13 @@ public class EnemyControlltest : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (coll.IsTouchingLayers(TriggerLayer))
+        
+        if (collision.tag == "EnemyTrigger")
         {
+            
             changeDirection();
         }
+        
 
         if (collision.tag == "UpGear") {
             TriggerGear = true;

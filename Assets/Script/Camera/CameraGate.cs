@@ -14,6 +14,7 @@ public class CameraGate : MonoBehaviour
 
     private void Start()
     {
+        transform.parent = null;
         openpoint.parent = null;
     }
 

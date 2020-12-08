@@ -19,8 +19,6 @@ public class CombinePlayerControll : MonoBehaviour
 
     [Header("物件參數")]
     public GameObject camera;
-    public Sprite Momounder;
-    public Sprite Mimiunder;
     public Transform AbovePoint;
     public Transform BottomPoint;
     public Transform mimiPoint;
@@ -29,6 +27,9 @@ public class CombinePlayerControll : MonoBehaviour
     public GameObject Momo;
     GameObject Grabobject;
     public Transform GrabthingPoint;
+    public Material MiMiisBottom;
+    public Material MoMoisBottom;
+
 
     [Header("移動參數")]
     public float speed = 5.0f;
@@ -42,7 +43,7 @@ public class CombinePlayerControll : MonoBehaviour
     float jumpTimeCounter;
 
     [Header("狀態變數")]
-    public bool Magnetic = false;
+    public bool Magnetic = true;
     public int Onbottom = 1;  //0是MIMI；1是MOMO
     bool isOnGround;
     public bool isJump = false;
@@ -68,7 +69,7 @@ public class CombinePlayerControll : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        //rend = GetComponent<SpriteRenderer>();
+        rend = GetComponent<SpriteRenderer>();
     }
 
     public void CombineSet(int whobottom, Transform showPosition) {
@@ -78,14 +79,14 @@ public class CombinePlayerControll : MonoBehaviour
         
         if (whobottom == 1) //Mimi 在下面  Momo上位
         {
-             rend.sprite = Mimiunder;
+            rend.material = MiMiisBottom;
             playerControls.actions.FindActionMap("CombineMo").Disable();
             playerControls.SwitchCurrentActionMap("CombineMi");
             playerControls.actions.FindActionMap("CombineMi").Enable();
         }
         else if (whobottom == 0) //Momo 在下面  Mimi上位
         {
-            rend.sprite = Momounder;
+            rend.material = MoMoisBottom;
             playerControls.actions.FindActionMap("CombineMi").Disable();
             playerControls.SwitchCurrentActionMap("CombineMo");
             playerControls.actions.FindActionMap("CombineMo").Enable();
@@ -220,6 +221,7 @@ public class CombinePlayerControll : MonoBehaviour
                 Momo.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                 Momo.GetComponent<PlayerMovement>().jumpAwake();
                 Mimi.GetComponent<PlayerMovement>().bottomAwake();
+                rb.gravityScale = 7;
                 gameObject.SetActive(false);
 
             }
@@ -230,6 +232,7 @@ public class CombinePlayerControll : MonoBehaviour
                 Mimi.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                 Mimi.GetComponent<PlayerMovement>().jumpAwake();
                 Momo.GetComponent<PlayerMovement>().bottomAwake();
+                rb.gravityScale = 7;
                 gameObject.SetActive(false);
             }
             
@@ -245,6 +248,7 @@ public class CombinePlayerControll : MonoBehaviour
                 Momo.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                 Momo.GetComponent<PlayerMovement>().AboveAwake();
                 Mimi.GetComponent<PlayerMovement>().bottomAwake();
+                rb.gravityScale = 7;
                 gameObject.SetActive(false);
 
             }
@@ -254,6 +258,7 @@ public class CombinePlayerControll : MonoBehaviour
                 Mimi.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                 Mimi.GetComponent<PlayerMovement>().AboveAwake();
                 Momo.GetComponent<PlayerMovement>().bottomAwake();
+                rb.gravityScale = 7;
                 gameObject.SetActive(false);
             }
         }

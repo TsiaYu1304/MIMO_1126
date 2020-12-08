@@ -9,7 +9,7 @@ public class MeshRendererSortimg : MonoBehaviour
     void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        meshRenderer.sortingLayerName = "player";
+        meshRenderer.sortingLayerName = "middleground";
         meshRenderer.sortingOrder = 3;
     }
 

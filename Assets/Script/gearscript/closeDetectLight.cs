@@ -10,6 +10,8 @@ public class closeDetectLight : MonoBehaviour
     private SpriteRenderer rend;
     public GameObject DetectPlayer_object;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
