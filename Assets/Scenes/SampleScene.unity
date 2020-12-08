@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1298,14 +1298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7221e6ed072e0f4fb9afd5e193a2d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGear: {fileID: 627286571500317704}
-  Down_Sprite: {fileID: -3806821854254640396, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Sprite: {fileID: 6195674290893004964, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: f25e91e2b33064742831f83c58e724de, type: 2}
-  Down_Material: {fileID: 2100000, guid: 48499bbd728af3442824769200a7057c, type: 2}
-  rend: {fileID: 0}
 --- !u!61 &97963430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2448,11 +2440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 695984859}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!4 &146381456
 Transform:
   m_ObjectHideFlags: 0
@@ -2761,41 +2748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d0fb50712f75444985cf39fa9d4b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  coll: {fileID: 0}
-  rend: {fileID: 168137707}
-  playerControls: {fileID: 168137704}
-  camera: {fileID: 2071994789}
-  Momounder: {fileID: -6874900116723852409, guid: f1547ba3c3cbbd54985eb85783b80c8c,
-    type: 3}
-  Mimiunder: {fileID: -6874900116723852409, guid: f1547ba3c3cbbd54985eb85783b80c8c,
-    type: 3}
-  AbovePoint: {fileID: 1651240527}
-  BottomPoint: {fileID: 1783319727}
-  mimiPoint: {fileID: 2127468083}
-  momoPoint: {fileID: 1206652740}
-  Mimi: {fileID: 271710603}
-  Momo: {fileID: 642178242}
-  Grabobject: {fileID: 0}
-  GrabthingPoint: {fileID: 943689815}
-  speed: 5.5
-  groundCheckPoint: {fileID: 711664786}
-  v_movement: {x: 0, y: 0}
-  xVelocity: 0
-  jumpforce: 11
-  jumptime: 0.1
-  jumpTimeCounter: 0
-  Magnetic: 0
-  Onbottom: 1
-  isOnGround: 0
-  isJump: 0
-  jumpPressed: 0
-  jumpHold: 0
-  pushGrab: 0
-  touchGrabthing: 0
-  Grabsomething: 0
-  groundLayer:
-    m_Bits: 256
 --- !u!114 &168137704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,77 +2761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 50a1076c8850ecb4d94346df86c59997,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 59a85c7b-9ada-4b99-ac39-d5cc07862155
-    m_ActionName: Player1/Move[/XInputControllerWindows/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 5c7635c2-be3f-40dc-828e-bd2c064385a2
-    m_ActionName: Player1/Jump[/XInputControllerWindows/buttonSouth]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: c221e954-4640-4421-9a62-9cc2e6fb55c8
-    m_ActionName: Player1/Grab[/XInputControllerWindows/rightTrigger]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: a8786ffb-0e2d-44b3-822a-6357cd7620bb
-    m_ActionName: Player1/Combine[/XInputControllerWindows/buttonEast]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 7080884f-f1f9-4baf-af14-d75238298c12
-    m_ActionName: Player1/PushButton[/XInputControllerWindows/leftTrigger]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 97b496c6-35ba-4607-bf87-0188d427eec0
-    m_ActionName: Player2/Move[/54C-5C4/stick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 16738b3f-9398-4e8f-949e-8b023907d52f
-    m_ActionName: Player2/Jump[/54C-5C4/button2]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 3b568599-46f4-4bb8-8854-583eadfcf35d
-    m_ActionName: Player2/Grab[/54C-5C4/button8]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: c88b98c4-c1b7-4c8b-8b6b-f77828f0a829
-    m_ActionName: Player2/Combine[/54C-5C4/button3]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 9d90735a-ed6d-402d-94c1-556a124ab9c5
-    m_ActionName: Player2/PushButton[/54C-5C4/button7]
-  - m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 168137703}, m_MethodName: OnMove, m_Mode: 0, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine: }}
 --- !u!70 &168137705
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4060,7 +3941,7 @@ Transform:
   m_Children:
   - {fileID: 577079971}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &222657151
 PrefabInstance:
@@ -4722,27 +4603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df1a9e7be9bb4b41add83aeb0b28447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnotherPlayer: {fileID: 0}
-  rb: {fileID: 0}
-  playerControls: {fileID: 271710607}
-  Combine2Player: {fileID: 0}
-  groundCheckPoint: {fileID: 1357387961}
-  xVelocity: 0
-  v_movement: {x: 0, y: 0}
-  speed: 5.5
-  jumpforce: 8.5
-  jumptime: 0.1
-  jumpTimeCounter: 0
-  Onbottom: 0
-  isOnGround: 0
-  isJump: 0
-  jumpPressed: 0
-  jumpHold: 0
-  canCombine: 0
-  groundLayer:
-    m_Bits: 256
-  playerLayer:
-    m_Bits: 512
 --- !u!114 &271710606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4756,20 +4616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4557b5bf0c37d4bbdaafe510fc0068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  GearTriggering: {fileID: 0}
-  canTurnoffLight: 0
-  canTurnoffLaser: 0
-  floatup: 1
-  FloatTrigger: 0
-  f_floatupPoint: 0
-  f_floatDoenPoint: 0
-  FloatSpeed: 1
-  Floatforce: 1.5
-  groundLayer:
-    m_Bits: 256
-  playerLayer:
-    m_Bits: 512
 --- !u!114 &271710607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4783,27 +4629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 50a1076c8850ecb4d94346df86c59997,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 271710605}, m_MethodName: OnMove, m_Mode: 0, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine: }}
 --- !u!61 &271710608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4919,7 +4744,7 @@ Transform:
   - {fileID: 1357387961}
   - {fileID: 2049120642}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279924267
 GameObject:
@@ -5117,14 +4942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 776692944}
-  startPoint: {fileID: 365475584}
-  stepSpeed: 5
 --- !u!61 &296046326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5547,12 +5364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53042dcad44868741ac15208ba9796a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Up_Point: {fileID: 15975773}
-  Down_Point: {fileID: 90677298}
-  Trigger: {fileID: 953293564}
-  rb: {fileID: 0}
-  isBlue: 1
-  speed: 3
 --- !u!60 &344822861
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29350,80 +29161,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!21 &455612996
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SingleLine-LightSaber(Clone)
-  m_Shader: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _Glossiness: 0.5
-    - _LightSaberFactor: 0.91
-    - _LineScale: 1.0000001
-    - _LineWidth: 0.49
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 0.6117647, g: 0.010865904, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &459551201
 GameObject:
   m_ObjectHideFlags: 3
@@ -29468,67 +29205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 0}
-  mCachedFollowTarget: {fileID: 0}
-  mCachedFollowTargetVcam: {fileID: 0}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0.2
-  m_LookaheadSmoothing: 10
-  m_LookaheadIgnoreY: 1
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.505
-  m_CameraDistance: 10
-  m_DeadZoneWidth: 0.97
-  m_DeadZoneHeight: 0.96
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.99
-  m_SoftZoneHeight: 1
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 3
-  m_AdjustmentMode: 2
-  m_GroupFramingSize: 0.06
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
-  m_PreviousCameraPosition: {x: 0, y: 0, z: 0}
-  <TrackedPoint>k__BackingField: {x: 0, y: 0, z: 0}
-  <InheritingPosition>k__BackingField: 0
-  m_prevFOV: 0
-  m_prevRotation: {x: 0, y: 0, z: 0, w: 0}
-  <LastBounds>k__BackingField:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  <LastBoundsMatrix>k__BackingField:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
 --- !u!114 &459551204
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -30133,47 +29809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 7
-    m_Time: 2
-    m_CustomCurve:
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_OutputCamera: {fileID: 519420031}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 0
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 0
-  mNextFrameId: 1
 --- !u!1 &532069004
 GameObject:
   m_ObjectHideFlags: 0
@@ -31119,67 +30754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 2071994793}
-  mCachedFollowTarget: {fileID: 0}
-  mCachedFollowTargetVcam: {fileID: 0}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0.2
-  m_LookaheadSmoothing: 10
-  m_LookaheadIgnoreY: 1
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.505
-  m_CameraDistance: 10
-  m_DeadZoneWidth: 0.97
-  m_DeadZoneHeight: 0.96
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.99
-  m_SoftZoneHeight: 1
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 3
-  m_AdjustmentMode: 2
-  m_GroupFramingSize: 0.06
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
-  m_PreviousCameraPosition: {x: 0, y: 0, z: -10}
-  <TrackedPoint>k__BackingField: {x: 0, y: 0, z: 0}
-  <InheritingPosition>k__BackingField: 0
-  m_prevFOV: 5.31
-  m_prevRotation: {x: -0, y: -0, z: -0, w: 1}
-  <LastBounds>k__BackingField:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  <LastBoundsMatrix>k__BackingField:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
 --- !u!114 &626178956
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -31430,27 +31004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df1a9e7be9bb4b41add83aeb0b28447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnotherPlayer: {fileID: 271710603}
-  rb: {fileID: 0}
-  playerControls: {fileID: 642178245}
-  Combine2Player: {fileID: 168137702}
-  groundCheckPoint: {fileID: 1768925640}
-  xVelocity: 0
-  v_movement: {x: 0, y: 0}
-  speed: 5.5
-  jumpforce: 8.5
-  jumptime: 0.1
-  jumpTimeCounter: 0
-  Onbottom: 1
-  isOnGround: 0
-  isJump: 0
-  jumpPressed: 0
-  jumpHold: 0
-  canCombine: 0
-  groundLayer:
-    m_Bits: 256
-  playerLayer:
-    m_Bits: 512
 --- !u!114 &642178244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31464,20 +31017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4557b5bf0c37d4bbdaafe510fc0068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  GearTriggering: {fileID: 0}
-  canTurnoffLight: 0
-  canTurnoffLaser: 0
-  floatup: 1
-  FloatTrigger: 0
-  f_floatupPoint: 0
-  f_floatDoenPoint: 0
-  FloatSpeed: 1
-  Floatforce: 10
-  groundLayer:
-    m_Bits: 256
-  playerLayer:
-    m_Bits: 512
 --- !u!114 &642178245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31491,52 +31030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 50a1076c8850ecb4d94346df86c59997,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 59a85c7b-9ada-4b99-ac39-d5cc07862155
-    m_ActionName: Player1/Move[/XInputControllerWindows/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 5c7635c2-be3f-40dc-828e-bd2c064385a2
-    m_ActionName: Player1/Jump[/XInputControllerWindows/buttonSouth]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: c221e954-4640-4421-9a62-9cc2e6fb55c8
-    m_ActionName: Player1/Grab[/XInputControllerWindows/rightTrigger]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: a8786ffb-0e2d-44b3-822a-6357cd7620bb
-    m_ActionName: Player1/Combine[/XInputControllerWindows/buttonEast]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-    m_ActionId: 7080884f-f1f9-4baf-af14-d75238298c12
-    m_ActionName: Player1/PushButton[/XInputControllerWindows/buttonEast]
-  - m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 642178243}, m_MethodName: OnMove, m_Mode: 0, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine: }}
 --- !u!61 &642178246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32736,169 +32229,6 @@ Transform:
   m_Father: {fileID: 607857161}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &695069840
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 18
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: -0.865, z: 0}
-      m_Extent: {x: 0, y: 0.865, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 020001000000030001000200040003000200050004000200040005000600060005000700
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 32
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 320
-    _typelessdata: 00000000a470ddbf000000000000000000000000000000000000803f0000803f0000803f0000803f00000000a470ddbf000000000000000000000000000000000000803f000000000000803f000080bf00000000a470ddbf000000000000000000000000000000000000003f0000803f000000000000803f00000000a470ddbf000000000000000000000000000000000000003f0000000000000000000080bf00000000000000000000000000000000a470ddbf000000000000003f00000000000000000000803f00000000000000000000000000000000a470ddbf000000000000003f0000803f00000000000080bf00000000000000000000000000000000a470ddbf0000000000000000000000000000803f0000803f00000000000000000000000000000000a470ddbf00000000000000000000803f0000803f000080bf
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: -0.865, z: 0}
-    m_Extent: {x: 0.30281824, y: 1.1678183, z: 0.30281824}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &695984858
 GameObject:
   m_ObjectHideFlags: 0
@@ -33864,14 +33194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 0
-  OpenPoint: {fileID: 1317268035}
-  startPoint: {fileID: 33141550}
-  stepSpeed: 5
 --- !u!61 &805205055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34548,11 +33870,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5c707240c6a5f439f1fea7f642db6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light_Turnoff: {fileID: 21300000, guid: f5bc998030779e64d88c3ee3d55a7a8c, type: 3}
-  Light_Turnoff_material: {fileID: 2100000, guid: b52c8a29dbdf2b946b1164c853e3174a,
-    type: 2}
-  rend: {fileID: 0}
-  DetectPlayer_object: {fileID: 2081923653}
 --- !u!61 &830084089
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35547,11 +34864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5c707240c6a5f439f1fea7f642db6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light_Turnoff: {fileID: 21300000, guid: f5bc998030779e64d88c3ee3d55a7a8c, type: 3}
-  Light_Turnoff_material: {fileID: 2100000, guid: b52c8a29dbdf2b946b1164c853e3174a,
-    type: 2}
-  rend: {fileID: 0}
-  DetectPlayer_object: {fileID: 1552199844}
 --- !u!61 &912968106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36242,8 +35554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48587d6dd8408464b8bb59ac53ab0a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Magnet: {fileID: 0}
-  Player: {fileID: 0}
 --- !u!1 &954819697
 GameObject:
   m_ObjectHideFlags: 0
@@ -36625,14 +35935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 805205053}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &974512275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36958,15 +36260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9034f081cee8a47abb1a467e48f5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movetime: 0
-  clocktime: 0
-  cvcamera: {fileID: 2071994789}
-  canmove: 0
-  Gateobject: {fileID: 1124454362}
-  movePoint: {fileID: 803092238}
-  playerCombine: {fileID: 168137702}
-  Camerakind: 0
-  lastCamera: {fileID: 0}
 --- !u!60 &995574209
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -37522,11 +36815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5c707240c6a5f439f1fea7f642db6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Light_Turnoff: {fileID: 21300000, guid: f5bc998030779e64d88c3ee3d55a7a8c, type: 3}
-  Light_Turnoff_material: {fileID: 2100000, guid: b52c8a29dbdf2b946b1164c853e3174a,
-    type: 2}
-  rend: {fileID: 0}
-  DetectPlayer_object: {fileID: 1292463393}
 --- !u!61 &1048223983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37687,12 +36975,12 @@ PrefabInstance:
     - target: {fileID: 2839599531068241051, guid: 81bc5dedf55f32049a65fad985032d5d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.77
+      value: -37.63
       objectReference: {fileID: 0}
     - target: {fileID: 2839599531068241051, guid: 81bc5dedf55f32049a65fad985032d5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.15
+      value: -11.51
       objectReference: {fileID: 0}
     - target: {fileID: 2839599531068241051, guid: 81bc5dedf55f32049a65fad985032d5d,
         type: 3}
@@ -38052,6 +37340,80 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!21 &1095706306
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SingleLine-LightSaber(Clone)
+  m_Shader: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Glossiness: 0.5
+    - _LightSaberFactor: 0.91
+    - _LineScale: 1.0786643
+    - _LineWidth: 0.49
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.6117647, g: 0.010865904, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1108268141
 GameObject:
   m_ObjectHideFlags: 0
@@ -38268,8 +37630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4988e25b780b04b89dc4b17c6de7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openpoint: {fileID: 1310119535}
-  openGate: 0
 --- !u!61 &1124454364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38407,8 +37767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4988e25b780b04b89dc4b17c6de7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openpoint: {fileID: 532069005}
-  openGate: 0
 --- !u!61 &1133556079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59820,14 +59178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1346214329}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1246547056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60028,14 +59378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 594939932}
-  startPoint: {fileID: 860437753}
-  stepSpeed: 5
 --- !u!61 &1248641314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60159,11 +59501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 2750953890528735589}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!1 &1263124832
 GameObject:
   m_ObjectHideFlags: 0
@@ -60224,14 +59561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1248641312}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1263124835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60641,7 +59970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69f4196469c0924bb4cbe55f029bd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1276584676}
 --- !u!95 &1276584676
 Animator:
   serializedVersion: 3
@@ -60673,14 +60001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 1276584678}
-  m_ConfineMode: 0
-  m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 2001118767}
-  m_BoundingShape2DCache: {fileID: 0}
-  m_ConfineScreenEdges: 1
-  m_Damping: 0
-  m_pathTotalPointCount: 0
 --- !u!114 &1276584678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60693,48 +60013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_ValidatingStreamVersion: 20170927
-  m_OnValidateCalled: 1
-  m_StreamingVersion: 20170927
-  m_Priority: 0
-  <FollowTargetAttachment>k__BackingField: 0
-  <LookAtTargetAttachment>k__BackingField: 0
-  m_StandbyUpdate: 2
-  mExtensions:
-  - {fileID: 1276584677}
-  <PreviousStateIsValid>k__BackingField: 0
-  m_WasStarted: 0
-  mSlaveStatusUpdated: 0
-  m_parentVcam: {fileID: 0}
-  m_QueuePriority: 2147483647
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 10
-    OrthographicSize: 5.31
-    NearClipPlane: 0.01
-    FarClipPlane: 5000
-    Dutch: 0
-    <Orthographic>k__BackingField: 0
-    <SensorSize>k__BackingField: {x: 0, y: 0}
-    <IsPhysicalCamera>k__BackingField: 0
-    LensShift: {x: 0, y: 0}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 1
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-      m_CallsDirty: 1
-  m_LegacyBlendHint: 0
-  <UserIsDragging>k__BackingField: 0
-  m_ComponentPipeline: []
-  m_ComponentOwner: {fileID: 459551202}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
 --- !u!4 &1276584679
 Transform:
   m_ObjectHideFlags: 0
@@ -60827,11 +60105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 695984859}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!50 &1290601230
 Rigidbody2D:
   serializedVersion: 4
@@ -61208,9 +60481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d503e87bc693bf4887537ffccd2b658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KillerRay: {fileID: 1259030259}
-  DetectLight: {fileID: 671368383}
-  KillPlayer: 1
 --- !u!212 &1292463397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61846,14 +61116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1672282407}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1345767101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -62116,14 +61378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 1433859090}
-  startPoint: {fileID: 2091543292}
-  stepSpeed: 5
 --- !u!61 &1346214332
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62970,14 +62224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 296046324}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1394102185
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64142,14 +63388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1720944828}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1469774781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65512,9 +64750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d503e87bc693bf4887537ffccd2b658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KillerRay: {fileID: 1906314351}
-  DetectLight: {fileID: 644200437}
-  KillPlayer: 1
 --- !u!212 &1552199848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -65888,11 +65123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 584409939}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!50 &1599952609
 Rigidbody2D:
   serializedVersion: 4
@@ -66354,6 +65584,169 @@ Transform:
   m_Father: {fileID: 130809300}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1633818108
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 18
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: -0.865, z: 0}
+      m_Extent: {x: 0, y: 0.865, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 020001000000030001000200040003000200050004000200040005000600060005000700
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 320
+    _typelessdata: 00000000a470ddbf000000000000000000000000000000000000803f0000803f0000803f0000803f00000000a470ddbf000000000000000000000000000000000000803f000000000000803f000080bf00000000a470ddbf000000000000000000000000000000000000003f0000803f000000000000803f00000000a470ddbf000000000000000000000000000000000000003f0000000000000000000080bf00000000000000000000000000000000a470ddbf000000000000003f00000000000000000000803f00000000000000000000000000000000a470ddbf000000000000003f0000803f00000000000080bf00000000000000000000000000000000a470ddbf0000000000000000000000000000803f0000803f00000000000000000000000000000000a470ddbf00000000000000000000803f0000803f000080bf
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: -0.865, z: 0}
+    m_Extent: {x: 0.30281824, y: 1.1678183, z: 0.30281824}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1637440266
 GameObject:
   m_ObjectHideFlags: 0
@@ -66497,7 +65890,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 5467240763729028638}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641762488}
-  m_Mesh: {fileID: 695069840}
+  m_Mesh: {fileID: 1633818108}
 --- !u!23 &1641762492
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66517,7 +65910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2020123757}
+  - {fileID: 1095706306}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66791,14 +66184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 1937436566}
-  startPoint: {fileID: 1417527881}
-  stepSpeed: 5
 --- !u!61 &1672282410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67492,14 +66877,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 1949784608}
-  startPoint: {fileID: 1121907865}
-  stepSpeed: 5
 --- !u!61 &1720944830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67846,14 +67223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 1317880691}
-  startPoint: {fileID: 95325807}
-  stepSpeed: 5
 --- !u!61 &1741640837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68440,8 +67809,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee8268cd453fcb42a79f89ed148e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerscount: 0
-  Cam: {fileID: 995574207}
 --- !u!61 &1797557745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68672,9 +68039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f129fe17f6fc4340a5117ac8747d51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Room: {fileID: 2001118765}
-  cvcamera: {fileID: 1276584674}
-  player: 0
 --- !u!61 &1799326353
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68772,14 +68136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7507218ea63b81c4a9388b603b663b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workGear: {fileID: 0}
-  b_controllGear: 0
-  isOpening: 0
-  isDown: 0
-  isStraight: 1
-  OpenPoint: {fileID: 1694608858}
-  startPoint: {fileID: 1286346587}
-  stepSpeed: 5
 --- !u!61 &1812194281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68983,8 +68339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee8268cd453fcb42a79f89ed148e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerscount: 0
-  Cam: {fileID: 2001118765}
 --- !u!61 &1816064123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69083,6 +68437,80 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!21 &1842432084
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SingleLine-LightSaber(Clone)
+  m_Shader: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Glossiness: 0.5
+    - _LightSaberFactor: 0.91
+    - _LineScale: 1.0000001
+    - _LineWidth: 0.49
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 0.6117647, g: 0.010865904, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1845254078
 GameObject:
   m_ObjectHideFlags: 0
@@ -69224,14 +68652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1741640835}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1846296792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69777,7 +69197,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 455612996}
+  - {fileID: 1842432084}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70004,11 +69424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 584409939}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!114 &1932698778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70635,14 +70050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306f5cea2f116c54181823bbc1ed0951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllUpGate: {fileID: 1812194279}
-  rend: {fileID: 0}
-  Up_Sprite: {fileID: -1480108804294253010, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Up_Material: {fileID: 2100000, guid: 361dae3a4b2d8f14aa13208b37ebd7aa, type: 2}
-  Down_Sprite: {fileID: 2422505048979200443, guid: 0ce0d148f8f0cd647b65885c6c26b8c3,
-    type: 3}
-  Down_Material: {fileID: 2100000, guid: 86d99eb79825030439fcb7cd591c6e12, type: 2}
 --- !u!212 &1991784791
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70772,15 +70179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9034f081cee8a47abb1a467e48f5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movetime: 0
-  clocktime: 0
-  cvcamera: {fileID: 1276584674}
-  canmove: 0
-  Gateobject: {fileID: 1133556076}
-  movePoint: {fileID: 803092238}
-  playerCombine: {fileID: 168137702}
-  Camerakind: 0
-  lastCamera: {fileID: 2071994789}
 --- !u!1001 &2001938762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70987,80 +70385,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!21 &2020123757
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SingleLine-LightSaber(Clone)
-  m_Shader: {fileID: 4800000, guid: 2d9a4ca4b2730b64e8aade7030f8caeb, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _BumpMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailAlbedoMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MetallicGlossMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ParallaxMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _BumpScale: 1
-    - _Cutoff: 0.5
-    - _DetailNormalMapScale: 1
-    - _DstBlend: 0
-    - _Glossiness: 0.5
-    - _LightSaberFactor: 0.91
-    - _LineScale: 1.0786643
-    - _LineWidth: 0.49
-    - _Metallic: 0
-    - _Mode: 0
-    - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _SrcBlend: 1
-    - _UVSec: 0
-    - _ZWrite: 1
-    m_Colors:
-    - _Color: {r: 0.6117647, g: 0.010865904, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &2040298885
 GameObject:
   m_ObjectHideFlags: 0
@@ -71526,9 +70850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f129fe17f6fc4340a5117ac8747d51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Room: {fileID: 995574207}
-  cvcamera: {fileID: 2071994789}
-  player: 0
 --- !u!61 &2066405204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -71587,7 +70908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69f4196469c0924bb4cbe55f029bd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2071994791}
 --- !u!95 &2071994791
 Animator:
   serializedVersion: 3
@@ -71619,14 +70939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 2071994793}
-  m_ConfineMode: 0
-  m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 995574209}
-  m_BoundingShape2DCache: {fileID: 995574209}
-  m_ConfineScreenEdges: 1
-  m_Damping: 0
-  m_pathTotalPointCount: 4
 --- !u!114 &2071994793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71639,49 +70951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_ValidatingStreamVersion: 20170927
-  m_OnValidateCalled: 1
-  m_StreamingVersion: 20170927
-  m_Priority: 0
-  <FollowTargetAttachment>k__BackingField: 1
-  <LookAtTargetAttachment>k__BackingField: 1
-  m_StandbyUpdate: 2
-  mExtensions:
-  - {fileID: 2071994792}
-  <PreviousStateIsValid>k__BackingField: 1
-  m_WasStarted: 1
-  mSlaveStatusUpdated: 1
-  m_parentVcam: {fileID: 0}
-  m_QueuePriority: 0
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 10
-    OrthographicSize: 5.31
-    NearClipPlane: 0.01
-    FarClipPlane: 5000
-    Dutch: 0
-    <Orthographic>k__BackingField: 1
-    <SensorSize>k__BackingField: {x: 1.7777778, y: 1}
-    <IsPhysicalCamera>k__BackingField: 0
-    LensShift: {x: 0, y: 0}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 1
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-      m_CallsDirty: 0
-  m_LegacyBlendHint: 0
-  <UserIsDragging>k__BackingField: 0
-  m_ComponentPipeline:
-  - {fileID: 626178955}
-  m_ComponentOwner: {fileID: 626178954}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
 --- !u!4 &2071994794
 Transform:
   m_ObjectHideFlags: 0
@@ -72132,9 +71401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d503e87bc693bf4887537ffccd2b658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KillerRay: {fileID: 146381454}
-  DetectLight: {fileID: 197870697}
-  KillPlayer: 1
 --- !u!212 &2081923656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73108,12 +72374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53042dcad44868741ac15208ba9796a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Up_Point: {fileID: 0}
-  Down_Point: {fileID: 0}
-  Trigger: {fileID: 0}
-  rb: {fileID: 0}
-  isBlue: 1
-  speed: 3
 --- !u!212 &2145571344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73520,21 +72780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91688e16b607a144fa7e39cb703d11b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AITrigger_Beneath_L: {fileID: 708485624}
-  AITrigger_Beneath_R: {fileID: 11750775}
-  AITrigger_Self_L: {fileID: 1626489968}
-  AITrigger_Self_R: {fileID: 1334467280}
-  AITrigger_Above_L: {fileID: 1735606828}
-  AITrigger_Above_R: {fileID: 997500503}
-  stepSpeed: 4
-  isUp: 0
-  isDown: 0
-  GateisOpen: 0
-  OnTop: 0
-  i_kind: 1
-  haveGate: 1
-  startPosirion: {fileID: 150851319}
-  upPosition: {fileID: 893570988}
 --- !u!61 &627286571500317706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73942,11 +73187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa5066aede1494488a3b9b099008e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Laser: {fileID: 1895391930}
-  firePoint: {fileID: 2750953890528735589}
-  isShoot: 0
-  f_x: 0
-  f_y: 0
 --- !u!1 &9033660551786299160
 GameObject:
   m_ObjectHideFlags: 0
@@ -74069,15 +73309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9034f081cee8a47abb1a467e48f5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movetime: 0
-  clocktime: 0
-  cvcamera: {fileID: 9163595047932566092}
-  canmove: 0
-  Gateobject: {fileID: 9163595048310033146}
-  movePoint: {fileID: 1142500713}
-  playerCombine: {fileID: 168137702}
-  Camerakind: 0
-  lastCamera: {fileID: 1276584674}
 --- !u!1 &9163595047423331527
 GameObject:
   m_ObjectHideFlags: 0
@@ -74122,8 +73353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee8268cd453fcb42a79f89ed148e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerscount: 0
-  Cam: {fileID: 9163595047417694291}
 --- !u!61 &9163595047423331530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74194,9 +73423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f129fe17f6fc4340a5117ac8747d51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Room: {fileID: 9163595047417694291}
-  cvcamera: {fileID: 9163595047932566092}
-  player: 0
 --- !u!61 &9163595047586898250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74270,14 +73496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 9163595047932566095}
-  m_ConfineMode: 0
-  m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 9163595047417694293}
-  m_BoundingShape2DCache: {fileID: 0}
-  m_ConfineScreenEdges: 1
-  m_Damping: 0
-  m_pathTotalPointCount: 0
 --- !u!114 &9163595047932566095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74290,48 +73508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_ValidatingStreamVersion: 20170927
-  m_OnValidateCalled: 1
-  m_StreamingVersion: 20170927
-  m_Priority: 0
-  <FollowTargetAttachment>k__BackingField: 0
-  <LookAtTargetAttachment>k__BackingField: 0
-  m_StandbyUpdate: 2
-  mExtensions:
-  - {fileID: 9163595047932566094}
-  <PreviousStateIsValid>k__BackingField: 0
-  m_WasStarted: 0
-  mSlaveStatusUpdated: 0
-  m_parentVcam: {fileID: 0}
-  m_QueuePriority: 2147483647
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_Lens:
-    FieldOfView: 10
-    OrthographicSize: 5.31
-    NearClipPlane: 0.01
-    FarClipPlane: 5000
-    Dutch: 0
-    <Orthographic>k__BackingField: 0
-    <SensorSize>k__BackingField: {x: 0, y: 0}
-    <IsPhysicalCamera>k__BackingField: 0
-    LensShift: {x: 0, y: 0}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 1
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-      m_CallsDirty: 1
-  m_LegacyBlendHint: 0
-  <UserIsDragging>k__BackingField: 0
-  m_ComponentPipeline: []
-  m_ComponentOwner: {fileID: 9163595048223898338}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
 --- !u!114 &9163595047932566128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74344,7 +73520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69f4196469c0924bb4cbe55f029bd8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 9163595047932566129}
 --- !u!95 &9163595047932566129
 Animator:
   serializedVersion: 3
@@ -74438,67 +73613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_vcamOwner: {fileID: 0}
-  mCachedFollowTarget: {fileID: 0}
-  mCachedFollowTargetVcam: {fileID: 0}
-  mCachedLookAtTarget: {fileID: 0}
-  mCachedLookAtTargetVcam: {fileID: 0}
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0.2
-  m_LookaheadSmoothing: 10
-  m_LookaheadIgnoreY: 1
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.505
-  m_CameraDistance: 10
-  m_DeadZoneWidth: 0.97
-  m_DeadZoneHeight: 0.96
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.99
-  m_SoftZoneHeight: 1
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 3
-  m_AdjustmentMode: 2
-  m_GroupFramingSize: 0.06
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
-  m_PreviousCameraPosition: {x: 0, y: 0, z: 0}
-  <TrackedPoint>k__BackingField: {x: 0, y: 0, z: 0}
-  <InheritingPosition>k__BackingField: 0
-  m_prevFOV: 0
-  m_prevRotation: {x: 0, y: 0, z: 0, w: 0}
-  <LastBounds>k__BackingField:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  <LastBoundsMatrix>k__BackingField:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
 --- !u!114 &9163595048223898340
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -74557,8 +73671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4988e25b780b04b89dc4b17c6de7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openpoint: {fileID: 9163595048040252936}
-  openGate: 0
 --- !u!61 &9163595048310033149
 BoxCollider2D:
   m_ObjectHideFlags: 0
