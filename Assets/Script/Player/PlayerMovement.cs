@@ -154,7 +154,7 @@ public class PlayerMovement : MonoBehaviour
             jumpHold = false;
             jumpPressed = false;
         }
-        Debug.Log(context.ReadValue<float>());
+        //Debug.Log(context.ReadValue<float>());
     }
 
     public void OnCombine(CallbackContext context)

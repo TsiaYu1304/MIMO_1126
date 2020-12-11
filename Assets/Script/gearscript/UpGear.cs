@@ -43,7 +43,7 @@ public class UpGear : MonoBehaviour
             AITrigger_Self_R.SetActive(false);
         }
         else if (i_kind == 3) {
-            AITrigger_Self_R.SetActive(false);
+           //AITrigger_Self_R.SetActive(false);
         }
     }
 
@@ -144,7 +144,7 @@ public class UpGear : MonoBehaviour
         }
         else if (i_kind == 3)
         {
-            AITrigger_Self_R.SetActive(false);
+            //AITrigger_Self_R.SetActive(false);
             AITrigger_Beneath_L.SetActive(false);
         }
     }
@@ -158,7 +158,8 @@ public class UpGear : MonoBehaviour
         }
         else if (i_kind == 3)
         {
-            AITrigger_Beneath_L.SetActive(true);
+            AITrigger_Above_L.SetActive(true);
+            AITrigger_Beneath_R.SetActive(true);
         }
         else if (i_kind == 2)
         {
@@ -182,6 +183,7 @@ public class UpGear : MonoBehaviour
         else if (i_kind == 3)
         {
             AITrigger_Above_L.SetActive(true);
+            AITrigger_Beneath_R.SetActive(true);
         }
     }
 

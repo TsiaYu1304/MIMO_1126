@@ -10,6 +10,7 @@ public class EnemyControlltest : MonoBehaviour
     public Collider2D coll;
     GameObject Gearobject;
     Transform GearPos;
+    public bool needTrigger = false;
 
     [Header("移動參數")]
     public float speed = 2.0f;
@@ -43,6 +44,9 @@ public class EnemyControlltest : MonoBehaviour
         
     }
 
+    public void setDirection(bool isLeft) {
+        leftDirection = isLeft;
+    }
     void OntheGear() {
 
         f_y = Gearobject.transform.position.y - GearPos.position.y;
