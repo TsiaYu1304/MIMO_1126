@@ -10,7 +10,8 @@ public class Camera_ver2 : MonoBehaviour
     bool canmove = false;
     public GameObject Gateobject;
     public Transform movePoint;
-   
+    public Transform ReplayPoint;
+    public GameObject Mimi, Momo;
     
 
     public GameObject playerCombine;
@@ -23,6 +24,7 @@ public class Camera_ver2 : MonoBehaviour
     {
         //Gateobject.transform.parent = null;
         movePoint.parent = null;
+        ReplayPoint.parent = null;
     }
 
 
@@ -31,11 +33,14 @@ public class Camera_ver2 : MonoBehaviour
         lastCamera.SetActive(false);
         clocktime = true;
         playerCombine.GetComponent<CombinePlayerControll>().camera = cvcamera;
+        Mimi.GetComponent<PlayerMovement>().setReplayPoint(ReplayPoint);
+        Momo.GetComponent<PlayerMovement>().setReplayPoint(ReplayPoint);
     }
 
     private void Update()
     {
-       
+        
+
         if (clocktime) {
             StartClock();
         }
@@ -93,7 +98,14 @@ public class Camera_ver2 : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" && !collision.isTrigger)
+        {
+
+        }
+    }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {

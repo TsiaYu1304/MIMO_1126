@@ -14,16 +14,30 @@ public class KillerRayControll : MonoBehaviour
     float f_x ;
     float f_y;
 
+    public bool Canshootlaser = true;
+    public Animator anim;
+
 
 // Start is called before the first frame update
 void Start()
     {
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void setAnimOpen() {
+        anim.SetBool("Open", true);
+        Debug.Log("開起雷射");
+    }
+    public void setAnimClose()
+    {
+        anim.SetBool("Open", false);
+        Debug.Log("關閉雷設");
     }
 
     public void KillPlayer(Vector3 PlayerPosition) {

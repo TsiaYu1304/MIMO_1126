@@ -12,7 +12,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     public PlayerInput playerControls;
     public GameObject Combine2Player;
+    public Animator anim;
+    public SpriteRenderer rend;
+    public Transform ReplayPoint;
 
+    public Material Jump_material, dust_material;
+    public Material idle_material, walk_material,jump_material;
     [Header("移動參數")]
     public Transform groundCheckPoint;
     float xVelocity;
@@ -46,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         isOnGround = Physics2D.OverlapCircle(groundCheckPoint.position, 0.1f, groundLayer);
+        Switchanim();
         Jump();
         GroundMovement();
     }
@@ -64,8 +70,38 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(transform.forward * 50);
         
     }
+    public void setWalkmaterial() {
+        rend.material = walk_material;
+    }
 
-    
+    public void setReplayPoint(Transform Point) {
+        ReplayPoint = Point;
+    }
+    public void LaserDie() {
+        anim.SetBool("LaserDie", true);
+    }
+    public void Replay() {
+        anim.SetBool("LaserDie", false);
+        anim.SetBool("Fall", true);
+        transform.position = ReplayPoint.position;
+    }
+
+    void Switchanim() {
+        if (anim.GetBool("Jump"))
+        {
+            if (rb.velocity.y < 0) {
+                anim.SetBool("Jump", false);
+                anim.SetBool("Fall", true);
+            }
+        }
+
+        if (anim.GetBool("Fall")) {
+            if (isOnGround) {
+                anim.SetBool("Fall", false);
+                rend.material = idle_material;
+            }
+        }
+    }    
 
 
     void Jump()
@@ -85,6 +121,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpforce;
             isJump = true;
+            anim.SetBool("Jump", true);
+            rend.material = jump_material;
             jumpTimeCounter = jumptime;
 
         }
@@ -110,6 +148,7 @@ public class PlayerMovement : MonoBehaviour
 
     void GroundMovement()
     {
+        anim.SetFloat("Walk", Mathf.Abs(xVelocity));
         rb.velocity = new Vector2(xVelocity * speed, rb.velocity.y);
         FlipDirection();
     }

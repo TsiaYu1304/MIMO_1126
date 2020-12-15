@@ -108,7 +108,6 @@ public class PlayerControl : MonoBehaviour
         if (collision.tag == "LaserTrigger") {
             canTurnoffLaser = true;
             GearTriggering = collision.gameObject;
-            Debug.Log("Playertrigger");
         }
         if (collision.tag == "Button_Float")
         {

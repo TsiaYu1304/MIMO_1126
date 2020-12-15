@@ -8,9 +8,13 @@ public class EnemyControlltest : MonoBehaviour
 {
     private Rigidbody2D rb;
     public Collider2D coll;
+    public Animator anim;
     GameObject Gearobject;
     Transform GearPos;
-    public bool needTrigger = false;
+    public bool needTrigger = false;   //???
+    bool canmove = true;
+    bool isControled = false;
+    GameObject killmodeConrol;
 
     [Header("移動參數")]
     public float speed = 2.0f;
@@ -28,14 +32,11 @@ public class EnemyControlltest : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        //coll = gameObject.GetComponent<BoxCollider2D>();
-
-        // Update is called once per frame
     }
    
     private void FixedUpdate()
     {
-        Move();
+        if(canmove)Move();
         //isTouchingTriggerLayer();
         if (Have_GearMove && TriggerGear)
         {
@@ -44,8 +45,11 @@ public class EnemyControlltest : MonoBehaviour
         
     }
 
-    public void setDirection(bool isLeft) {
+    public void setDirection(bool isLeft,GameObject Controller) {
         leftDirection = isLeft;
+        isControled = true;
+        killmodeConrol = Controller;
+        changeDirection();
     }
     void OntheGear() {
 
@@ -81,6 +85,9 @@ public class EnemyControlltest : MonoBehaviour
             changeDirection();
         }
     }
+    public void Die() {
+        Destroy(gameObject);   
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -90,7 +97,15 @@ public class EnemyControlltest : MonoBehaviour
             
             changeDirection();
         }
-        
+
+        if (collision.tag == "EnemyDie") {
+            anim.SetTrigger("Die");
+            canmove = false;
+            if (isControled) {
+                killmodeConrol.GetComponent<killModeControl>().AddDieCount();
+            
+            }
+        }
 
         if (collision.tag == "UpGear") {
             TriggerGear = true;

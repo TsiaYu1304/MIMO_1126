@@ -7,7 +7,7 @@ public class Button_LaserControll : MonoBehaviour
     [Header("物件控制")]
     public GameObject Ceiling;
     public bool Getparty = false; //是派對模式的雷射開關嗎
-
+    public GameObject killlRay;
     public GameObject LaserFire;
     public GameObject LaserFire2;
     public GameObject myLight;
@@ -22,7 +22,9 @@ public class Button_LaserControll : MonoBehaviour
     float time = 2.1f;  
 
     public float partytime; //party的總共時間
-
+    public bool HaveTrigger = false;
+    public GameObject Trigger;
+    public GameObject EnemyTurnTrigger;
     [Header("元件控制")]
     private SpriteRenderer rend;
     private Animator anim;
@@ -32,6 +34,7 @@ public class Button_LaserControll : MonoBehaviour
     public Sprite Laser_Turnoff;
     public Material Laser_Turnon_material;
     public Material Laser_Turnoff_material;
+    public Material defaultMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +42,7 @@ public class Button_LaserControll : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
         if (Getparty) TurnOn = false;
 
-        if (canPushed)
+        if (!Getparty && canPushed)
         {
             TurnOn = true;
             SetcanPush();
@@ -76,10 +79,27 @@ public class Button_LaserControll : MonoBehaviour
     }
 
     public void SetcanPush() { //玩家可以push_button
-        //anim.SetBool("canpush",true);
+        
         canPushed = true;
-        //rend.sprite = Laser_Turnon;
+        if (TurnOn)
+        {
+            rend.sprite = Laser_Turnon;
+            rend.material = Laser_Turnon_material;
+            LaserFire.SetActive(true);
+            LaserFire.GetComponent<LaserTut>().openLaser();
+        }
+        else {
+            rend.sprite = Laser_Turnoff;
+            rend.material = Laser_Turnoff_material;
+        }
         myLight.SetActive(true);
+        if (killlRay != null)
+        {
+            killlRay.GetComponent<KillerRayControll>().setAnimOpen();
+        }
+        else {
+            Debug.Log("killRay == null");
+        }
         
     }
 
@@ -95,10 +115,23 @@ public class Button_LaserControll : MonoBehaviour
         canPushed = false;
         //rend.sprite = Laser_Turnoff;
         myLight.SetActive(false);
+        killlRay.GetComponent<KillerRayControll>().setAnimClose();
+        LaserFire.GetComponent<LaserTut>().closeLaser();
+        TurnOn = false;
+        rend.sprite = Laser_Turnoff;
+        rend.material = defaultMaterial;
+        if (HaveTrigger)
+        {
+            Trigger.SetActive(false);
+            EnemyTurnTrigger.SetActive(false);
+        }
     }
 
     public void StartParty() { //開始派對模式
         TurnOn = true;
+        rend.sprite = Laser_Turnon;
+        rend.material = Laser_Turnon_material;
+        myLight.SetActive(true);
     }
 
     public void TriggerLaser()
@@ -123,14 +156,20 @@ public class Button_LaserControll : MonoBehaviour
                 LaserFire.GetComponent<LaserTut>().closeLaser();
                 TurnOn = false;
                 rend.sprite = Laser_Turnoff;
+                rend.material = Laser_Turnoff_material;
+                if (HaveTrigger) {
+                    Trigger.SetActive(false);
+                    EnemyTurnTrigger.SetActive(false);
+                }
             }
         }
         else {
             TurnOn = false;
-            rend.sprite = Laser_Turnoff;
+            rend.sprite = Laser_Turnoff; 
+            rend.material = Laser_Turnoff_material;
             LaserFire.GetComponent<LaserTut>().closeLaser();
             LaserFire2.GetComponent<LaserTut>().closeLaser();
-            
+            Getparty = false;
             Ceiling.GetComponent<FallCeilingControll>().StopFall();
 
         }
@@ -142,11 +181,16 @@ public class Button_LaserControll : MonoBehaviour
         {
             if (PlayerTriggerme)
             {
-                Debug.Log("TurnOnLaser");
                 LaserFire.SetActive(true);
                 LaserFire.GetComponent<LaserTut>().openLaser();
                 TurnOn = true;
                 rend.sprite = Laser_Turnon;
+                rend.material = Laser_Turnon_material;
+                if (HaveTrigger)
+                {
+                    Trigger.SetActive(true);
+                    EnemyTurnTrigger.SetActive(true);
+                }
             }
         }
         
