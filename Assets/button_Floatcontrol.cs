@@ -5,6 +5,7 @@ using UnityEngine;
 public class button_Floatcontrol : MonoBehaviour
 {
     public GameObject FloatFan;
+    public GameObject wind;
     public int FloatType = 1;
     bool ToZero = true;
     bool ToTwo = false;
@@ -37,6 +38,7 @@ public class button_Floatcontrol : MonoBehaviour
             else
             {
                 ToZero = false;
+                FloatType = FloatType + 1;
             }
         }
         else {
@@ -47,11 +49,12 @@ public class button_Floatcontrol : MonoBehaviour
             }
             else {
                 ToZero = true;
+                FloatType = FloatType - 1;
             }
         }
         setSprite();
         FloatFan.GetComponent<FloatTrigger>().setFloatType(FloatType);
-        
+        wind.GetComponent<Animator>().SetFloat("FloatType", FloatType);
     }
 
     void setSprite() {

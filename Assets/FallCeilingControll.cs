@@ -21,7 +21,9 @@ public class FallCeilingControll : MonoBehaviour
     private CinemachineBasicMultiChannelPerlin virtualCameraNoise;
     public GameObject RedGate, RedGate2;
     public GameObject LaserComtrol;
+    public GameObject[] Lasergear;
     public float downSpeed ;
+    public bool partymode = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,13 +52,32 @@ public class FallCeilingControll : MonoBehaviour
     }
 
     void FallDownCeiling() {
+
         
         transform.localScale = transform.localScale + new Vector3(0, downSpeed * Time.deltaTime, 0);
+        if (partymode) {
+            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, -0.5f * Time.deltaTime, 0);
+            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, -0.5f * Time.deltaTime, 0);
+        }
+        
+        if (!partymode) {
+            if (transform.localScale.y > 10) {
+                StopCameraNoise();
+                canFallDown = false;
+                canFallback = true;
+            }
+        }
     }
 
     void FallbackCeiling() {
+        
         transform.localScale = transform.localScale + new Vector3(0, -(downSpeed+2) * Time.deltaTime, 0);
-        if (transform.localScale.y < 0) {
+        if (partymode)
+        {
+            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, 4* Time.deltaTime, 0);
+            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, 4 * Time.deltaTime, 0);
+        }
+            if (transform.localScale.y < 0) {
             transform.localScale = new Vector3(0,0, 0);
             canFallback = false;
         }
@@ -64,10 +85,14 @@ public class FallCeilingControll : MonoBehaviour
 
     void StartToFall()
     {
-        ClosetheRedGate();
+        if (partymode) {
+            ClosetheRedGate();
+            OpenLaser();
+        }
+        
         CameraNoise();
         canFallDown = true;
-        OpenLaser();
+       
     }
 
     void OpenLaser() {
@@ -98,8 +123,11 @@ public class FallCeilingControll : MonoBehaviour
         StopCameraNoise();
         canFallDown = false;
         canFallback = true;
-        RedGate.GetComponent<RedGate>().backtheGate();
-        RedGate2.GetComponent<RedGate>().backtheGate();
+        if (partymode) {
+            RedGate.GetComponent<RedGate>().backtheGate();
+            RedGate2.GetComponent<RedGate>().backtheGate();
+        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class killmodeEnemyGenerator : MonoBehaviour
 {
+    public GameObject killmodeController;
     public GameObject ControllTrigger;
     public GameObject Enemy;
-
-    public bool isLeft = true;
+    GameObject controlenemy;
+    public GameObject RedGate;
+    public Transform GenPoint;
+    public bool isLeft = true; //要產生往左邊的
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +20,34 @@ public class killmodeEnemyGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(controlenemy != null) {
+            if (isLeft) //在左邊
+            {
+                if ((controlenemy.transform.position.x - transform.position.x) > 1.5)
+                {
+                    ControllTrigger.SetActive(true);
+                    RedGate.GetComponent<RedGate>().ClosetheGate();
+                    controlenemy = null;
+                }
+
+            }
+            else {
+                if ((transform.position.x - controlenemy.transform.position.x) > 1.5)
+                {
+                    ControllTrigger.SetActive(true);
+                    RedGate.GetComponent<RedGate>().ClosetheGate();
+                    controlenemy = null;
+                }
+            }
+        }
     }
 
     public void GenerateEnemy() {
-        GameObject GenEnemy =  Instantiate(Enemy, transform.position, Quaternion.identity);
-        GenEnemy.GetComponent<EnemyControlltest>().setDirection(isLeft);
+        RedGate.GetComponent<RedGate>().backtheGate();
+        GameObject GenEnemy =  Instantiate(Enemy, new Vector3 (GenPoint.position.x, GenPoint.position.y,10), Quaternion.identity);
+        GenEnemy.GetComponent<EnemyControlltest>().setDirection(isLeft,killmodeController);
+        ControllTrigger.SetActive(false);
+        controlenemy = GenEnemy;
     }
 
 }

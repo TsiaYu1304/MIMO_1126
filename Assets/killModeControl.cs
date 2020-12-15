@@ -7,6 +7,8 @@ public class killModeControl : MonoBehaviour
     int PlayerCount = 0;
 
     public GameObject[] button;
+    public GameObject[] Enemy_Generate;
+    public GameObject[] RedGate;
     int i_button = 0;
     int i_Ramdon = 0;
     bool OpenAllbutton = false;
@@ -15,6 +17,8 @@ public class killModeControl : MonoBehaviour
     bool readytoRelease = false;
     bool isLeft = false;
     float time = 0;
+    int EnemyDie_Count = 0;
+    bool Stopkillmode = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +30,8 @@ public class killModeControl : MonoBehaviour
     {
         if (PlayerCount == 2) {
             PlayerCount = -10;
-            OpenAllbutton = true;
+            killModeOpen();
+            
         }
         if (OpenAllbutton) {
             if (time > 0.2f)
@@ -60,7 +65,7 @@ public class killModeControl : MonoBehaviour
                 button[0].GetComponent<Button_LaserControll>().SetcannotPush();
                 CloseAllbutton = false;
                 time = 0;
-                readyTokill = true;
+                if(!Stopkillmode) readyTokill = true;
                 
             }
             else {
@@ -74,7 +79,6 @@ public class killModeControl : MonoBehaviour
                 readyTokill = false;
                 RandomButton();
                 time = 0;
-                Debug.Log("準備放出來了");
             }
             else {
                 time = time + Time.deltaTime;
@@ -100,11 +104,30 @@ public class killModeControl : MonoBehaviour
 
     public void killModeOpen()
     {
-        closeRedGates();
+        for (int i = 0; i < 5; i++)
+        {
+            RedGate[i].GetComponent<RedGate>().ClosetheGate();
+        }
         OpenAllbutton = true;
         
     }
-    
+
+    public void AddDieCount() {
+        EnemyDie_Count = EnemyDie_Count + 1;
+        if (EnemyDie_Count < 4)
+        {
+            CloseAllbutton = true;
+            time = 0;
+        }
+        else {
+            for (int i = 0; i < 5; i++)
+            {
+                RedGate[i].GetComponent<RedGate>().backtheGate();
+            }
+            Stopkillmode = true;
+            CloseAllbutton = true;
+        }
+    }
 
     public void OpenbuttonLight() {
         if (i_Ramdon == 1)
@@ -126,6 +149,7 @@ public class killModeControl : MonoBehaviour
             button[0].GetComponent<Button_LaserControll>().SetcanPush();
             button[2].GetComponent<Button_LaserControll>().SetcanPush();
         }
+        readytoRelease = true;
     }
 
     public void ClosebuttonLight()
@@ -161,19 +185,11 @@ public class killModeControl : MonoBehaviour
     }
 
     public void RandomRobotRelease() {
-        if (isLeft) { Debug.Log("左邊產生");  }
-        else { Debug.Log("右邊產生"); }
+        if (isLeft) { Enemy_Generate[1].GetComponent<killmodeEnemyGenerator>().GenerateEnemy(); }
+        else { Enemy_Generate[0].GetComponent<killmodeEnemyGenerator>().GenerateEnemy(); }
         isLeft = !isLeft;
     }
 
-    public void closeRedGates() {
-        Debug.Log("門關起來了");
-    }
-
-    public void openRedGates()
-    {
-
-    }
 
     public void PlayerAdd() {
         PlayerCount = PlayerCount + 1;

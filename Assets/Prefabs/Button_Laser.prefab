@@ -244,7 +244,7 @@ SpriteRenderer:
   m_SortingLayerID: -1086208277
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f519f27449f63184c82d849868a4492d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35d30b6f60978bf4aaefe71e7e9a92d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -269,12 +269,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ceiling: {fileID: 0}
   Getparty: 0
-  startPartyMode: 0
   LaserFire: {fileID: 6498910902913498244}
   LaserFire2: {fileID: 0}
+  myLight: {fileID: 0}
+  canPushed: 0
   partytime: 0
-  Laser_Turnon: {fileID: 21300000, guid: f519f27449f63184c82d849868a4492d, type: 3}
-  Laser_Turnoff: {fileID: 21300000, guid: c0ee283251e390d44ac3fe4c5dddc373, type: 3}
+  Laser_Turnon: {fileID: 21300000, guid: 35d30b6f60978bf4aaefe71e7e9a92d0, type: 3}
+  Laser_Turnoff: {fileID: 21300000, guid: 0421e0026eb2b4c4eae54b3215b9dcb9, type: 3}
   Laser_Turnon_material: {fileID: 0}
   Laser_Turnoff_material: {fileID: 0}
 --- !u!61 &6498910904099726742
@@ -294,7 +295,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6769231, y: 0.84615386}
+    oldSize: {x: 0.69, y: 0.55}
     newSize: {x: 0.44, y: 0.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
