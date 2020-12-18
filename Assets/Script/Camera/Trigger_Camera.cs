@@ -14,6 +14,7 @@ public class Trigger_Camera : MonoBehaviour
     void Update()
     {
         if (playerscount == 2) {
+            playerscount = -100;
             Cam.GetComponent<Camera_ver2>().starttomove();
         }
     }

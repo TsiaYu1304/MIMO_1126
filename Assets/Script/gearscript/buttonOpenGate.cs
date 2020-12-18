@@ -7,6 +7,7 @@ public class buttonOpenGate : MonoBehaviour
 {
 
     [Header("控制物件")]
+    public BoxCollider2D coll;
     public GameObject workGear;
     public bool b_controllGear;
     public bool b_controlTrigger;
@@ -38,11 +39,13 @@ public class buttonOpenGate : MonoBehaviour
 
     public void changetoOpen() {
         isOpening = true;
+       if(coll != null) coll.enabled = false;
     }
     public void changetoDown()
     {
         isOpening = false;
         isDown = true;
+        if (coll != null)  coll.enabled = true; ;
     }
 
 

@@ -5,66 +5,80 @@ using UnityEngine.PlayerLoop;
 
 public class KillerRayControll : MonoBehaviour
 {
-    
+
     [Header("Laser參數")]
     public GameObject Laser;
-    public Transform firePoint;
+    public Transform rotatpoint;
     bool isShoot = false;
+    float time = 0;
 
     float f_x ;
     float f_y;
 
-    public bool Canshootlaser = true;
     public Animator anim;
 
 
 // Start is called before the first frame update
-void Start()
+    void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (isShoot) {
+            if (time < 0.5f)
+            {
+                time = time + Time.deltaTime;
+            }
+            else if (time > 0.5f && time < 1.2f)
+            {
+                
+                Laser.GetComponent<LaserTut>().closeLaser();
+                time = time + Time.deltaTime;
+
+            }
+            else if(time > 1.2f){
+                time = 0;
+                isShoot = false;
+                rotatpoint.rotation = Quaternion.Euler(0, 0, 0);
+                Laser.GetComponent<LaserTut>().ForwardPointedit();
+            }
+        }
     }
+
 
     public void setAnimOpen() {
         anim.SetBool("Open", true);
-        Debug.Log("開起雷射");
     }
     public void setAnimClose()
     {
         anim.SetBool("Open", false);
-        Debug.Log("關閉雷設");
     }
 
     public void KillPlayer(Vector3 PlayerPosition) {
 
        
         Vector2 shootDir = PlayerPosition - transform.position;
-        //float angle = Mathf.Atan2(shootDir.y, shootDir.x) * Mathf.Rad2Deg + 90f ;
-        float radiant = Mathf.Abs(shootDir.y) / Mathf.Abs(shootDir.x);
-        float degree = 180 / Mathf.PI * radiant;
+        float angle = Mathf.Atan2(shootDir.y, shootDir.x) * Mathf.Rad2Deg + 90f ;
+        //float radiant = Mathf.Abs(shootDir.y) / Mathf.Abs(shootDir.x);
+        //float degree = 180 / Mathf.PI * radiant;
 
-        transform.rotation = Quaternion.Euler(0, 0 ,-degree);
-        
-        
+        rotatpoint.rotation = Quaternion.Euler(0, 0 ,angle);
         EnableLaser(PlayerPosition);
 
+        isShoot = true;
     }
 
 
     void EnableLaser(Vector3 PlayerPosition) {
-        f_x = PlayerPosition.x - firePoint.position.x;
-        f_y = -2.862f - firePoint.position.y;
+       // f_x = PlayerPosition.x - firePoint.position.x;
+        //f_y = -2.862f - firePoint.position.y;
         
-        Laser.GetComponent<VolumetricLines.VolumetricLineBehavior>().SetEndPoint(firePoint.position.x, firePoint.position.y);
-        Laser.GetComponent<VolumetricLines.VolumetricLineBehavior>().SetStartPoint(f_x, f_y);
-        
+       
         Laser.SetActive(true);
-        isShoot = true;
+        Laser.GetComponent<LaserTut>().SetLaserPoint(PlayerPosition);
+        Laser.GetComponent<LaserTut>().openLaser();
     }
 
     void UpdateLaser() {

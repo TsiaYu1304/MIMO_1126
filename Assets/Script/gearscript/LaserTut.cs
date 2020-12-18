@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class LaserTut : MonoBehaviour
 {
+    [Header("控制物件")]
     public Animator anim;
-    public bool Test = false;
     public Transform myPoint;
     public Transform forward;
+    public GameObject EndVFX;
+    public GameObject StartVFX;
+    GameObject g_EndVFX;
+    GameObject g_StartVFX;
     private LineRenderer lr;
+
+    [Header("狀態變數")]
+    public bool Detectcontrolled = false;
+    bool shootRay = false;
     public LayerMask Player;
-    public float speed;
-    bool open = false;
-    public GameObject LaserCenter;
-    public GameObject miniLaserCenter;
-    GameObject g_LaserCenter;
-    GameObject g_LaserminiCenter;
+    public bool open = false;
     public bool parttyLaser = false;
-    bool move = false;
+    public bool isStraight = true;
 
     float f_x, f_y,f_totalY = 0;
     // Use this for initialization
     void Start()
     {
-        forward.parent = null;
+        if (parttyLaser) forward.parent = null;
         lr = GetComponent<LineRenderer>();
         // anim = GetComponent<Animator>();
         f_x = forward.position.x - myPoint.position.x;
@@ -36,13 +39,16 @@ public class LaserTut : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (parttyLaser) {
-            if (g_LaserminiCenter != null) g_LaserminiCenter.transform.position = myPoint.position;
+        if (parttyLaser) { //party laser天花板下降
+            if (g_StartVFX != null) g_StartVFX.transform.position = myPoint.position;
         }
-        if (Test)
+
+        if (shootRay && isStraight) //要設定raycast狙擊player
         {
-            Debug.DrawRay(transform.position, new Vector3(0, f_y, 0));
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(0, f_y, 0),10f,Player);
+           
+            Debug.DrawRay(transform.position, new Vector3(0, f_y, 0),Color.red);
+           
+            RaycastHit2D hit = Physics2D.Raycast(myPoint.position, new Vector3(0, -f_y, 0), f_y,Player);
             
             if (hit.collider != null && hit.collider.tag == "Player")
             {
@@ -50,52 +56,114 @@ public class LaserTut : MonoBehaviour
                 
                 Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
                 Debug.DrawRay(transform.position, HP, Color.blue,1f);
-                //if (g_LaserCenter != null) g_LaserCenter.transform.position = hit.point;
-                //lr.SetPosition(1, new Vector2(hit.point.x - myPoint.position.x, hit.point.y - myPoint.position.y+0.4f));
                 hit.collider.gameObject.GetComponent<PlayerMovement>().LaserDie();
-                Test = false;
+                
             }
-            //else lr.SetPosition(1, transform.forward * 5000);
         }
 
-        if (open) {
+        if (shootRay && !isStraight ) //要設定raycast狙擊player
+        {
+
+            Debug.DrawRay(transform.position, new Vector3(f_x, 0, 0), Color.blue);
+            RaycastHit2D hit = Physics2D.Raycast(myPoint.position, new Vector3(f_x, 0, 0), f_x);
             
-            f_totalY = f_totalY - speed * Time.deltaTime;
-            speed = speed + 5;
-            lr.SetPosition(1, new Vector2(f_x, f_totalY));
-            if (f_totalY < f_y+0.8f) {
-                lr.SetPosition(1, new Vector2(f_x, f_y + 0.8f));
-                open = false;
-                f_totalY = 0;
-                speed = 5;
-                if (LaserCenter != null) g_LaserCenter = Instantiate(LaserCenter, forward.position, Quaternion.identity);
+            if (hit.collider != null && hit.collider.tag == "Player")
+            {
+                Debug.Log(hit.transform.name);
+
+                Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
+                Debug.DrawRay(transform.position, HP, Color.blue, 1f);
+                hit.collider.gameObject.GetComponent<PlayerMovement>().LaserDie();
+
             }
+            
         }
+
+
+        if (open) {
+            if (!Detectcontrolled) shootRay = true;
+            if (StartVFX != null) g_StartVFX = Instantiate(StartVFX, myPoint.position, Quaternion.identity);
+            lr.SetPosition(0, myPoint.position);
+            lr.SetPosition(1, forward.position);
+            open = false;
+            anim.SetBool("Open", false);
+            if (EndVFX != null) g_EndVFX = Instantiate(EndVFX, forward.position, Quaternion.identity);
+        }
+    }
+    public void Hitcollision()
+    {
+        Destroy(g_EndVFX);
+        if (isStraight)
+        {
+            forward.position = forward.position + new Vector3(0, 2.2f, 0);
+            lr.SetPosition(1, forward.position);
+            f_y = 0;
+        }
+        else {
+            Debug.Log("進來衡的");
+            forward.position = forward.position + new Vector3(-3.8f, 0, 0);
+            lr.SetPosition(1, forward.position);
+        }
+        if (EndVFX != null) g_EndVFX = Instantiate(EndVFX, forward.position, Quaternion.identity);
+    }
+
+    public void ExitCollision() {
+        Destroy(g_EndVFX);
+        if (isStraight)
+        {
+            forward.position = forward.position + new Vector3(0, -2.2f, 0);
+            lr.SetPosition(1, forward.position);
+            f_y = forward.position.y - myPoint.position.y;
+        }
+        else {
+            Debug.Log("出去衡的");
+            forward.position = forward.position + new Vector3(3.8f, 0, 0);
+            lr.SetPosition(1, forward.position);
+        }
+        if (EndVFX != null) g_EndVFX = Instantiate(EndVFX, forward.position, Quaternion.identity);
     }
 
     public void SetInactive() {
 
         lr.SetPosition(1, new Vector2(0, 0));
-        if (g_LaserCenter != null) { 
-            Destroy(g_LaserCenter); 
+        if (g_EndVFX != null) { 
+            Destroy(g_EndVFX); 
         }
-        if (g_LaserminiCenter != null) {
-            Destroy(g_LaserminiCenter);
+        if (g_StartVFX != null) {
+            Destroy(g_StartVFX);
         }
         gameObject.SetActive(false);
+
+        
+    }
+
+    public void ForwardPointedit() {
+        forward.position = new Vector3(myPoint.position.x, forward.position.y, forward.position.z);
     }
 
     public void closeLaser() {
         anim.SetTrigger("Close");
         open = false;
+        if (shootRay) shootRay = false;
     }
 
     public void openLaser() {
-        Debug.Log("開啟");
         anim.SetBool("Open", true);
         open = true;
-        if (miniLaserCenter != null) g_LaserminiCenter = Instantiate(miniLaserCenter, transform.position, Quaternion.identity);
-        anim.SetBool("Open", false);
+       
+    }
+
+    public void SetLaserPoint(Vector3 targetPoint) {
+        //f_x = targetPoint.x - myPoint.position.x ;
+
+        //if (f_x > 0)
+        //    forward.position = new Vector3(forward.position.x + f_x , forward.position.y, forward.position.z);
+        //else {
+        //    forward.position = new Vector3(forward.position.x - f_x, forward.position.y, forward.position.z);
+        //}
+        forward.position = new Vector3(targetPoint.x, forward.position.y, forward.position.z);
+
+        f_x = forward.position.x - myPoint.position.x;
     }
 
 }

@@ -144,8 +144,8 @@ public class UpGear : MonoBehaviour
         }
         else if (i_kind == 3)
         {
-            //AITrigger_Self_R.SetActive(false);
-            AITrigger_Beneath_L.SetActive(false);
+            AITrigger_Self_L.SetActive(false);
+            AITrigger_Beneath_R.SetActive(false);
         }
     }
 
@@ -194,6 +194,22 @@ public class UpGear : MonoBehaviour
     public void SetGateisnotOpen()
     {
         GateisOpen = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Laser")
+        {
+            collision.GetComponent<LaserTut>().Hitcollision();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Laser")
+        {
+            collision.GetComponent<LaserTut>().ExitCollision();
+        }
     }
 
 

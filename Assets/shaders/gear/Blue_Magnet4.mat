@@ -49,6 +49,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 1.4712403, g: 1.7709368, b: 5.884961, a: 0}
+    - _MainColor: {r: 1.2327952, g: 2.0408278, b: 6.0779667, a: 0}
     - _MainColor2: {r: 0, g: 1.3611311, b: 3.732132, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

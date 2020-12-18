@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     bool jumpPressed;  //按下jump鈕
     bool jumpHold;
     bool canCombine = false;  //trigger彼此 可以合體
+    bool canMove = true;
 
     [Header("環境檢測")]
     public LayerMask groundLayer;
@@ -53,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         isOnGround = Physics2D.OverlapCircle(groundCheckPoint.position, 0.1f, groundLayer);
         Switchanim();
         Jump();
-        GroundMovement();
+        if(canMove)GroundMovement();
     }
 
     public void jumpAwake() {
@@ -79,9 +80,12 @@ public class PlayerMovement : MonoBehaviour
     }
     public void LaserDie() {
         anim.SetBool("LaserDie", true);
+        canMove = false;
+        rb.velocity = new Vector2(0, rb.velocity.y);
     }
     public void Replay() {
         anim.SetBool("LaserDie", false);
+        canMove = true;
         anim.SetBool("Fall", true);
         transform.position = ReplayPoint.position;
     }

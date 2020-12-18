@@ -55,6 +55,7 @@ public class Camera_ver2 : MonoBehaviour
                     transform.position = movePoint.position;
                     
                     canmove = false;
+                    Gateobject.GetComponent<CameraGate>().Closegate();
                 }
             }
             else if (Camerakind == 1)
@@ -66,6 +67,7 @@ public class Camera_ver2 : MonoBehaviour
                     transform.position = movePoint.position;
 
                     canmove = false;
+                    Gateobject.GetComponent<CameraGate>().Closegate();
                 }
             }
             else if (Camerakind == 2)
@@ -77,6 +79,7 @@ public class Camera_ver2 : MonoBehaviour
                     transform.position = movePoint.position;
 
                     canmove = false;
+                    Gateobject.GetComponent<CameraGate>().Closegate();
                 }
             }
 
@@ -86,7 +89,6 @@ public class Camera_ver2 : MonoBehaviour
 
     public void starttomove(){
         canmove = true;
-        //lastCamera.SetActive(false);
     }
 
 

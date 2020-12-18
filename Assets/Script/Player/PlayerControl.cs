@@ -54,10 +54,12 @@ public class PlayerControl : MonoBehaviour
         if (floatup)
         {
             if (transform.position.y < f_floatDoenPoint)
+            {
                 rb.velocity = Vector2.up * Floatforce;
-            //rb.AddForce(Vector2.up * Floatforce);
+            }
             if (transform.position.y > f_floatupPoint)
             {
+                rb.velocity = new Vector2(0, 0);
                 floatup = false;
                 rb.gravityScale = rbgravity;
             }
