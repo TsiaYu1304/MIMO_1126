@@ -3,18 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Button_DetectLight
-  - CombinePlayer
-  - mag_blue
-  - LaserTrigger
-  - Button_Float
-  - UpGear
-  - EnemyTrigger
-  - EnemyAI
-  - LefttorightGear
-  - Laser
-  - EnemyDie
+  tags: [Button_DetectLight, CombinePlayer, mag_blue, LaserTrigger, Button_Float,
+    UpGear, EnemyTrigger, EnemyAI, LefttorightGear, Laser, EnemyDie]
   layers:
   - Default
   - TransparentFX
@@ -66,4 +56,7 @@ TagManager:
     locked: 0
   - name: frontground
     uniqueID: 2689685025
+    locked: 0
+  - name: UI
+    uniqueID: 3951638503
     locked: 0
