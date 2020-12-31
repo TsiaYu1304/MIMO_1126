@@ -5,6 +5,7 @@ using UnityEngine;
 public class LaserTut : MonoBehaviour
 {
     [Header("控制物件")]
+    public GameObject Fallceiling;
     public Animator anim;
     public Transform myPoint;
     public Transform forward;
@@ -52,12 +53,27 @@ public class LaserTut : MonoBehaviour
             
             if (hit.collider != null && hit.collider.tag == "Player")
             {
-                Debug.Log(hit.transform.name);
-                
                 Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
                 Debug.DrawRay(transform.position, HP, Color.blue,1f);
                 hit.collider.gameObject.GetComponent<PlayerMovement>().LaserDie();
-                
+                if (parttyLaser)
+                {
+                    Fallceiling.GetComponent<FallCeilingControll>().ResetGear();
+                   
+                }
+
+            }
+            else if (hit.collider != null && hit.collider.tag == "CombinePlayer")
+            {
+                Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
+                Debug.DrawRay(transform.position, HP, Color.blue, 1f);
+                hit.collider.gameObject.GetComponent<CombinePlayerControll>().LaserDie();
+                if (parttyLaser)
+                {
+                    Fallceiling.GetComponent<FallCeilingControll>().ResetGear();
+
+                }
+
             }
         }
 
@@ -69,14 +85,27 @@ public class LaserTut : MonoBehaviour
             
             if (hit.collider != null && hit.collider.tag == "Player")
             {
-                Debug.Log(hit.transform.name);
 
                 Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
                 Debug.DrawRay(transform.position, HP, Color.blue, 1f);
                 hit.collider.gameObject.GetComponent<PlayerMovement>().LaserDie();
-
+                if (parttyLaser)
+                {
+                    Fallceiling.GetComponent<FallCeilingControll>().ResetGear();
+                }
             }
-            
+            else if (hit.collider != null && hit.collider.tag == "CombinePlayer")
+            {
+
+                Vector3 HP = new Vector3(hit.point.x - transform.position.x, hit.point.y - transform.position.y, 0);
+                Debug.DrawRay(transform.position, HP, Color.blue, 1f);
+                hit.collider.gameObject.GetComponent<CombinePlayerControll>().LaserDie();
+                if (parttyLaser)
+                {
+                    Fallceiling.GetComponent<FallCeilingControll>().ResetGear();
+                }
+            }
+
         }
 
 
@@ -164,6 +193,11 @@ public class LaserTut : MonoBehaviour
         forward.position = new Vector3(targetPoint.x, forward.position.y, forward.position.z);
 
         f_x = forward.position.x - myPoint.position.x;
+    }
+
+    public void SetForwardPoint(Transform Point) {
+
+        forward.position = Point.position;
     }
 
 }

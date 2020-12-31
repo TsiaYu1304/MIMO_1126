@@ -25,5 +25,11 @@ public class Trigger_Camera : MonoBehaviour
         {
             playerscount = playerscount + 1;
         }
+        if (collision.tag == "CombinePlayer") {
+
+            playerscount = 2;
+
+
+        }
     }
 }

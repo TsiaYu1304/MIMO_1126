@@ -57,6 +57,14 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Speak"",
+                    ""type"": ""Button"",
+                    ""id"": ""0e76c98d-7a53-414a-a954-a03d2398af99"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -202,6 +210,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6b4cecf5-9e15-4793-827c-50617a37bca5"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Speak"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -248,13 +267,21 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Speak"",
+                    ""type"": ""Button"",
+                    ""id"": ""2cc7c348-61bb-49fd-a342-24fbaada0e14"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""4a50371c-791a-4c5a-890f-83ca6f4d5dfe"",
-                    ""path"": ""<XInputController>/leftStick"",
+                    ""path"": ""<Joystick>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -320,7 +347,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""9877c225-892a-4d34-a556-40176d9f3517"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<HID::54C-5C4>/button2"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
@@ -353,7 +380,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""20eedcf4-c6a9-42d9-b3b1-436f7b3100ad"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<HID::54C-5C4>/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -375,7 +402,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6d6a20c7-631c-4ba5-97df-f2e7d3b531a4"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<HID::54C-5C4>/button3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -391,6 +418,17 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PushButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""332f2d07-07cf-4103-be90-b839e276e02e"",
+                    ""path"": ""<HID::54C-5C4>/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Speak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -449,36 +487,20 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Useprops_Mi_L"",
+                    ""name"": ""PushButton"",
                     ""type"": ""Button"",
-                    ""id"": ""b844d3dd-b10d-4310-8f0c-4e62ec0ad741"",
+                    ""id"": ""abaa22c8-9da6-4be5-a61f-dbbcdb04ed70"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": """"
                 },
                 {
-                    ""name"": ""Useprops_Mi_R"",
+                    ""name"": ""Speak"",
                     ""type"": ""Button"",
-                    ""id"": ""702922c2-e2d7-48c3-aac5-c871a1050bd0"",
+                    ""id"": ""40bb7192-02cc-4a49-9556-766ce40b887b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Useprops_Mo_L"",
-                    ""type"": ""Button"",
-                    ""id"": ""8373287d-12f6-483c-89a7-c206cbdd98ac"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Useprops_Mo_R"",
-                    ""type"": ""Button"",
-                    ""id"": ""2f4ecdac-ce73-4463-a396-c58a0f3dbff2"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -595,7 +617,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8c88c09a-e892-4672-a164-f0dd06d84bda"",
-                    ""path"": ""<XInputController>/buttonNorth"",
+                    ""path"": ""<HID::54C-5C4>/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -638,45 +660,45 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""8810f266-15de-4392-b097-41e012331f38"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""id"": ""00862b8c-11ed-456e-913e-15ef906ce7ad"",
+                    ""path"": ""<HID::54C-5C4>/button3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mi_L"",
+                    ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""74d0dd7b-4a2e-4c88-9afe-cbfc70d0820d"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""id"": ""ab2fcb00-9c1d-4b94-9d04-6df840eb82ba"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mi_R"",
+                    ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1ead0c92-4f55-4bb3-b889-4c81cf255df8"",
+                    ""id"": ""fdabc840-0aa7-42cc-bc8d-f41ff899cb06"",
                     ""path"": ""<HID::54C-5C4>/button5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mo_L"",
+                    ""action"": ""Speak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9c7a8be9-7acc-4b9d-80ee-97dcd5bcac2b"",
-                    ""path"": ""<HID::54C-5C4>/button6"",
+                    ""id"": ""c25152ec-10d6-4c50-8eb3-4cf1361ef115"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mo_R"",
+                    ""action"": ""Speak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -735,43 +757,27 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Useprops_Mi_L"",
+                    ""name"": ""PushButton"",
                     ""type"": ""Button"",
-                    ""id"": ""8fd6c9d8-cb78-42f9-b5a5-de8af4b2b86f"",
+                    ""id"": ""8f1fdf68-6d82-429b-b1ed-4d1ad63f8669"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": """"
                 },
                 {
-                    ""name"": ""Useprops_Mi_R"",
+                    ""name"": ""Speak"",
                     ""type"": ""Button"",
-                    ""id"": ""30e3294c-099d-4b78-9ed6-937ca6e89ec2"",
+                    ""id"": ""9335281b-1ec8-4765-8775-25da9fd04d02"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Useprops_Mo_L"",
-                    ""type"": ""Button"",
-                    ""id"": ""e22f3688-de34-4282-bec4-95c8daaba8dd"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Useprops_Mo_R"",
-                    ""type"": ""Button"",
-                    ""id"": ""03cfeb61-3bae-4d3c-a24d-b858b1ed382f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""a36aec50-8310-47ee-8056-bddd0e5735b1"",
-                    ""path"": ""<Gamepad>/leftStick"",
+                    ""path"": ""<Joystick>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -837,7 +843,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""7d499e32-5971-4be9-af0a-738f3da855ce"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<HID::54C-5C4>/button2"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
@@ -870,7 +876,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""55a76b65-d2e7-426c-8259-ba84ab71f9db"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<HID::54C-5C4>/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -881,7 +887,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""0a25d290-0870-4f1e-9598-e1ee91ad7d36"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<HID::54C-5C4>/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -903,7 +909,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cb89bc77-1364-474f-95cc-086fe191968b"",
-                    ""path"": ""<XInputController>/buttonNorth"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -924,45 +930,45 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""802c4456-13bc-46c8-918b-b38919cd6df2"",
-                    ""path"": ""<HID::54C-5C4>/button6"",
+                    ""id"": ""ecbf0a6a-a511-4513-b8ab-7e43bcd1a9ab"",
+                    ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mo_R"",
+                    ""action"": ""PushButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""89657dc3-30fe-4a73-af70-918a63001ba8"",
+                    ""id"": ""36dca871-8d41-4b19-bf8d-da8aa5cbd775"",
+                    ""path"": ""<Keyboard>/rightCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PushButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""30a54f53-16b9-4f99-ae0e-33a240d7b2c4"",
                     ""path"": ""<HID::54C-5C4>/button5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mo_L"",
+                    ""action"": ""Speak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a92d7655-6cbe-42a2-a697-bdadfbdc1473"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Useprops_Mi_R"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""35ad1c3d-c1a4-4f48-a2b9-5828c39e6c39"",
+                    ""id"": ""b425888b-b8a1-42f9-ad57-cc3ad0886fc0"",
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Useprops_Mi_L"",
+                    ""action"": ""Speak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -978,6 +984,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_Player1_Grab = m_Player1.FindAction("Grab", throwIfNotFound: true);
         m_Player1_Combine = m_Player1.FindAction("Combine", throwIfNotFound: true);
         m_Player1_PushButton = m_Player1.FindAction("PushButton", throwIfNotFound: true);
+        m_Player1_Speak = m_Player1.FindAction("Speak", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Move = m_Player2.FindAction("Move", throwIfNotFound: true);
@@ -985,6 +992,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_Player2_Grab = m_Player2.FindAction("Grab", throwIfNotFound: true);
         m_Player2_Combine = m_Player2.FindAction("Combine", throwIfNotFound: true);
         m_Player2_PushButton = m_Player2.FindAction("PushButton", throwIfNotFound: true);
+        m_Player2_Speak = m_Player2.FindAction("Speak", throwIfNotFound: true);
         // CombineMi
         m_CombineMi = asset.FindActionMap("CombineMi", throwIfNotFound: true);
         m_CombineMi_Move = m_CombineMi.FindAction("Move", throwIfNotFound: true);
@@ -993,10 +1001,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_CombineMi_Discombine = m_CombineMi.FindAction("Discombine", throwIfNotFound: true);
         m_CombineMi_Bang_Discombine = m_CombineMi.FindAction("Bang_Discombine", throwIfNotFound: true);
         m_CombineMi_Normal_Discombine = m_CombineMi.FindAction("Normal_Discombine", throwIfNotFound: true);
-        m_CombineMi_Useprops_Mi_L = m_CombineMi.FindAction("Useprops_Mi_L", throwIfNotFound: true);
-        m_CombineMi_Useprops_Mi_R = m_CombineMi.FindAction("Useprops_Mi_R", throwIfNotFound: true);
-        m_CombineMi_Useprops_Mo_L = m_CombineMi.FindAction("Useprops_Mo_L", throwIfNotFound: true);
-        m_CombineMi_Useprops_Mo_R = m_CombineMi.FindAction("Useprops_Mo_R", throwIfNotFound: true);
+        m_CombineMi_PushButton = m_CombineMi.FindAction("PushButton", throwIfNotFound: true);
+        m_CombineMi_Speak = m_CombineMi.FindAction("Speak", throwIfNotFound: true);
         // CombineMo
         m_CombineMo = asset.FindActionMap("CombineMo", throwIfNotFound: true);
         m_CombineMo_Move = m_CombineMo.FindAction("Move", throwIfNotFound: true);
@@ -1005,10 +1011,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         m_CombineMo_Discombine = m_CombineMo.FindAction("Discombine", throwIfNotFound: true);
         m_CombineMo_Normal_Discombine = m_CombineMo.FindAction("Normal_Discombine", throwIfNotFound: true);
         m_CombineMo_Bang_Discombine = m_CombineMo.FindAction("Bang_Discombine", throwIfNotFound: true);
-        m_CombineMo_Useprops_Mi_L = m_CombineMo.FindAction("Useprops_Mi_L", throwIfNotFound: true);
-        m_CombineMo_Useprops_Mi_R = m_CombineMo.FindAction("Useprops_Mi_R", throwIfNotFound: true);
-        m_CombineMo_Useprops_Mo_L = m_CombineMo.FindAction("Useprops_Mo_L", throwIfNotFound: true);
-        m_CombineMo_Useprops_Mo_R = m_CombineMo.FindAction("Useprops_Mo_R", throwIfNotFound: true);
+        m_CombineMo_PushButton = m_CombineMo.FindAction("PushButton", throwIfNotFound: true);
+        m_CombineMo_Speak = m_CombineMo.FindAction("Speak", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1063,6 +1067,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_Grab;
     private readonly InputAction m_Player1_Combine;
     private readonly InputAction m_Player1_PushButton;
+    private readonly InputAction m_Player1_Speak;
     public struct Player1Actions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1072,6 +1077,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Grab => m_Wrapper.m_Player1_Grab;
         public InputAction @Combine => m_Wrapper.m_Player1_Combine;
         public InputAction @PushButton => m_Wrapper.m_Player1_PushButton;
+        public InputAction @Speak => m_Wrapper.m_Player1_Speak;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1096,6 +1102,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @PushButton.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPushButton;
                 @PushButton.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPushButton;
                 @PushButton.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPushButton;
+                @Speak.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSpeak;
+                @Speak.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSpeak;
+                @Speak.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSpeak;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -1115,6 +1124,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @PushButton.started += instance.OnPushButton;
                 @PushButton.performed += instance.OnPushButton;
                 @PushButton.canceled += instance.OnPushButton;
+                @Speak.started += instance.OnSpeak;
+                @Speak.performed += instance.OnSpeak;
+                @Speak.canceled += instance.OnSpeak;
             }
         }
     }
@@ -1128,6 +1140,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player2_Grab;
     private readonly InputAction m_Player2_Combine;
     private readonly InputAction m_Player2_PushButton;
+    private readonly InputAction m_Player2_Speak;
     public struct Player2Actions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1137,6 +1150,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Grab => m_Wrapper.m_Player2_Grab;
         public InputAction @Combine => m_Wrapper.m_Player2_Combine;
         public InputAction @PushButton => m_Wrapper.m_Player2_PushButton;
+        public InputAction @Speak => m_Wrapper.m_Player2_Speak;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1161,6 +1175,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @PushButton.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPushButton;
                 @PushButton.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPushButton;
                 @PushButton.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPushButton;
+                @Speak.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSpeak;
+                @Speak.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSpeak;
+                @Speak.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnSpeak;
             }
             m_Wrapper.m_Player2ActionsCallbackInterface = instance;
             if (instance != null)
@@ -1180,6 +1197,9 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @PushButton.started += instance.OnPushButton;
                 @PushButton.performed += instance.OnPushButton;
                 @PushButton.canceled += instance.OnPushButton;
+                @Speak.started += instance.OnSpeak;
+                @Speak.performed += instance.OnSpeak;
+                @Speak.canceled += instance.OnSpeak;
             }
         }
     }
@@ -1194,10 +1214,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_CombineMi_Discombine;
     private readonly InputAction m_CombineMi_Bang_Discombine;
     private readonly InputAction m_CombineMi_Normal_Discombine;
-    private readonly InputAction m_CombineMi_Useprops_Mi_L;
-    private readonly InputAction m_CombineMi_Useprops_Mi_R;
-    private readonly InputAction m_CombineMi_Useprops_Mo_L;
-    private readonly InputAction m_CombineMi_Useprops_Mo_R;
+    private readonly InputAction m_CombineMi_PushButton;
+    private readonly InputAction m_CombineMi_Speak;
     public struct CombineMiActions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1208,10 +1226,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Discombine => m_Wrapper.m_CombineMi_Discombine;
         public InputAction @Bang_Discombine => m_Wrapper.m_CombineMi_Bang_Discombine;
         public InputAction @Normal_Discombine => m_Wrapper.m_CombineMi_Normal_Discombine;
-        public InputAction @Useprops_Mi_L => m_Wrapper.m_CombineMi_Useprops_Mi_L;
-        public InputAction @Useprops_Mi_R => m_Wrapper.m_CombineMi_Useprops_Mi_R;
-        public InputAction @Useprops_Mo_L => m_Wrapper.m_CombineMi_Useprops_Mo_L;
-        public InputAction @Useprops_Mo_R => m_Wrapper.m_CombineMi_Useprops_Mo_R;
+        public InputAction @PushButton => m_Wrapper.m_CombineMi_PushButton;
+        public InputAction @Speak => m_Wrapper.m_CombineMi_Speak;
         public InputActionMap Get() { return m_Wrapper.m_CombineMi; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1239,18 +1255,12 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Normal_Discombine.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
                 @Normal_Discombine.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
                 @Normal_Discombine.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnNormal_Discombine;
-                @Useprops_Mi_L.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_L.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_L.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_R.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mi_R.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mi_R.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mo_L.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_L.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_L.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_R.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
-                @Useprops_Mo_R.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
-                @Useprops_Mo_R.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnUseprops_Mo_R;
+                @PushButton.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnPushButton;
+                @PushButton.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnPushButton;
+                @PushButton.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnPushButton;
+                @Speak.started -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnSpeak;
+                @Speak.performed -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnSpeak;
+                @Speak.canceled -= m_Wrapper.m_CombineMiActionsCallbackInterface.OnSpeak;
             }
             m_Wrapper.m_CombineMiActionsCallbackInterface = instance;
             if (instance != null)
@@ -1273,18 +1283,12 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Normal_Discombine.started += instance.OnNormal_Discombine;
                 @Normal_Discombine.performed += instance.OnNormal_Discombine;
                 @Normal_Discombine.canceled += instance.OnNormal_Discombine;
-                @Useprops_Mi_L.started += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_L.performed += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_L.canceled += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_R.started += instance.OnUseprops_Mi_R;
-                @Useprops_Mi_R.performed += instance.OnUseprops_Mi_R;
-                @Useprops_Mi_R.canceled += instance.OnUseprops_Mi_R;
-                @Useprops_Mo_L.started += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_L.performed += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_L.canceled += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_R.started += instance.OnUseprops_Mo_R;
-                @Useprops_Mo_R.performed += instance.OnUseprops_Mo_R;
-                @Useprops_Mo_R.canceled += instance.OnUseprops_Mo_R;
+                @PushButton.started += instance.OnPushButton;
+                @PushButton.performed += instance.OnPushButton;
+                @PushButton.canceled += instance.OnPushButton;
+                @Speak.started += instance.OnSpeak;
+                @Speak.performed += instance.OnSpeak;
+                @Speak.canceled += instance.OnSpeak;
             }
         }
     }
@@ -1299,10 +1303,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
     private readonly InputAction m_CombineMo_Discombine;
     private readonly InputAction m_CombineMo_Normal_Discombine;
     private readonly InputAction m_CombineMo_Bang_Discombine;
-    private readonly InputAction m_CombineMo_Useprops_Mi_L;
-    private readonly InputAction m_CombineMo_Useprops_Mi_R;
-    private readonly InputAction m_CombineMo_Useprops_Mo_L;
-    private readonly InputAction m_CombineMo_Useprops_Mo_R;
+    private readonly InputAction m_CombineMo_PushButton;
+    private readonly InputAction m_CombineMo_Speak;
     public struct CombineMoActions
     {
         private @PlayerActionControls m_Wrapper;
@@ -1313,10 +1315,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         public InputAction @Discombine => m_Wrapper.m_CombineMo_Discombine;
         public InputAction @Normal_Discombine => m_Wrapper.m_CombineMo_Normal_Discombine;
         public InputAction @Bang_Discombine => m_Wrapper.m_CombineMo_Bang_Discombine;
-        public InputAction @Useprops_Mi_L => m_Wrapper.m_CombineMo_Useprops_Mi_L;
-        public InputAction @Useprops_Mi_R => m_Wrapper.m_CombineMo_Useprops_Mi_R;
-        public InputAction @Useprops_Mo_L => m_Wrapper.m_CombineMo_Useprops_Mo_L;
-        public InputAction @Useprops_Mo_R => m_Wrapper.m_CombineMo_Useprops_Mo_R;
+        public InputAction @PushButton => m_Wrapper.m_CombineMo_PushButton;
+        public InputAction @Speak => m_Wrapper.m_CombineMo_Speak;
         public InputActionMap Get() { return m_Wrapper.m_CombineMo; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1344,18 +1344,12 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Bang_Discombine.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
                 @Bang_Discombine.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
                 @Bang_Discombine.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnBang_Discombine;
-                @Useprops_Mi_L.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_L.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_L.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_L;
-                @Useprops_Mi_R.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mi_R.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mi_R.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mi_R;
-                @Useprops_Mo_L.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_L.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_L.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_L;
-                @Useprops_Mo_R.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
-                @Useprops_Mo_R.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
-                @Useprops_Mo_R.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnUseprops_Mo_R;
+                @PushButton.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnPushButton;
+                @PushButton.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnPushButton;
+                @PushButton.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnPushButton;
+                @Speak.started -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnSpeak;
+                @Speak.performed -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnSpeak;
+                @Speak.canceled -= m_Wrapper.m_CombineMoActionsCallbackInterface.OnSpeak;
             }
             m_Wrapper.m_CombineMoActionsCallbackInterface = instance;
             if (instance != null)
@@ -1378,18 +1372,12 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 @Bang_Discombine.started += instance.OnBang_Discombine;
                 @Bang_Discombine.performed += instance.OnBang_Discombine;
                 @Bang_Discombine.canceled += instance.OnBang_Discombine;
-                @Useprops_Mi_L.started += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_L.performed += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_L.canceled += instance.OnUseprops_Mi_L;
-                @Useprops_Mi_R.started += instance.OnUseprops_Mi_R;
-                @Useprops_Mi_R.performed += instance.OnUseprops_Mi_R;
-                @Useprops_Mi_R.canceled += instance.OnUseprops_Mi_R;
-                @Useprops_Mo_L.started += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_L.performed += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_L.canceled += instance.OnUseprops_Mo_L;
-                @Useprops_Mo_R.started += instance.OnUseprops_Mo_R;
-                @Useprops_Mo_R.performed += instance.OnUseprops_Mo_R;
-                @Useprops_Mo_R.canceled += instance.OnUseprops_Mo_R;
+                @PushButton.started += instance.OnPushButton;
+                @PushButton.performed += instance.OnPushButton;
+                @PushButton.canceled += instance.OnPushButton;
+                @Speak.started += instance.OnSpeak;
+                @Speak.performed += instance.OnSpeak;
+                @Speak.canceled += instance.OnSpeak;
             }
         }
     }
@@ -1401,6 +1389,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnGrab(InputAction.CallbackContext context);
         void OnCombine(InputAction.CallbackContext context);
         void OnPushButton(InputAction.CallbackContext context);
+        void OnSpeak(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
@@ -1409,6 +1398,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnGrab(InputAction.CallbackContext context);
         void OnCombine(InputAction.CallbackContext context);
         void OnPushButton(InputAction.CallbackContext context);
+        void OnSpeak(InputAction.CallbackContext context);
     }
     public interface ICombineMiActions
     {
@@ -1418,10 +1408,8 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnDiscombine(InputAction.CallbackContext context);
         void OnBang_Discombine(InputAction.CallbackContext context);
         void OnNormal_Discombine(InputAction.CallbackContext context);
-        void OnUseprops_Mi_L(InputAction.CallbackContext context);
-        void OnUseprops_Mi_R(InputAction.CallbackContext context);
-        void OnUseprops_Mo_L(InputAction.CallbackContext context);
-        void OnUseprops_Mo_R(InputAction.CallbackContext context);
+        void OnPushButton(InputAction.CallbackContext context);
+        void OnSpeak(InputAction.CallbackContext context);
     }
     public interface ICombineMoActions
     {
@@ -1431,9 +1419,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
         void OnDiscombine(InputAction.CallbackContext context);
         void OnNormal_Discombine(InputAction.CallbackContext context);
         void OnBang_Discombine(InputAction.CallbackContext context);
-        void OnUseprops_Mi_L(InputAction.CallbackContext context);
-        void OnUseprops_Mi_R(InputAction.CallbackContext context);
-        void OnUseprops_Mo_L(InputAction.CallbackContext context);
-        void OnUseprops_Mo_R(InputAction.CallbackContext context);
+        void OnPushButton(InputAction.CallbackContext context);
+        void OnSpeak(InputAction.CallbackContext context);
     }
 }

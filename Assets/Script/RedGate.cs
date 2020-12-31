@@ -49,7 +49,7 @@ public class RedGate : MonoBehaviour
         {
             transform.position = backPoint.position;
             backGate = false;
-            
+            coll.enabled = false;
 
         }
     }

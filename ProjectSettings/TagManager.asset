@@ -3,8 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [Button_DetectLight, CombinePlayer, mag_blue, LaserTrigger, Button_Float,
-    UpGear, EnemyTrigger, EnemyAI, LefttorightGear, Laser, EnemyDie]
+  tags:
+  - Button_DetectLight
+  - CombinePlayer
+  - mag_blue
+  - LaserTrigger
+  - Button_Float
+  - UpGear
+  - EnemyTrigger
+  - EnemyAI
+  - LefttorightGear
+  - Laser
+  - EnemyDie
+  - MagnetProps
+  - Thronball
   layers:
   - Default
   - TransparentFX
@@ -53,6 +65,9 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 2474206691
+    locked: 0
+  - name: Rose
+    uniqueID: 4169566865
     locked: 0
   - name: frontground
     uniqueID: 2689685025

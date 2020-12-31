@@ -15,8 +15,11 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public SpriteRenderer rend;
     public Transform ReplayPoint;
-
-    public Material Jump_material, dust_material;
+    public AudioSource s_walk;
+    public AudioSource s_fall;
+    public AudioSource s_Sounds;
+    public AudioSource s_die;
+    public Material  dust_material, Fall_material;
     public Material idle_material, walk_material,jump_material;
     [Header("移動參數")]
     public Transform groundCheckPoint;
@@ -79,23 +82,38 @@ public class PlayerMovement : MonoBehaviour
         ReplayPoint = Point;
     }
     public void LaserDie() {
-        anim.SetBool("LaserDie", true);
+
+        s_walk.Pause();
+        if (!anim.GetBool("LaserDie")) anim.SetBool("LaserDie", true);
+        s_die.Play();
+        canMove = false;
+        rb.velocity = new Vector2(0, rb.velocity.y);
+        rend.material = dust_material;
+    }
+
+    public void PressDie()
+    {
+        s_walk.Pause(); s_die.Play();
+        anim.SetBool("PressDie", true);
         canMove = false;
         rb.velocity = new Vector2(0, rb.velocity.y);
     }
     public void Replay() {
         anim.SetBool("LaserDie", false);
+        anim.SetBool("PressDie", false);
         canMove = true;
         anim.SetBool("Fall", true);
         transform.position = ReplayPoint.position;
+        rend.material = Fall_material;
     }
 
     void Switchanim() {
         if (anim.GetBool("Jump"))
         {
-            if (rb.velocity.y < 0) {
+            if (rb.velocity.y <= 0) {
                 anim.SetBool("Jump", false);
                 anim.SetBool("Fall", true);
+                rend.material = Fall_material;
             }
         }
 
@@ -103,8 +121,22 @@ public class PlayerMovement : MonoBehaviour
             if (isOnGround) {
                 anim.SetBool("Fall", false);
                 rend.material = idle_material;
+                s_fall.Pause();
             }
         }
+
+        if (anim.GetFloat("Walk") > 0.1f && !anim.GetBool("Jump") && !anim.GetBool("Fall")) {
+
+            s_walk.Play();
+            rend.material = walk_material;
+        }
+        if (anim.GetFloat("Walk") < 0.1f && !anim.GetBool("Fall") && !anim.GetBool("Jump"))
+        {
+            rend.material = idle_material;
+            s_walk.Pause();
+        }
+
+
     }    
 
 
@@ -126,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpforce;
             isJump = true;
             anim.SetBool("Jump", true);
+            s_walk.Pause();
             rend.material = jump_material;
             jumpTimeCounter = jumptime;
 
@@ -153,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
     void GroundMovement()
     {
         anim.SetFloat("Walk", Mathf.Abs(xVelocity));
+        
         rb.velocity = new Vector2(xVelocity * speed, rb.velocity.y);
         FlipDirection();
     }
@@ -161,15 +195,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (xVelocity < 0)
         {
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(1,1);
         }
         else if (xVelocity > 0)
         {
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(-1,1);
         }
     }
 
-    public void SetShowPoint(Transform showPosition)
+    public void SetShowPoint(Transform showPosition)  // Set解體位置
     {
         transform.position = showPosition.position;
     }
@@ -208,6 +242,12 @@ public class PlayerMovement : MonoBehaviour
             Combine2Player.GetComponent<CombinePlayerControll>().CombineSet(Onbottom, combinePosition);
             AnotherPlayer.SetActive(false);
             gameObject.SetActive(false);
+        }
+    }
+
+    public void OnSpeak(CallbackContext context) {
+        if (context.performed) {
+            s_Sounds.Play();
         }
     }
 

@@ -8,6 +8,7 @@ public class MagnetGear : MonoBehaviour
     public Transform Up_Point;
     public Transform Down_Point;
     public GameObject Trigger;
+    public AudioSource sounds;
     //Rigidbody2D rb;
 
     [Header("磁吸變量")]
@@ -51,6 +52,7 @@ public class MagnetGear : MonoBehaviour
         
         if (transform.position.y > Down_Point.position.y)
         {   //吸引還沒過下面的點
+            if (!sounds.isPlaying) sounds.Play();
             transform.position = transform.position + new Vector3(0, -speed * Time.deltaTime,0);
             //rb.velocity = new Vector2(0, -speed);
             speed = speed + 0.5f;
@@ -71,6 +73,7 @@ public class MagnetGear : MonoBehaviour
         if (transform.position.y < Up_Point.position.y)
         {   //排斥還沒上面的點
             //rb.velocity = new Vector2(0, speed);
+            if (!sounds.isPlaying) sounds.Play(); if (!sounds.isPlaying) sounds.Play();
             transform.position = transform.position + new Vector3(0, speed * Time.deltaTime, 0);
             speed = speed + 0.5f;
         }

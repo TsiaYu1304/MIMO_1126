@@ -11,6 +11,7 @@ public class buttonOpenGate : MonoBehaviour
     public GameObject workGear;
     public bool b_controllGear;
     public bool b_controlTrigger;
+    public AudioSource openSound;
 
     public GameObject Trigger_L, Trigger_R;
     [Header("狀態變數")]
@@ -33,19 +34,21 @@ public class buttonOpenGate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOpening) { OpentheGate(); }
+        if (isOpening) { OpentheGate();
+        }
         else if (isDown) { DowntheGate(); }
     }
 
-    public void changetoOpen() {
+    public void changetoOpen(bool isPlayer) {
         isOpening = true;
        if(coll != null) coll.enabled = false;
+       if(isPlayer) openSound.Play();
     }
     public void changetoDown()
     {
         isOpening = false;
         isDown = true;
-        if (coll != null)  coll.enabled = true; ;
+        
     }
 
 
@@ -99,6 +102,7 @@ public class buttonOpenGate : MonoBehaviour
             {
                 isDown = false;
                 transform.position = new Vector3(transform.position.x, startPoint.position.y, transform.position.z);
+                if (coll != null) coll.enabled = true;
             }
             else
             {

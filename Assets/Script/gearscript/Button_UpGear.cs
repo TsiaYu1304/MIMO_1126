@@ -12,6 +12,7 @@ public class Button_UpGear : MonoBehaviour
     public Material Up_Material;
     public Material Down_Material;
     private SpriteRenderer rend;
+    public AudioSource pushSound;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class Button_UpGear : MonoBehaviour
         if ((collision.tag == "Player" || collision.tag == "CombinePlayer") && !collision.isTrigger) {
             controllUpGear.GetComponent<UpGear>().changeUp();
             rend.sprite = Down_Sprite;
+            pushSound.Play();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

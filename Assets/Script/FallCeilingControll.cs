@@ -12,7 +12,8 @@ public class FallCeilingControll : MonoBehaviour
     public float ShakeFrequency = 2.0f;         // Cinemachine Noise Profile Parameter
 
     private float ShakeElapsedTime = 0f;
-
+    int dieplayer = 0;
+    int fallPlayercount = 2;
     bool Fallen = false;  //下墜過了嗎
     int PlayerCount = 0;
     bool canFallDown = false;
@@ -22,6 +23,7 @@ public class FallCeilingControll : MonoBehaviour
     public GameObject RedGate, RedGate2;
     public GameObject LaserComtrol;
     public GameObject[] Lasergear;
+    public GameObject PressTrigger;
     public float downSpeed ;
     public bool partymode = true;
     // Start is called before the first frame update
@@ -36,7 +38,7 @@ public class FallCeilingControll : MonoBehaviour
     {
         if (!Fallen)
         {
-            if (PlayerCount == 2)
+            if (PlayerCount == fallPlayercount)
             {
                 StartToFall();
             }
@@ -56,16 +58,22 @@ public class FallCeilingControll : MonoBehaviour
         
         transform.localScale = transform.localScale + new Vector3(0, downSpeed * Time.deltaTime, 0);
         if (partymode) {
-            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, -0.5f * Time.deltaTime, 0);
-            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, -0.5f * Time.deltaTime, 0);
+            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, -0.34f * Time.deltaTime, 0);
+            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, -0.34f * Time.deltaTime, 0);
         }
         
         if (!partymode) {
-            if (transform.localScale.y > 10) {
-                StopCameraNoise();
-                canFallDown = false;
-                canFallback = true;
+
+            //if (transform.localScale.y > 10) {
+            //    StopCameraNoise();
+            //    canFallDown = false;
+            //    canFallback = true;
+            //}
+            if (transform.localScale.y > 7.14f) {
+                PressTrigger.GetComponent<CeilingdieTrigger>().DetectpressPlayer();
             }
+
+
         }
     }
 
@@ -74,20 +82,24 @@ public class FallCeilingControll : MonoBehaviour
         transform.localScale = transform.localScale + new Vector3(0, -(downSpeed+2) * Time.deltaTime, 0);
         if (partymode)
         {
-            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, 4* Time.deltaTime, 0);
-            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, 4 * Time.deltaTime, 0);
+            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, 3.5f* Time.deltaTime, 0);
+            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, 3.5f * Time.deltaTime, 0);
         }
             if (transform.localScale.y < 0) {
-            transform.localScale = new Vector3(0,0, 0);
+            transform.localScale = new Vector3(transform.localScale.x,0.1f, 0);
             canFallback = false;
         }
     }
 
     void StartToFall()
     {
-        if (partymode) {
+        if (partymode)
+        {
             ClosetheRedGate();
             OpenLaser();
+        }
+        else {
+            RedGate.GetComponent<RedGate>().ClosetheGate();
         }
         
         CameraNoise();
@@ -95,9 +107,27 @@ public class FallCeilingControll : MonoBehaviour
        
     }
 
-    void OpenLaser() {
-        LaserComtrol.GetComponent<Button_LaserControll>().StartParty(); 
+    public void ResetGear()
+
+    {
+        PlayerCount = 0;
+        StopCameraNoise();
+        canFallDown = false;
+        canFallback = true;
+        RedGate.GetComponent<RedGate>().backtheGate();
+        if (partymode)
+        {
+            RedGate2.GetComponent<RedGate>().backtheGate();
+            LaserComtrol.GetComponent<Button_LaserControll>().Resetbutton();
+        }
+        
+        fallPlayercount = 1;
     }
+
+    void OpenLaser()
+        {
+            LaserComtrol.GetComponent<Button_LaserControll>().StartParty();
+        }
     void ClosetheRedGate()
     {
         RedGate.GetComponent<RedGate>().ClosetheGate();
@@ -123,10 +153,13 @@ public class FallCeilingControll : MonoBehaviour
         StopCameraNoise();
         canFallDown = false;
         canFallback = true;
+        RedGate.GetComponent<RedGate>().backtheGate();
         if (partymode) {
-            RedGate.GetComponent<RedGate>().backtheGate();
+            
             RedGate2.GetComponent<RedGate>().backtheGate();
         }
+
+        Fallen = true;
        
     }
 
@@ -134,6 +167,13 @@ public class FallCeilingControll : MonoBehaviour
     {
         if (collision.tag == "Player" && !collision.isTrigger) {
             PlayerCount = PlayerCount + 1;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" && !collision.isTrigger)
+        {
+            PlayerCount = PlayerCount - 1;
         }
     }
 }

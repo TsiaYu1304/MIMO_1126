@@ -7,7 +7,7 @@ public class Button_UpGate : MonoBehaviour
     [Header("控制物件")]
     public GameObject controllUpGate;
     private SpriteRenderer rend;
-    
+    public AudioSource PushSound;
     public Sprite Up_Sprite;
     public Material Up_Material;
     public Sprite Down_Sprite;
@@ -24,8 +24,16 @@ public class Button_UpGate : MonoBehaviour
     {
         if (collision.tag == "Player" || collision.tag == "EnemyAI" || collision.tag == "CombinePlayer")
         {
-            controllUpGate.GetComponent<buttonOpenGate>().changetoOpen();
+            if (collision.tag == "Player")
+            {
+                PushSound.Play();
+                controllUpGate.GetComponent<buttonOpenGate>().changetoOpen(true);
+            }
+            else {
+                controllUpGate.GetComponent<buttonOpenGate>().changetoOpen(false);
+            }
             rend.sprite = Down_Sprite;
+            
             
         }
     }

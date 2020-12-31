@@ -25,11 +25,5 @@ public class killModeTrigger : MonoBehaviour
         }   
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player" && !collision.isTrigger)
-        {
-            ModeControl.GetComponent<killModeControl>().PlayerSub();
-        }
-    }
+    
 }

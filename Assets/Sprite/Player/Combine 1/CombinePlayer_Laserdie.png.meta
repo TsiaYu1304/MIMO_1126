@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: a08d238d2d993dc4ba477411b0324e2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3572036190767351270
+    second: CombinePlayer_Laserdie_0
+  - first:
+      213: 1638359004446986019
+    second: CombinePlayer_Laserdie_1
+  - first:
+      213: -8672137875039507899
+    second: CombinePlayer_Laserdie_2
+  - first:
+      213: -1649289532932247069
+    second: CombinePlayer_Laserdie_3
+  - first:
+      213: -7946528060399776497
+    second: CombinePlayer_Laserdie_4
+  - first:
+      213: -8665573535150329848
+    second: CombinePlayer_Laserdie_5
+  - first:
+      213: 3004699635062212671
+    second: CombinePlayer_Laserdie_6
+  - first:
+      213: 2052005327698740303
+    second: CombinePlayer_Laserdie_7
+  - first:
+      213: -7229164937055787873
+    second: CombinePlayer_Laserdie_8
+  - first:
+      213: -2212307537124938598
+    second: CombinePlayer_Laserdie_9
+  - first:
+      213: 8608197530817528227
+    second: CombinePlayer_Laserdie_10
+  - first:
+      213: 6896635673238770716
+    second: CombinePlayer_Laserdie_11
+  - first:
+      213: -2235067235635240020
+    second: CombinePlayer_Laserdie_12
+  - first:
+      213: 8903150459061267162
+    second: CombinePlayer_Laserdie_13
+  - first:
+      213: -7116549530478036287
+    second: CombinePlayer_Laserdie_14
+  - first:
+      213: -9222098774511006603
+    second: CombinePlayer_Laserdie_15
+  - first:
+      213: -6426797722710368229
+    second: CombinePlayer_Laserdie_16
+  - first:
+      213: -6310145113883150139
+    second: CombinePlayer_Laserdie_17
+  - first:
+      213: -230233134770452711
+    second: CombinePlayer_Laserdie_18
+  - first:
+      213: 409015125210727417
+    second: CombinePlayer_Laserdie_19
+  - first:
+      213: -4478027911316867046
+    second: CombinePlayer_Laserdie_20
+  - first:
+      213: -7965580570319769340
+    second: CombinePlayer_Laserdie_21
+  - first:
+      213: 4462920920668969494
+    second: CombinePlayer_Laserdie_22
+  - first:
+      213: 1426709448345244411
+    second: CombinePlayer_Laserdie_23
+  - first:
+      213: -6795131268508374700
+    second: CombinePlayer_Laserdie_24
+  - first:
+      213: -7429753000716786606
+    second: CombinePlayer_Laserdie_25
+  - first:
+      213: 3385030824559775642
+    second: CombinePlayer_Laserdie_26
+  - first:
+      213: -2954422546869934791
+    second: CombinePlayer_Laserdie_27
+  - first:
+      213: 1989607082041354134
+    second: CombinePlayer_Laserdie_28
+  - first:
+      213: -7322295102728147164
+    second: CombinePlayer_Laserdie_29
+  - first:
+      213: -355223894299908307
+    second: CombinePlayer_Laserdie_30
+  - first:
+      213: 7915245192812197867
+    second: CombinePlayer_Laserdie_31
+  - first:
+      213: -8151186483332963395
+    second: CombinePlayer_Laserdie_32
+  - first:
+      213: 6805451046206941929
+    second: CombinePlayer_Laserdie_33
+  - first:
+      213: -7364646119734807866
+    second: CombinePlayer_Laserdie_34
+  - first:
+      213: 1076188109448206011
+    second: CombinePlayer_Laserdie_35
+  - first:
+      213: -2159747096817485910
+    second: CombinePlayer_Laserdie_36
+  - first:
+      213: 1379524510020281639
+    second: CombinePlayer_Laserdie_37
+  - first:
+      213: -2406498860800144584
+    second: CombinePlayer_Laserdie_38
+  - first:
+      213: 7863355657092989861
+    second: CombinePlayer_Laserdie_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 240
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2126
+        width: 161
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e507837dfb629130800000000000000
+      internalID: 3572036190767351270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 2126
+        width: 163
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f00aa85de9cb610800000000000000
+      internalID: 1638359004446986019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_2
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2126
+        width: 162
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a2f03bc8066a780800000000000000
+      internalID: -8672137875039507899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_3
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 2126
+        width: 162
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1bdc978eb8c19e0800000000000000
+      internalID: -1649289532932247069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_4
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2126
+        width: 162
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d8232e4d248b190800000000000000
+      internalID: -7946528060399776497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_5
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 2126
+        width: 162
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800b65e28c2bdb780800000000000000
+      internalID: -8665573535150329848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1811
+        width: 161
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3801a40666d2b920800000000000000
+      internalID: 3004699635062212671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_7
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1811
+        width: 163
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4441ba39ff2a7c10800000000000000
+      internalID: 2052005327698740303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_8
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1811
+        width: 162
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a410aac8dcab90800000000000000
+      internalID: -7229164937055787873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_9
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1811
+        width: 237
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cafbb240e4c41e0800000000000000
+      internalID: -2212307537124938598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_10
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1811
+        width: 236
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a106cccb06767770800000000000000
+      internalID: 8608197530817528227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_11
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1811
+        width: 236
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c141fa8da95c5bf50800000000000000
+      internalID: 6896635673238770716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1498
+        width: 235
+        height: 194
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3e8dae0327bf0e0800000000000000
+      internalID: -2235067235635240020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1499
+        width: 235
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adae33eeb285e8b70800000000000000
+      internalID: 8903150459061267162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_14
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1499
+        width: 236
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca326938efec3d90800000000000000
+      internalID: -7116549530478036287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_15
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1499
+        width: 235
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc4bd7606840080800000000000000
+      internalID: -9222098774511006603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_16
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1499
+        width: 235
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b102f86958d6fc6a0800000000000000
+      internalID: -6426797722710368229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_17
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1499
+        width: 235
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8f3d5937cdd68a0800000000000000
+      internalID: -6310145113883150139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1184
+        width: 234
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9178b7a0f2c0eccf0800000000000000
+      internalID: -230233134770452711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1184
+        width: 236
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f382fdd61d1da500800000000000000
+      internalID: 409015125210727417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_20
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1184
+        width: 236
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a187cab1759dad1c0800000000000000
+      internalID: -4478027911316867046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_21
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1184
+        width: 236
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401365cbca2947190800000000000000
+      internalID: -7965580570319769340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_22
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1184
+        width: 235
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a12298eea7fed30800000000000000
+      internalID: 4462920920668969494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_23
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1184
+        width: 235
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2df4a2fa0bcc310800000000000000
+      internalID: 1426709448345244411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 872
+        width: 235
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459a86a0d18d2b1a0800000000000000
+      internalID: -6795131268508374700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_25
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 872
+        width: 235
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2542267a20734e890800000000000000
+      internalID: -7429753000716786606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_26
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 872
+        width: 234
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f02aba99b0afe20800000000000000
+      internalID: 3385030824559775642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_27
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 872
+        width: 236
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935a969c858cff6d0800000000000000
+      internalID: -2954422546869934791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_28
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 872
+        width: 235
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6972da789118c9b10800000000000000
+      internalID: 1989607082041354134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_29
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 872
+        width: 235
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f6e45366bf16a90800000000000000
+      internalID: -7322295102728147164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_30
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 559
+        width: 234
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27e58c00cdf11bf0800000000000000
+      internalID: -355223894299908307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_31
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 559
+        width: 235
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be770bbe09998dd60800000000000000
+      internalID: 7915245192812197867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_32
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 559
+        width: 234
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db329fa841b21ee80800000000000000
+      internalID: -8151186483332963395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_33
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 559
+        width: 236
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaa9717ba1d17e50800000000000000
+      internalID: 6805451046206941929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_34
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 559
+        width: 235
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c27fb8af558bc990800000000000000
+      internalID: -7364646119734807866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_35
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 559
+        width: 235
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6d82732636fee00800000000000000
+      internalID: 1076188109448206011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_36
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 244
+        width: 235
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7338155790702e0800000000000000
+      internalID: -2159747096817485910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_37
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 244
+        width: 235
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72524ba9b3e052310800000000000000
+      internalID: 1379524510020281639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_38
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 244
+        width: 234
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b00a949066a9ed0800000000000000
+      internalID: -2406498860800144584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Laserdie_39
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 244
+        width: 236
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3069bee40402d60800000000000000
+      internalID: 7863355657092989861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

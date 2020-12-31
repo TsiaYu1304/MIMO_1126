@@ -45,6 +45,11 @@ public class DetectLightControll : MonoBehaviour
         DetectLight.SetActive(false);
         KillerRay.GetComponent<KillerRayControll>().setAnimClose();
     }
+    public void OpenDetect() {
+        KillPlayer = true;
+        DetectLight.SetActive(true);
+        KillerRay.GetComponent<KillerRayControll>().setAnimOpen();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

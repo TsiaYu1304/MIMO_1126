@@ -1,0 +1,1110 @@
+fileFormatVersion: 2
+guid: 8029af8b23eae06459d65ba920cb248d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7884652231881207893
+    second: CombinePlayer_Fall_0
+  - first:
+      213: 5317401360705350890
+    second: CombinePlayer_Fall_1
+  - first:
+      213: 5596370315645135565
+    second: CombinePlayer_Fall_2
+  - first:
+      213: 5334812556357105106
+    second: CombinePlayer_Fall_3
+  - first:
+      213: 4203081170465079598
+    second: CombinePlayer_Fall_4
+  - first:
+      213: -1547900923752957938
+    second: CombinePlayer_Fall_5
+  - first:
+      213: 8221219408181828670
+    second: CombinePlayer_Fall_6
+  - first:
+      213: -25573057007087836
+    second: CombinePlayer_Fall_7
+  - first:
+      213: -1660316646286862312
+    second: CombinePlayer_Fall_8
+  - first:
+      213: -822114389090590750
+    second: CombinePlayer_Fall_9
+  - first:
+      213: -3390011142421414813
+    second: CombinePlayer_Fall_10
+  - first:
+      213: -6173386485515430263
+    second: CombinePlayer_Fall_11
+  - first:
+      213: 8020928313430050009
+    second: CombinePlayer_Fall_12
+  - first:
+      213: -2792269096485929844
+    second: CombinePlayer_Fall_13
+  - first:
+      213: -4608972477413359280
+    second: CombinePlayer_Fall_14
+  - first:
+      213: -18806116249705823
+    second: CombinePlayer_Fall_15
+  - first:
+      213: 4939406422842120864
+    second: CombinePlayer_Fall_16
+  - first:
+      213: 8419017894663587987
+    second: CombinePlayer_Fall_17
+  - first:
+      213: 8850935860042809479
+    second: CombinePlayer_Fall_18
+  - first:
+      213: 8727386897536883247
+    second: CombinePlayer_Fall_19
+  - first:
+      213: -5621689197141241977
+    second: CombinePlayer_Fall_20
+  - first:
+      213: -8151896069319478466
+    second: CombinePlayer_Fall_21
+  - first:
+      213: 7817289850437263881
+    second: CombinePlayer_Fall_22
+  - first:
+      213: 191763407126562887
+    second: CombinePlayer_Fall_23
+  - first:
+      213: -233561834879804407
+    second: CombinePlayer_Fall_24
+  - first:
+      213: -5714052671484852779
+    second: CombinePlayer_Fall_25
+  - first:
+      213: -7214416491370025638
+    second: CombinePlayer_Fall_26
+  - first:
+      213: -9043103594287907756
+    second: CombinePlayer_Fall_27
+  - first:
+      213: 8779263371326215342
+    second: CombinePlayer_Fall_28
+  - first:
+      213: -908485022765069712
+    second: CombinePlayer_Fall_29
+  - first:
+      213: -807754953980443323
+    second: CombinePlayer_Fall_30
+  - first:
+      213: 794087658984755218
+    second: CombinePlayer_Fall_31
+  - first:
+      213: 5543385302138974217
+    second: CombinePlayer_Fall_32
+  - first:
+      213: -8072325253491781494
+    second: CombinePlayer_Fall_33
+  - first:
+      213: 3120033041097961834
+    second: CombinePlayer_Fall_34
+  - first:
+      213: 3870751361338446532
+    second: CombinePlayer_Fall_35
+  - first:
+      213: -4120940483558928404
+    second: CombinePlayer_Fall_36
+  - first:
+      213: 5681229933740350977
+    second: CombinePlayer_Fall_37
+  - first:
+      213: 751441062585736671
+    second: CombinePlayer_Fall_38
+  - first:
+      213: -4954858387517042702
+    second: CombinePlayer_Fall_39
+  - first:
+      213: -4773232701421685469
+    second: CombinePlayer_Fall_40
+  - first:
+      213: 2413046561069633880
+    second: CombinePlayer_Fall_41
+  - first:
+      213: 6548250428970708117
+    second: CombinePlayer_Fall_42
+  - first:
+      213: -225760883523955154
+    second: CombinePlayer_Fall_43
+  - first:
+      213: 4414643421182801642
+    second: CombinePlayer_Fall_44
+  - first:
+      213: 7315253431680800788
+    second: CombinePlayer_Fall_45
+  - first:
+      213: 6719729994335848213
+    second: CombinePlayer_Fall_6
+  - first:
+      213: -3939340004527762619
+    second: CombinePlayer_Fall_7
+  - first:
+      213: 430245343058853036
+    second: CombinePlayer_Fall_8
+  - first:
+      213: -3202246738838439924
+    second: CombinePlayer_Fall_9
+  - first:
+      213: 7668767924408818813
+    second: CombinePlayer_Fall_10
+  - first:
+      213: 3085558642820364320
+    second: CombinePlayer_Fall_11
+  - first:
+      213: -1351976698545468870
+    second: CombinePlayer_Fall_13
+  - first:
+      213: 8657169432041006513
+    second: CombinePlayer_Fall_17
+  - first:
+      213: -1473998573496607524
+    second: CombinePlayer_Fall_18
+  - first:
+      213: 8801884933898193256
+    second: CombinePlayer_Fall_19
+  - first:
+      213: -1601181313161468274
+    second: CombinePlayer_Fall_20
+  - first:
+      213: 5180985411301954584
+    second: CombinePlayer_Fall_21
+  - first:
+      213: 1986941029670288475
+    second: CombinePlayer_Fall_22
+  - first:
+      213: 4401798591188464413
+    second: CombinePlayer_Fall_23
+  - first:
+      213: -1805049670883795352
+    second: CombinePlayer_Fall_24
+  - first:
+      213: -3113241115395132512
+    second: CombinePlayer_Fall_25
+  - first:
+      213: 7885396682838566015
+    second: CombinePlayer_Fall_26
+  - first:
+      213: -8875697587199256591
+    second: CombinePlayer_Fall_27
+  - first:
+      213: 2954292221819672762
+    second: CombinePlayer_Fall_28
+  - first:
+      213: 2712871764626842895
+    second: CombinePlayer_Fall_29
+  - first:
+      213: 2826534960858312140
+    second: CombinePlayer_Fall_30
+  - first:
+      213: -7554620449016859647
+    second: CombinePlayer_Fall_31
+  - first:
+      213: -7399049091874920178
+    second: CombinePlayer_Fall_32
+  - first:
+      213: -3928393564835892320
+    second: CombinePlayer_Fall_33
+  - first:
+      213: -6077090124242362851
+    second: CombinePlayer_Fall_34
+  - first:
+      213: 991131012911380086
+    second: CombinePlayer_Fall_35
+  - first:
+      213: 1810455815832882271
+    second: CombinePlayer_Fall_36
+  - first:
+      213: -2005200323985365575
+    second: CombinePlayer_Fall_37
+  - first:
+      213: -4795120930135211960
+    second: CombinePlayer_Fall_38
+  - first:
+      213: 4425178834260322891
+    second: CombinePlayer_Fall_39
+  - first:
+      213: 9024495444261123133
+    second: CombinePlayer_Fall_40
+  - first:
+      213: -1114485508179003160
+    second: CombinePlayer_Fall_41
+  - first:
+      213: -8531589173476714251
+    second: CombinePlayer_Fall_42
+  - first:
+      213: -8004607341305058924
+    second: CombinePlayer_Fall_43
+  - first:
+      213: -5450790985425957255
+    second: CombinePlayer_Fall_44
+  - first:
+      213: -2664641978988940668
+    second: CombinePlayer_Fall_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 240
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_6
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2108
+        width: 211
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5170de2c3d6414d50800000000000000
+      internalID: 6719729994335848213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2107
+        width: 214
+        height: 293
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54313ac2327a459c0800000000000000
+      internalID: -3939340004527762619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_8
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 2106
+        width: 219
+        height: 289
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacf9472cd988f500800000000000000
+      internalID: 430245343058853036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_9
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2104
+        width: 222
+        height: 291
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08b168ae855f83d0800000000000000
+      internalID: -3202246738838439924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_10
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2103
+        width: 227
+        height: 288
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c1c4fdbcfec6a60800000000000000
+      internalID: 7668767924408818813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_11
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 2103
+        width: 230
+        height: 286
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028b1f6dc3b12da20800000000000000
+      internalID: 3085558642820364320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1752
+        width: 234
+        height: 284
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a87921b50dc3de0800000000000000
+      internalID: -1351976698545468870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_17
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1756
+        width: 209
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5ac251bb1742870800000000000000
+      internalID: 8657169432041006513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_18
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1756
+        width: 202
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc5d436b1e4b8be0800000000000000
+      internalID: -1473998573496607524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_19
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1753
+        width: 235
+        height: 279
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8694dd686b3962a70800000000000000
+      internalID: 8801884933898193256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_20
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1754
+        width: 215
+        height: 271
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e866400441677c9e0800000000000000
+      internalID: -1601181313161468274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_21
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 1756
+        width: 218
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814522318ce86e740800000000000000
+      internalID: 5180985411301954584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1407
+        width: 195
+        height: 242
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c7527d658039b10800000000000000
+      internalID: 1986941029670288475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_23
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1407
+        width: 185
+        height: 237
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d137a983f74561d30800000000000000
+      internalID: 4401798591188464413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_24
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1407
+        width: 184
+        height: 233
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e190d43ec23f6e0800000000000000
+      internalID: -1805049670883795352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_25
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1407
+        width: 182
+        height: 235
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a37bb043bb8bc4d0800000000000000
+      internalID: -3113241115395132512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_26
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1408
+        width: 191
+        height: 236
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74e2a1218e8e6d60800000000000000
+      internalID: 7885396682838566015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_27
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 1408
+        width: 187
+        height: 240
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f75235e11033d480800000000000000
+      internalID: -8875697587199256591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_28
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1058
+        width: 183
+        height: 243
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8d24c8f11cff820800000000000000
+      internalID: 2954292221819672762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_29
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1058
+        width: 179
+        height: 247
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0525cb1f7e06a520800000000000000
+      internalID: 2712871764626842895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_30
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1058
+        width: 175
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdae2f329ed93720800000000000000
+      internalID: 2826534960858312140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_31
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1058
+        width: 173
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104b27b4ab8982790800000000000000
+      internalID: -7554620449016859647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_32
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1058
+        width: 172
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e096e138d0c415990800000000000000
+      internalID: -7399049091874920178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_33
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1058
+        width: 170
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3b606cdda8b79c0800000000000000
+      internalID: -3928393564835892320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_34
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 705
+        width: 169
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1edf74dab6d9aba0800000000000000
+      internalID: -6077090124242362851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_35
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 707
+        width: 171
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676b47ea76431cd00800000000000000
+      internalID: 991131012911380086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_36
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 707
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c4248e8f7002910800000000000000
+      internalID: 1810455815832882271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_37
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 707
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5aa59ede81c24e0800000000000000
+      internalID: -2005200323985365575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_38
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 707
+        width: 170
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84000407bee447db0800000000000000
+      internalID: -4795120930135211960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_39
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 706
+        width: 169
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ae9a344b4696d30800000000000000
+      internalID: 4425178834260322891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 357
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34b050fac27d3d70800000000000000
+      internalID: 9024495444261123133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_41
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 357
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e87ba9c55d8880f0800000000000000
+      internalID: -1114485508179003160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_42
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 357
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f81a5959d4b99980800000000000000
+      internalID: -8531589173476714251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_43
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 357
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4992707880ce9e090800000000000000
+      internalID: -8004607341305058924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_44
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 357
+        width: 170
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ec8c07a76ea54b0800000000000000
+      internalID: -5450790985425957255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CombinePlayer_Fall_45
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 357
+        width: 169
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48235ccec3a450bd0800000000000000
+      internalID: -2664641978988940668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 327beb8a32885eb4b8f263b08d808779, type: 3}
+      name: Down_Emission
+    - texture: {fileID: 2800000, guid: 92f61edbe497b83469df302810c29fd7, type: 3}
+      name: Up_Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

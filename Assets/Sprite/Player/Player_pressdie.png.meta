@@ -1,0 +1,974 @@
+fileFormatVersion: 2
+guid: 9a7cb846f2ded57488582e894967b5e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1768969889245647001
+    second: Player_pressdie_0
+  - first:
+      213: -8028191738647091444
+    second: Player_pressdie_1
+  - first:
+      213: 580110534303957433
+    second: Player_pressdie_2
+  - first:
+      213: -2902824146951655299
+    second: Player_pressdie_3
+  - first:
+      213: 2415049488727242678
+    second: Player_pressdie_4
+  - first:
+      213: 5780599000751620676
+    second: Player_pressdie_5
+  - first:
+      213: -6592266607087156058
+    second: Player_pressdie_6
+  - first:
+      213: 6584242686552184704
+    second: Player_pressdie_7
+  - first:
+      213: -8968496563778689924
+    second: Player_pressdie_8
+  - first:
+      213: -443905215945184529
+    second: Player_pressdie_9
+  - first:
+      213: 4366498042379880345
+    second: Player_pressdie_10
+  - first:
+      213: 6127351637967616639
+    second: Player_pressdie_11
+  - first:
+      213: -1341025605897253610
+    second: Player_pressdie_12
+  - first:
+      213: 4643173266458233727
+    second: Player_pressdie_13
+  - first:
+      213: -3350579145634714290
+    second: Player_pressdie_14
+  - first:
+      213: -9020103772255794951
+    second: Player_pressdie_15
+  - first:
+      213: 4570706938963291308
+    second: Player_pressdie_16
+  - first:
+      213: 1541931388452009208
+    second: Player_pressdie_17
+  - first:
+      213: 1967233156301209449
+    second: Player_pressdie_18
+  - first:
+      213: 1883598822124353747
+    second: Player_pressdie_19
+  - first:
+      213: 4544216015425192256
+    second: Player_pressdie_20
+  - first:
+      213: -1320742673693412428
+    second: Player_pressdie_21
+  - first:
+      213: -4527630273908933809
+    second: Player_pressdie_22
+  - first:
+      213: -6958054365441820640
+    second: Player_pressdie_23
+  - first:
+      213: 7865510581439412918
+    second: Player_pressdie_24
+  - first:
+      213: -8719170241216823990
+    second: Player_pressdie_25
+  - first:
+      213: -6980746856175673985
+    second: Player_pressdie_26
+  - first:
+      213: 6515927725482917982
+    second: Player_pressdie_27
+  - first:
+      213: 8093895410086973141
+    second: Player_pressdie_28
+  - first:
+      213: -5486013498723370675
+    second: Player_pressdie_29
+  - first:
+      213: 1078804153066251430
+    second: Player_pressdie_30
+  - first:
+      213: -8949500063062265345
+    second: Player_pressdie_31
+  - first:
+      213: -5818193132981374371
+    second: Player_pressdie_32
+  - first:
+      213: -600652618982441788
+    second: Player_pressdie_33
+  - first:
+      213: 9181652049672177471
+    second: Player_pressdie_34
+  - first:
+      213: 1938280144458825625
+    second: Player_pressdie_35
+  - first:
+      213: 878476288770340323
+    second: Player_pressdie_36
+  - first:
+      213: 1899892854325621129
+    second: Player_pressdie_37
+  - first:
+      213: 2107349236568978096
+    second: Player_pressdie_38
+  - first:
+      213: -3620476427923757898
+    second: Player_pressdie_39
+  - first:
+      213: 1485377248404389380
+    second: Player_pressdie_40
+  - first:
+      213: 5356896948655332169
+    second: Player_pressdie_41
+  - first:
+      213: 6149895112240582880
+    second: Player_pressdie_42
+  - first:
+      213: 2936826339045195798
+    second: Player_pressdie_43
+  - first:
+      213: 6920980265214471510
+    second: Player_pressdie_44
+  - first:
+      213: 3183265431320505422
+    second: Player_pressdie_45
+  - first:
+      213: -7214891131175310090
+    second: Player_pressdie_46
+  - first:
+      213: -941979836167743152
+    second: Player_pressdie_47
+  - first:
+      213: -2074009526519628069
+    second: Player_pressdie_48
+  - first:
+      213: -6602596689111079987
+    second: Player_pressdie_49
+  - first:
+      213: 3273217288255864784
+    second: Player_pressdie_50
+  - first:
+      213: 5810958117779637217
+    second: Player_pressdie_51
+  - first:
+      213: 6182749779426862452
+    second: Player_pressdie_52
+  - first:
+      213: -1473984551745280952
+    second: Player_pressdie_53
+  - first:
+      213: 3809982562971080979
+    second: Player_pressdie_54
+  - first:
+      213: 7107653397839163210
+    second: Player_pressdie_55
+  - first:
+      213: -365439440312252997
+    second: Player_pressdie_56
+  - first:
+      213: 3148479229383040910
+    second: Player_pressdie_57
+  - first:
+      213: -3349856682332416871
+    second: Player_pressdie_58
+  - first:
+      213: 3051332209599322665
+    second: Player_pressdie_59
+  - first:
+      213: 8533738864475320183
+    second: Player_pressdie_60
+  - first:
+      213: -1845836852640594493
+    second: Player_pressdie_61
+  - first:
+      213: -3579418414198669661
+    second: Player_pressdie_62
+  - first:
+      213: -5870566853176978288
+    second: Player_pressdie_63
+  - first:
+      213: 5710452125799800026
+    second: Player_pressdie_64
+  - first:
+      213: -4537002582891703170
+    second: Player_pressdie_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 240
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player_pressdie_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1287
+        width: 154
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fa625124b5377e0800000000000000
+      internalID: -1768969889245647001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1287
+        width: 160
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07e63d1622269090800000000000000
+      internalID: -8028191738647091444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_2
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1287
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b146a71577fc0800800000000000000
+      internalID: 580110534303957433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_3
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1287
+        width: 166
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70358371d817b7d0800000000000000
+      internalID: -2902824146951655299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_4
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1287
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7739ae6baf38120800000000000000
+      internalID: 2415049488727242678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_5
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1287
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44247cc0a20d83050800000000000000
+      internalID: 5780599000751620676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_6
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 1287
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a486ebb2709384a0800000000000000
+      internalID: -6592266607087156058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_7
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 1287
+        width: 165
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08718eea6ddef5b50800000000000000
+      internalID: 6584242686552184704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 868
+        width: 165
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74e8a274ef798380800000000000000
+      internalID: -8968496563778689924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_9
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 868
+        width: 165
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feae4a9de8ee6d9f0800000000000000
+      internalID: -443905215945184529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_10
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 868
+        width: 165
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997cd78b5dae89c30800000000000000
+      internalID: 4366498042379880345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_11
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 868
+        width: 162
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ab7f2c9d9b80550800000000000000
+      internalID: 6127351637967616639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_12
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 868
+        width: 162
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d8ac50158b36de0800000000000000
+      internalID: -1341025605897253610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_13
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 868
+        width: 161
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b45d93c7ddf6040800000000000000
+      internalID: 4643173266458233727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_14
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 868
+        width: 160
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d6c98e40a5081d0800000000000000
+      internalID: -3350579145634714290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_15
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 868
+        width: 160
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f84881e86722d280800000000000000
+      internalID: -9020103772255794951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 449
+        width: 161
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cace15d8eb96e6f30800000000000000
+      internalID: 4570706938963291308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 449
+        width: 157
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4f4b4ad6a066510800000000000000
+      internalID: 1541931388452009208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_18
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 449
+        width: 173
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f34bff1240d4b10800000000000000
+      internalID: 1967233156301209449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_19
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 449
+        width: 193
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f0142623e32a10800000000000000
+      internalID: 1883598822124353747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_21
+      rect:
+        serializedVersion: 2
+        x: 2424
+        y: 449
+        width: 206
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3fdce2987cbade0800000000000000
+      internalID: -1320742673693412428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_23
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 449
+        width: 155
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028fbf38b66007f90800000000000000
+      internalID: -6958054365441820640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_24
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 449
+        width: 154
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bab5c75338e72d60800000000000000
+      internalID: 7865510581439412918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_25
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 449
+        width: 157
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d3d1c9cd84ff680800000000000000
+      internalID: -8719170241216823990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_41
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 30
+        width: 220
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b99fa8465875a40800000000000000
+      internalID: 5356896948655332169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_51
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 32
+        width: 237
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e38deece9ba4a050800000000000000
+      internalID: 5810958117779637217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_53
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 30
+        width: 252
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8442fc41cda5b8be0800000000000000
+      internalID: -1473984551745280952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_55
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 30
+        width: 266
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f2dcc7b1573a260800000000000000
+      internalID: 7107653397839163210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_57
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 30
+        width: 283
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f52128d25a1bb20800000000000000
+      internalID: 3148479229383040910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_59
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 30
+        width: 284
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a10ec5a72885a20800000000000000
+      internalID: 3051332209599322665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_61
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 30
+        width: 280
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5480589254266e0800000000000000
+      internalID: -1845836852640594493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_pressdie_63
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 30
+        width: 279
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0941436fc8e878ea0800000000000000
+      internalID: -5870566853176978288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

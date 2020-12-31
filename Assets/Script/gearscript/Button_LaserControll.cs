@@ -35,6 +35,7 @@ public class Button_LaserControll : MonoBehaviour
     public Material Laser_Turnon_material;
     public Material Laser_Turnoff_material;
     public Material defaultMaterial;
+    public AudioSource sounds;
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +77,15 @@ public class Button_LaserControll : MonoBehaviour
                 time = time + Time.deltaTime;
             }
         }
+    }
+
+    public void Resetbutton() {
+        TurnOn = false;
+        open = false;
+        LaserFire.GetComponent<LaserTut>().closeLaser();
+        LaserFire2.GetComponent<LaserTut>().closeLaser();
+        time = 0;
+        myLight.SetActive(false);
     }
 
     public void SetcanPush() { //玩家可以push_button
@@ -132,6 +142,7 @@ public class Button_LaserControll : MonoBehaviour
         rend.sprite = Laser_Turnon;
         rend.material = Laser_Turnon_material;
         myLight.SetActive(true);
+        
     }
 
     public void TriggerLaser()
@@ -173,6 +184,7 @@ public class Button_LaserControll : MonoBehaviour
             Ceiling.GetComponent<FallCeilingControll>().StopFall();
 
         }
+        sounds.Play();
     }
 
     public void TurnOnLaser()
@@ -186,6 +198,7 @@ public class Button_LaserControll : MonoBehaviour
                 TurnOn = true;
                 rend.sprite = Laser_Turnon;
                 rend.material = Laser_Turnon_material;
+                sounds.Play();
                 if (HaveTrigger)
                 {
                     Trigger.SetActive(true);
@@ -201,6 +214,7 @@ public class Button_LaserControll : MonoBehaviour
         if (collision.tag == "Player" && !collision.isTrigger) {
             PlayerTriggerme = true;
         }
+        if(collision.tag == "CombinePlayer") PlayerTriggerme = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -209,6 +223,7 @@ public class Button_LaserControll : MonoBehaviour
         {
             PlayerTriggerme = false;
         }
+        if (collision.tag == "CombinePlayer") PlayerTriggerme = false;
     }
 
 }

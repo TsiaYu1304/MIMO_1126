@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class killmodeEnemyGenerator : MonoBehaviour
 {
+    public GameObject warmLight;
     public GameObject killmodeController;
+    public Transform closePoint;
     public GameObject ControllTrigger;
     public GameObject Enemy;
     GameObject controlenemy;
@@ -23,20 +25,22 @@ public class killmodeEnemyGenerator : MonoBehaviour
         if(controlenemy != null) {
             if (isLeft) //在左邊
             {
-                if ((controlenemy.transform.position.x - transform.position.x) > 1.5)
+                if (controlenemy.transform.position.x  > closePoint.position.x)
                 {
                     ControllTrigger.SetActive(true);
                     RedGate.GetComponent<RedGate>().ClosetheGate();
                     controlenemy = null;
+                    warmLight.SetActive(false);
                 }
 
             }
             else {
-                if ((transform.position.x - controlenemy.transform.position.x) > 1.5)
+                if (controlenemy.transform.position.x < closePoint.position.x)
                 {
                     ControllTrigger.SetActive(true);
                     RedGate.GetComponent<RedGate>().ClosetheGate();
                     controlenemy = null;
+                    warmLight.SetActive(false);
                 }
             }
         }
@@ -48,6 +52,7 @@ public class killmodeEnemyGenerator : MonoBehaviour
         GenEnemy.GetComponent<EnemyControlltest>().setDirection(isLeft,killmodeController);
         ControllTrigger.SetActive(false);
         controlenemy = GenEnemy;
+
     }
 
 }

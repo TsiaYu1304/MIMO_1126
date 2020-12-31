@@ -5,7 +5,7 @@ using UnityEngine;
 public class killModeControl : MonoBehaviour
 {
     int PlayerCount = 0;
-
+    public GameObject[] warmLight;
     public GameObject[] button;
     public GameObject[] Enemy_Generate;
     public GameObject[] RedGate;
@@ -185,8 +185,14 @@ public class killModeControl : MonoBehaviour
     }
 
     public void RandomRobotRelease() {
-        if (isLeft) { Enemy_Generate[1].GetComponent<killmodeEnemyGenerator>().GenerateEnemy(); }
-        else { Enemy_Generate[0].GetComponent<killmodeEnemyGenerator>().GenerateEnemy(); }
+        if (isLeft) { 
+            Enemy_Generate[1].GetComponent<killmodeEnemyGenerator>().GenerateEnemy();
+            warmLight[1].SetActive(true);
+        }
+        else { 
+            Enemy_Generate[0].GetComponent<killmodeEnemyGenerator>().GenerateEnemy();
+            warmLight[0].SetActive(true);
+        }
         isLeft = !isLeft;
     }
 

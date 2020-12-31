@@ -26,6 +26,8 @@ public class BigMagnetGear : MonoBehaviour
     bool canclock = true;
     int randkind = 0;
     bool canMagnet = false;
+
+    public AudioSource sounds;
     
     
     
@@ -153,7 +155,7 @@ public class BigMagnetGear : MonoBehaviour
             CombinePlayer = collision.gameObject;
             canMagnet = true;
             SetPlayergravity();
-
+            sounds.Play();
         }
     }
 
@@ -161,6 +163,8 @@ public class BigMagnetGear : MonoBehaviour
     {
         if (collision.tag == "CombinePlayer" && !collision.isTrigger)
         {
+            Debug.Log(gameObject.name + " " + collision.gameObject.name);
+
             if (islast) CombinePlayer.GetComponent<Rigidbody2D>().gravityScale = 7;
             CombinePlayer = null;
             canMagnet = false; ;
@@ -174,6 +178,8 @@ public class BigMagnetGear : MonoBehaviour
             {
                 anim.SetBool("Active", false);
             }
+
+            sounds.Pause();
         }
     }
 

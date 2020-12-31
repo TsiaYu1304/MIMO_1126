@@ -9,13 +9,16 @@ public class EnemyControlltest : MonoBehaviour
     private Rigidbody2D rb;
     public Collider2D coll;
     public Animator anim;
+    public GameObject Laser;
+    float hitTime = 0;
+    bool hitPlayer = false;
+
     GameObject Gearobject;
     Transform GearPos;
     public bool needTrigger = false;   //???
     bool canmove = true;
     bool isControled = false;
     GameObject killmodeConrol;
-
     [Header("移動參數")]
     public float speed = 2.0f;
     float f_y = 0;
@@ -42,7 +45,28 @@ public class EnemyControlltest : MonoBehaviour
         {
             OntheGear();
         }
-        
+        if (hitPlayer)
+        {
+
+            if (hitTime > 0.5f && hitTime < 1f)
+            {
+                
+                Laser.GetComponent<LaserTut>().closeLaser();
+                hitTime = hitTime + Time.deltaTime;
+
+            }
+            else if (hitTime >= 1f) {
+                hitTime = 0;
+                hitPlayer = false;
+                canmove = true;
+            }
+            else if (hitTime <= 0.5f)
+            {
+                hitTime = hitTime + Time.deltaTime;
+            }
+
+        }
+
     }
 
     public void setDirection(bool isLeft,GameObject Controller) {
@@ -80,11 +104,6 @@ public class EnemyControlltest : MonoBehaviour
         }
     }
 
-    private void isTouchingTriggerLayer() {
-        if (coll.IsTouchingLayers(TriggerLayer)) {
-            changeDirection();
-        }
-    }
     public void Die() {
         Destroy(gameObject);   
     }
@@ -94,8 +113,7 @@ public class EnemyControlltest : MonoBehaviour
         
         if (collision.tag == "EnemyTrigger")
         {
-            
-            changeDirection();
+           changeDirection();
         }
 
         if (collision.tag == "EnemyDie") {
@@ -112,6 +130,18 @@ public class EnemyControlltest : MonoBehaviour
             Gearobject = collision.gameObject;
             GearPos = Gearobject.transform;
         }
+
+
+        if (collision.tag == "Player" && !collision.isTrigger)
+        {
+            Laser.GetComponent<LaserTut>().SetForwardPoint(collision.transform);
+            Laser.SetActive(true);
+            Laser.GetComponent<LaserTut>().openLaser();
+            collision.GetComponent<PlayerMovement>().LaserDie();
+            hitPlayer = true;
+            canmove = false;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -121,6 +151,9 @@ public class EnemyControlltest : MonoBehaviour
             TriggerGear = false ;
             f_y = 0;
         }
+
+
     }
+
 
 }

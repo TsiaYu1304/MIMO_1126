@@ -11,7 +11,7 @@ public class KillerRayControll : MonoBehaviour
     public Transform rotatpoint;
     bool isShoot = false;
     float time = 0;
-
+    public bool open = false;
     float f_x ;
     float f_y;
 
@@ -22,6 +22,7 @@ public class KillerRayControll : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        if (open) setAnimOpen();
     }
 
     private void Update()

@@ -44,6 +44,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Speak",
+                    "type": "Button",
+                    "id": "0e76c98d-7a53-414a-a954-a03d2398af99",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -189,6 +197,17 @@
                     "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b4cecf5-9e15-4793-827c-50617a37bca5",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speak",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -235,13 +254,21 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Speak",
+                    "type": "Button",
+                    "id": "2cc7c348-61bb-49fd-a342-24fbaada0e14",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "4a50371c-791a-4c5a-890f-83ca6f4d5dfe",
-                    "path": "<XInputController>/leftStick",
+                    "path": "<Joystick>/stick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -307,7 +334,7 @@
                 {
                     "name": "",
                     "id": "9877c225-892a-4d34-a556-40176d9f3517",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<HID::54C-5C4>/button2",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
@@ -340,7 +367,7 @@
                 {
                     "name": "",
                     "id": "20eedcf4-c6a9-42d9-b3b1-436f7b3100ad",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<HID::54C-5C4>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -362,7 +389,7 @@
                 {
                     "name": "",
                     "id": "6d6a20c7-631c-4ba5-97df-f2e7d3b531a4",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<HID::54C-5C4>/button3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -378,6 +405,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "PushButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "332f2d07-07cf-4103-be90-b839e276e02e",
+                    "path": "<HID::54C-5C4>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speak",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -436,36 +474,20 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Useprops_Mi_L",
+                    "name": "PushButton",
                     "type": "Button",
-                    "id": "b844d3dd-b10d-4310-8f0c-4e62ec0ad741",
+                    "id": "abaa22c8-9da6-4be5-a61f-dbbcdb04ed70",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": ""
                 },
                 {
-                    "name": "Useprops_Mi_R",
+                    "name": "Speak",
                     "type": "Button",
-                    "id": "702922c2-e2d7-48c3-aac5-c871a1050bd0",
+                    "id": "40bb7192-02cc-4a49-9556-766ce40b887b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
-                },
-                {
-                    "name": "Useprops_Mo_L",
-                    "type": "Button",
-                    "id": "8373287d-12f6-483c-89a7-c206cbdd98ac",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Hold"
-                },
-                {
-                    "name": "Useprops_Mo_R",
-                    "type": "Button",
-                    "id": "2f4ecdac-ce73-4463-a396-c58a0f3dbff2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Hold"
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -582,7 +604,7 @@
                 {
                     "name": "",
                     "id": "8c88c09a-e892-4672-a164-f0dd06d84bda",
-                    "path": "<XInputController>/buttonNorth",
+                    "path": "<HID::54C-5C4>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -625,45 +647,45 @@
                 },
                 {
                     "name": "",
-                    "id": "8810f266-15de-4392-b097-41e012331f38",
-                    "path": "<Gamepad>/leftShoulder",
+                    "id": "00862b8c-11ed-456e-913e-15ef906ce7ad",
+                    "path": "<HID::54C-5C4>/button3",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mi_L",
+                    "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "74d0dd7b-4a2e-4c88-9afe-cbfc70d0820d",
-                    "path": "<Gamepad>/rightShoulder",
+                    "id": "ab2fcb00-9c1d-4b94-9d04-6df840eb82ba",
+                    "path": "<Keyboard>/leftCtrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mi_R",
+                    "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "1ead0c92-4f55-4bb3-b889-4c81cf255df8",
+                    "id": "fdabc840-0aa7-42cc-bc8d-f41ff899cb06",
                     "path": "<HID::54C-5C4>/button5",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mo_L",
+                    "action": "Speak",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "9c7a8be9-7acc-4b9d-80ee-97dcd5bcac2b",
-                    "path": "<HID::54C-5C4>/button6",
+                    "id": "c25152ec-10d6-4c50-8eb3-4cf1361ef115",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mo_R",
+                    "action": "Speak",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -722,43 +744,27 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Useprops_Mi_L",
+                    "name": "PushButton",
                     "type": "Button",
-                    "id": "8fd6c9d8-cb78-42f9-b5a5-de8af4b2b86f",
+                    "id": "8f1fdf68-6d82-429b-b1ed-4d1ad63f8669",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": ""
                 },
                 {
-                    "name": "Useprops_Mi_R",
+                    "name": "Speak",
                     "type": "Button",
-                    "id": "30e3294c-099d-4b78-9ed6-937ca6e89ec2",
+                    "id": "9335281b-1ec8-4765-8775-25da9fd04d02",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Hold"
-                },
-                {
-                    "name": "Useprops_Mo_L",
-                    "type": "Button",
-                    "id": "e22f3688-de34-4282-bec4-95c8daaba8dd",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Hold"
-                },
-                {
-                    "name": "Useprops_Mo_R",
-                    "type": "Button",
-                    "id": "03cfeb61-3bae-4d3c-a24d-b858b1ed382f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Hold"
+                    "interactions": ""
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "a36aec50-8310-47ee-8056-bddd0e5735b1",
-                    "path": "<Gamepad>/leftStick",
+                    "path": "<Joystick>/stick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -824,7 +830,7 @@
                 {
                     "name": "",
                     "id": "7d499e32-5971-4be9-af0a-738f3da855ce",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<HID::54C-5C4>/button2",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
@@ -857,7 +863,7 @@
                 {
                     "name": "",
                     "id": "55a76b65-d2e7-426c-8259-ba84ab71f9db",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<HID::54C-5C4>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -868,7 +874,7 @@
                 {
                     "name": "",
                     "id": "0a25d290-0870-4f1e-9598-e1ee91ad7d36",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<HID::54C-5C4>/button4",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -890,7 +896,7 @@
                 {
                     "name": "",
                     "id": "cb89bc77-1364-474f-95cc-086fe191968b",
-                    "path": "<XInputController>/buttonNorth",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -911,45 +917,45 @@
                 },
                 {
                     "name": "",
-                    "id": "802c4456-13bc-46c8-918b-b38919cd6df2",
-                    "path": "<HID::54C-5C4>/button6",
+                    "id": "ecbf0a6a-a511-4513-b8ab-7e43bcd1a9ab",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mo_R",
+                    "action": "PushButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "89657dc3-30fe-4a73-af70-918a63001ba8",
+                    "id": "36dca871-8d41-4b19-bf8d-da8aa5cbd775",
+                    "path": "<Keyboard>/rightCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PushButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30a54f53-16b9-4f99-ae0e-33a240d7b2c4",
                     "path": "<HID::54C-5C4>/button5",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mo_L",
+                    "action": "Speak",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "a92d7655-6cbe-42a2-a697-bdadfbdc1473",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Useprops_Mi_R",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "35ad1c3d-c1a4-4f48-a2b9-5828c39e6c39",
+                    "id": "b425888b-b8a1-42f9-ad57-cc3ad0886fc0",
                     "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Useprops_Mi_L",
+                    "action": "Speak",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
