@@ -11,6 +11,12 @@ public class roseControl : MonoBehaviour
     public GameObject light;
     public GameObject Propscolumn;
     public Animator anim;
+    public AudioSource gotitem;
+    public GameObject myEffect;
+
+
+    float time;
+    bool startclock;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,17 @@ public class roseControl : MonoBehaviour
         //    if (transform.position.y <= (myPoint.y - 0.07f)) isUp = true;
         //}
 
+        if (startclock) {
+            if (time < 1.8f)
+            {
+                time = time + Time.deltaTime;
+            }
+            else {
+                startclock = false;
+                time = 0;
+                myEffect.SetActive(false);
+            }
+        }
     }
 
     public void showcolumn() {
@@ -42,6 +59,8 @@ public class roseControl : MonoBehaviour
         if (collision.tag == "Player" && !collision.isTrigger) {
             anim.SetTrigger("Got");
             light.GetComponent<Animator>().SetTrigger("Got");
+            gotitem.Play();
+            myEffect.SetActive(true);
         }
     }
 }

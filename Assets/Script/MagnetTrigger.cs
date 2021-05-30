@@ -28,7 +28,7 @@ public class MagnetTrigger : MonoBehaviour
         if (collision.tag == "CombinePlayer" && !collision.isTrigger) {
 
             if (collision.GetComponent<CombinePlayerControll>().Magnetic == true) { //吸引力模式開了嗎
-                Debug.Log("進入判斷");
+               
                 int bottomkind = collision.GetComponent<CombinePlayerControll>().Onbottom;
                 if (isBlue)  //藍色磁鐵 MOMO在下
                 { 

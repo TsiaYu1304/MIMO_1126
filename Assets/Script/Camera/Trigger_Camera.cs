@@ -9,7 +9,12 @@ public class Trigger_Camera : MonoBehaviour
 
     public GameObject Cam;
     // Start is called before the first frame update
-   
+
+
+    private void Start()
+    {
+        transform.parent = null;
+    }
     // Update is called once per frame
     void Update()
     {

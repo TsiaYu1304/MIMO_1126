@@ -14,42 +14,69 @@ public class FallCeilingControll : MonoBehaviour
     private float ShakeElapsedTime = 0f;
     int dieplayer = 0;
     int fallPlayercount = 2;
-    bool Fallen = false;  //下墜過了嗎
+    bool startFall = false;  //下墜過了嗎
+    public GameObject LaserFire;
+    public GameObject LaserFire2;
+
     int PlayerCount = 0;
     bool canFallDown = false;
     bool canFallback = false;
     public CinemachineVirtualCamera VirtualCamera;
     private CinemachineBasicMultiChannelPerlin virtualCameraNoise;
-    public GameObject RedGate, RedGate2;
     public GameObject LaserComtrol;
     public GameObject[] Lasergear;
     public GameObject PressTrigger;
     public float downSpeed ;
     public bool partymode = true;
+
+    [Header("開關雷射")]
+    bool open = true; //打開雷射??
+    float time = 2.1f;
+    public float partytime; //party的總共時間
+
     // Start is called before the first frame update
     void Start()
     {
         if (VirtualCamera != null)
             virtualCameraNoise = VirtualCamera.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>();
     }
+    public void Playerassemble() {
+        startFall = true;
+    }
+
+    public void PlayerLeave() {
+        startFall = false;
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (!Fallen)
+        if (!canFallDown && !canFallback)
         {
-            if (PlayerCount == fallPlayercount)
+            if (startFall) //人數到齊
             {
-                StartToFall();
+                CameraNoise();
+                canFallDown = true;
+
             }
         }
 
-        if (canFallDown) {
+        else if(canFallDown && !canFallback) {
+           
             FallDownCeiling();
+            if (!startFall) { //下降了可是人不齊
+                StopCameraNoise();
+                StopFall();
+
+            }
         }
-        if (canFallback) {
+
+        else if (canFallback && !canFallDown) {
             FallbackCeiling();
         }
+
+        if (partymode) OpenLaser();
 
     }
 
@@ -57,18 +84,18 @@ public class FallCeilingControll : MonoBehaviour
 
         
         transform.localScale = transform.localScale + new Vector3(0, downSpeed * Time.deltaTime, 0);
-        if (partymode) {
-            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, -0.34f * Time.deltaTime, 0);
-            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, -0.34f * Time.deltaTime, 0);
+
+        if (partymode) { //雷射下降
+            Lasergear[0].transform.position = Lasergear[0].transform.position + new Vector3(0, -0.2f * Time.deltaTime, 0);
+            Lasergear[1].transform.position = Lasergear[1].transform.position + new Vector3(0, -0.2f * Time.deltaTime, 0);
+            if (transform.localScale.y > 1.92f)
+            {
+                PressTrigger.GetComponent<CeilingdieTrigger>().DetectpressPlayer();
+            }
         }
         
         if (!partymode) {
 
-            //if (transform.localScale.y > 10) {
-            //    StopCameraNoise();
-            //    canFallDown = false;
-            //    canFallback = true;
-            //}
             if (transform.localScale.y > 7.14f) {
                 PressTrigger.GetComponent<CeilingdieTrigger>().DetectpressPlayer();
             }
@@ -91,22 +118,6 @@ public class FallCeilingControll : MonoBehaviour
         }
     }
 
-    void StartToFall()
-    {
-        if (partymode)
-        {
-            ClosetheRedGate();
-            OpenLaser();
-        }
-        else {
-            RedGate.GetComponent<RedGate>().ClosetheGate();
-        }
-        
-        CameraNoise();
-        canFallDown = true;
-       
-    }
-
     public void ResetGear()
 
     {
@@ -114,24 +125,37 @@ public class FallCeilingControll : MonoBehaviour
         StopCameraNoise();
         canFallDown = false;
         canFallback = true;
-        RedGate.GetComponent<RedGate>().backtheGate();
         if (partymode)
         {
-            RedGate2.GetComponent<RedGate>().backtheGate();
             LaserComtrol.GetComponent<Button_LaserControll>().Resetbutton();
         }
         
         fallPlayercount = 1;
     }
 
-    void OpenLaser()
+    void OpenLaser() {
+        if (time > partytime)
         {
-            LaserComtrol.GetComponent<Button_LaserControll>().StartParty();
+            if (open)
+            {
+                LaserFire.SetActive(true);
+                LaserFire.GetComponent<LaserTut>().openLaser();
+                LaserFire2.SetActive(true);
+                LaserFire2.GetComponent<LaserTut>().openLaser();
+                open = false;
+            }
+            else
+            {
+                LaserFire.GetComponent<LaserTut>().closeLaser();
+                LaserFire2.GetComponent<LaserTut>().closeLaser();
+                open = true;
+            }
+            time = 0;
         }
-    void ClosetheRedGate()
-    {
-        RedGate.GetComponent<RedGate>().ClosetheGate();
-        RedGate2.GetComponent<RedGate>().ClosetheGate();
+        else
+        {
+            time = time + Time.deltaTime;
+        }
     }
 
     void CameraNoise() {
@@ -150,30 +174,22 @@ public class FallCeilingControll : MonoBehaviour
     }
 
     public void StopFall() {
-        StopCameraNoise();
         canFallDown = false;
         canFallback = true;
-        RedGate.GetComponent<RedGate>().backtheGate();
-        if (partymode) {
-            
-            RedGate2.GetComponent<RedGate>().backtheGate();
-        }
-
-        Fallen = true;
        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //偵測到player
     {
         if (collision.tag == "Player" && !collision.isTrigger) {
-            PlayerCount = PlayerCount + 1;
+            PlayerCount = PlayerCount + 1; //trigger增加一名玩家
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player" && !collision.isTrigger)
         {
-            PlayerCount = PlayerCount - 1;
+            PlayerCount = PlayerCount - 1; //trigge減少一名玩家
         }
     }
 }

@@ -72,7 +72,14 @@ public class CombinePlayerControll : MonoBehaviour
     [Header("環境檢測")]
     public LayerMask groundLayer;
 
-   
+    [Header("漂浮變數")]
+    bool floatup = true;   //往上還是往下
+    bool FloatTrigger = false;
+    float f_floatupPoint, f_floatDoenPoint;
+    public float FloatSpeed = 1f;
+    public float Floatforce = 10f;
+    public float rbgravity = 0.1f;
+    public float ori_gravity;
 
     private void Awake()
     {
@@ -85,6 +92,45 @@ public class CombinePlayerControll : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         rend = GetComponent<SpriteRenderer>();
+    }
+
+    public void setstopFloat()
+    {
+        rb.gravityScale = ori_gravity;
+        FloatTrigger = false;
+    }
+
+    public void setFloat(float upY, float downY)
+    {
+        FloatTrigger = true;
+        f_floatupPoint = upY;
+        f_floatDoenPoint = downY;
+        rb.gravityScale = rbgravity;
+        floatup = true;
+    }
+
+    public void Float()
+    {
+        print("持續漂浮");
+        if (floatup)
+        {
+            if (transform.position.y < f_floatDoenPoint-0.2f)
+            {
+                rb.velocity = Vector2.up * Floatforce;
+            }
+            if (transform.position.y > f_floatupPoint - 0.2f)
+            {
+                rb.velocity = new Vector2(0, 0);
+                floatup = false;
+                rb.gravityScale = rbgravity;
+            }
+        }
+        else
+        {
+            if (transform.position.y < f_floatDoenPoint - 0.2f) rb.velocity = Vector2.up * FloatSpeed;
+        }
+
+       
     }
 
     public void CombineSet(int whobottom, Transform showPosition) {
@@ -126,6 +172,7 @@ public class CombinePlayerControll : MonoBehaviour
         GroundMovement();
         Switchanim();
         Jump();
+        if (FloatTrigger) Float();
     }
 
     void Switchanim() //偵測動畫切換 包含Material
@@ -295,9 +342,11 @@ public class CombinePlayerControll : MonoBehaviour
     }
 
     public void OnBang_Discombine(CallbackContext context) {
+        print("bang近來");
         if (context.ReadValue<float>() == 1) {
-            if (rb.gravityScale != -14)
+            if (rb.gravityScale > 0)
             {
+                print("裡面");
                 if (Onbottom == 1) // MIMI在下
                 {
                     camera.GetComponent<Virtualcamera>().SetShakeTrigger();
@@ -305,7 +354,7 @@ public class CombinePlayerControll : MonoBehaviour
                     Momo.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                     Momo.GetComponent<PlayerMovement>().jumpAwake();
                     Mimi.GetComponent<PlayerMovement>().bottomAwake();
-                    rb.gravityScale = 7;
+                    rb.gravityScale = 2.2f;
                     gameObject.SetActive(false);
 
                 }
@@ -316,7 +365,7 @@ public class CombinePlayerControll : MonoBehaviour
                     Mimi.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                     Mimi.GetComponent<PlayerMovement>().jumpAwake();
                     Momo.GetComponent<PlayerMovement>().bottomAwake();
-                    rb.gravityScale = 7;
+                    rb.gravityScale = 2.2f;
                     gameObject.SetActive(false);
                 }
             }
@@ -326,17 +375,19 @@ public class CombinePlayerControll : MonoBehaviour
                 Mimi.GetComponent<PlayerMovement>().SetShowPoint(BottomPoint);
                 Mimi.GetComponent<PlayerMovement>().bottomAwake();
                 Momo.GetComponent<PlayerMovement>().bottomAwake();
-                rb.gravityScale = 7;
+                rb.gravityScale =2.2f;
                 gameObject.SetActive(false);
             }
-            
+            setstopFloat();
+
+
         }  
     }
 
     public void OnNormal_Discombine(CallbackContext context) {
         if (context.ReadValue<float>() == 1)
         {
-            if (rb.gravityScale != -14)
+            if (rb.gravityScale > 0)
             {
                 if (Onbottom == 1) // MIMI在下
                 {
@@ -344,7 +395,7 @@ public class CombinePlayerControll : MonoBehaviour
                     Momo.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                     Momo.GetComponent<PlayerMovement>().AboveAwake();
                     Mimi.GetComponent<PlayerMovement>().bottomAwake();
-                    rb.gravityScale = 7;
+                    rb.gravityScale = 2.2f;
                     gameObject.SetActive(false);
 
                 }
@@ -354,7 +405,7 @@ public class CombinePlayerControll : MonoBehaviour
                     Mimi.GetComponent<PlayerMovement>().SetShowPoint(AbovePoint);
                     Mimi.GetComponent<PlayerMovement>().AboveAwake();
                     Momo.GetComponent<PlayerMovement>().bottomAwake();
-                    rb.gravityScale = 7;
+                    rb.gravityScale = 2.2f;
                     gameObject.SetActive(false);
                 }
             }
@@ -364,9 +415,10 @@ public class CombinePlayerControll : MonoBehaviour
                 Mimi.GetComponent<PlayerMovement>().SetShowPoint(BottomPoint);
                 Mimi.GetComponent<PlayerMovement>().bottomAwake();
                 Momo.GetComponent<PlayerMovement>().bottomAwake();
-                rb.gravityScale = 7;
+                rb.gravityScale = 2.2f;
                 gameObject.SetActive(false);
             }
+            setstopFloat();
         }
     }
 

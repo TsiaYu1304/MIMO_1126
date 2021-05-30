@@ -49,13 +49,14 @@ public class Camera_ver2 : MonoBehaviour
             if (Camerakind == 0)
             {
                 float diff = transform.position.x - movePoint.position.x;
-                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 5.0f * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 4.5f * Time.deltaTime);
                 if (diff < 0.05f)
                 {
                     transform.position = movePoint.position;
                     
                     canmove = false;
                     Gateobject.GetComponent<CameraGate>().Closegate();
+                    
                 }
             }
             else if (Camerakind == 1)
@@ -73,7 +74,7 @@ public class Camera_ver2 : MonoBehaviour
             else if (Camerakind == 2)
             {
                 float diff = movePoint.position.x - transform.position.x;
-                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 5.0f * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, movePoint.position, 4.5f * Time.deltaTime);
                 if (diff < 0.05f)
                 {
                     transform.position = movePoint.position;
@@ -89,6 +90,7 @@ public class Camera_ver2 : MonoBehaviour
 
     public void starttomove(){
         canmove = true;
+        
     }
 
 

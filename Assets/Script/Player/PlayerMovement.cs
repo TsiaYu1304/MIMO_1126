@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("物件變數")]
     public GameObject AnotherPlayer;
+    public GameObject DieVX;
     private Rigidbody2D rb;
     public PlayerInput playerControls;
     public GameObject Combine2Player;
@@ -51,6 +52,10 @@ public class PlayerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         xVelocity = 0;
     }
+    public Transform getReplayPoint() {
+        return ReplayPoint;
+    }
+
 
     private void FixedUpdate()
     {
@@ -62,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void jumpAwake() {
         gameObject.SetActive(true);
-        rb.velocity = Vector2.up * 10;
+        rb.velocity = Vector2.up * 5.0f;
     }
 
     public void bottomAwake() {
@@ -71,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void AboveAwake() {
         gameObject.SetActive(true);
-        rb.AddForce(transform.forward * 50);
+        rb.AddForce(transform.forward * 5.0f);
         
     }
     public void setWalkmaterial() {
@@ -84,23 +89,29 @@ public class PlayerMovement : MonoBehaviour
     public void LaserDie() {
 
         s_walk.Pause();
-        if (!anim.GetBool("LaserDie")) anim.SetBool("LaserDie", true);
+       // if (!anim.GetBool("LaserDie")) anim.SetBool("LaserDie", true);
         s_die.Play();
         canMove = false;
         rb.velocity = new Vector2(0, rb.velocity.y);
-        rend.material = dust_material;
+        //rend.material = dust_material;
+        DieVX.SetActive(true);
+        DieVX.GetComponent<DieVFX>().clocktime();
+        rend.color = new Color(1f, 1f, 1f, 0);
+        
     }
 
     public void PressDie()
     {
-        s_walk.Pause(); s_die.Play();
+        s_walk.Pause(); 
+        s_die.Play();
         anim.SetBool("PressDie", true);
         canMove = false;
         rb.velocity = new Vector2(0, rb.velocity.y);
     }
     public void Replay() {
-        anim.SetBool("LaserDie", false);
-        anim.SetBool("PressDie", false);
+        //anim.SetBool("LaserDie", false);
+        //anim.SetBool("PressDie", false);
+        rend.color = new Color(1f, 1f, 1f, 1f);
         canMove = true;
         anim.SetBool("Fall", true);
         transform.position = ReplayPoint.position;

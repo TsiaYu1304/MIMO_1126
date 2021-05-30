@@ -9,6 +9,7 @@ public class UpGear : MonoBehaviour
     public GameObject AITrigger_Beneath_L, AITrigger_Beneath_R;
     public GameObject AITrigger_Self_L, AITrigger_Self_R;
     public GameObject AITrigger_Above_L,AITrigger_Above_R;
+    public GameObject flowGear;
 
     [Header("移動變數")]
     public float stepSpeed = 5.0f;
@@ -18,10 +19,12 @@ public class UpGear : MonoBehaviour
     bool isDown = false;
     bool GateisOpen = false;
     bool OnTop = false;
+    
 
     [Header("1右 2中 3左")]
     public int i_kind = 1;
     public bool haveGate = false;
+    public bool isRow = false;
 
     [Header("移動位置")]
     public Transform startPosirion;
@@ -33,22 +36,33 @@ public class UpGear : MonoBehaviour
         startPosirion.parent = null;
         upPosition.parent = null;
         //startPosirion = transform;
-        if (i_kind == 1)
+        if (!isRow)
         {
-            AITrigger_Self_L.SetActive(false);
-        }
-        else if (i_kind == 2)
-        {
-            AITrigger_Self_L.SetActive(false);
-            AITrigger_Self_R.SetActive(false);
-        }
-        else if (i_kind == 3) {
-           //AITrigger_Self_R.SetActive(false);
+            if (i_kind == 1)
+            {
+                AITrigger_Self_L.SetActive(false);
+            }
+            else if (i_kind == 2)
+            {
+                AITrigger_Self_L.SetActive(false);
+                AITrigger_Self_R.SetActive(false);
+            }
+            else if (i_kind == 3)
+            {
+                //AITrigger_Self_R.SetActive(false);
+            }
         }
     }
 
     // Update is called once per frame
-   
+
+    public bool ismoving() {
+        if (isUp || isDown)
+        {
+            return true;
+        }
+        else return false;
+    }
 
     private void FixedUpdate()
     {
@@ -59,7 +73,8 @@ public class UpGear : MonoBehaviour
         {
             if (GateisOpen && OnTop) { setTopTrigger(); }  //注意這裡 喔喔喔!!!
         }
-        else { if (OnTop) setTopTrigger();  }
+        else { if (OnTop && !isRow) setTopTrigger(); }
+
     }
 
     public void changeUp() {  //改成上升狀態
@@ -79,35 +94,76 @@ public class UpGear : MonoBehaviour
 
     void UpMove()
     {
-        float f_Ypositiondiff;
-        f_Ypositiondiff = transform.position.y - upPosition.position.y;
-        if (f_Ypositiondiff > 0) { //到頂了
-            isUp = false;
-            transform.position = new Vector3(transform.position.x, upPosition.position.y, transform.position.z);
-            OnTop = true;
 
+        if (isRow) {
+            float f_Xpositiondiff;
+            f_Xpositiondiff = transform.position.x- upPosition.position.x;
+            if (f_Xpositiondiff > 0)
+            { //到頂了
+                isUp = false;
+                transform.position = new Vector3(upPosition.position.x, transform.position.y,  transform.position.z);
+                OnTop = true; //到左邊了
+                flowGear.GetComponent<FloatTrigger>().ExitGear();
+            }
+            else if (!OnTop)
+            {
+                transform.position = transform.position + new Vector3(stepSpeed * Time.deltaTime, 0,  0);
+            }
         }
-        else if(!OnTop)
+        else
         {
-            transform.position = transform.position + new Vector3(0, stepSpeed * Time.deltaTime,0);  
+            float f_Ypositiondiff;
+            f_Ypositiondiff = transform.position.y - upPosition.position.y;
+            if (f_Ypositiondiff > 0)
+            { //到頂了
+                isUp = false;
+                transform.position = new Vector3(transform.position.x, upPosition.position.y, transform.position.z);
+                OnTop = true;
+
+            }
+            else if (!OnTop)
+            {
+                transform.position = transform.position + new Vector3(0, stepSpeed * Time.deltaTime, 0);
+            }
         }
 
 
     }
 
     void DownMove() {
-        float f_Ypositiondiff;
-        f_Ypositiondiff = transform.position.y - startPosirion.position.y;
-        if (f_Ypositiondiff < 0) { 
-            isDown = false;
-            transform.position = new Vector3(transform.position.x, startPosirion.position.y, transform.position.z);
-            setBottomTrigger();
-        }
-        else if (f_Ypositiondiff > 0)
-        {
-            transform.position = transform.position - new Vector3(0, stepSpeed * Time.deltaTime, 0);
 
+        if (isRow) {
+            float f_Xpositiondiff;
+            f_Xpositiondiff = transform.position.x-startPosirion.position.x  ;
+            if (f_Xpositiondiff < 0)
+            {
+                isDown = false;
+                transform.position = new Vector3(startPosirion.position.x, transform.position.y, transform.position.z);
+                //setBottomTrigger();
+                flowGear.GetComponent<FloatTrigger>().HitGear();
+            }
+            else
+            {
+                transform.position = transform.position - new Vector3(stepSpeed * Time.deltaTime, 0,  0);
+
+            }
         }
+        else {
+            float f_Ypositiondiff;
+            f_Ypositiondiff = transform.position.y - startPosirion.position.y;
+            if (f_Ypositiondiff < 0)
+            {
+                isDown = false;
+                transform.position = new Vector3(transform.position.x, startPosirion.position.y, transform.position.z);
+                setBottomTrigger();
+            }
+            else if (f_Ypositiondiff > 0)
+            {
+                transform.position = transform.position - new Vector3(0, stepSpeed * Time.deltaTime, 0);
+
+            }
+        }
+        
     }
 
     void setTopTrigger() {
@@ -216,6 +272,7 @@ public class UpGear : MonoBehaviour
         {
             collision.GetComponent<LaserTut>().ExitCollision();
         }
+        
     }
 
 

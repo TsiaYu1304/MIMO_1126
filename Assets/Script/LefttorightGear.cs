@@ -51,15 +51,16 @@ public class LefttorightGear : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Laser") {
-            collision.GetComponent<LaserTut>().Hitcollision();
+            //collision.GetComponent<LaserTut>().Hitcollision();
         }
     }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Laser")
         {
-            collision.GetComponent<LaserTut>().ExitCollision();
+            //collision.GetComponent<LaserTut>().ExitCollision();
         }
     }
 }

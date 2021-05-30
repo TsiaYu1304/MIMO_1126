@@ -44,6 +44,7 @@ public class DetectLightControll : MonoBehaviour
         KillPlayer = false;
         DetectLight.SetActive(false);
         KillerRay.GetComponent<KillerRayControll>().setAnimClose();
+        canRotate = false;
     }
     public void OpenDetect() {
         KillPlayer = true;

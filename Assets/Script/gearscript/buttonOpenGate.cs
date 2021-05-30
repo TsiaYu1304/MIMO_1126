@@ -18,6 +18,7 @@ public class buttonOpenGate : MonoBehaviour
     bool isOpening = false;
     bool isDown = false;
     public bool isStraight = false;
+    public bool oriLeft = false;
     
     [Header("移動變數")]
     public Transform OpenPoint;
@@ -28,7 +29,8 @@ public class buttonOpenGate : MonoBehaviour
     void Start()
     {
         transform.DetachChildren();
-        
+
+        if (oriLeft) coll.enabled = false;
     }
 
     // Update is called once per frame
@@ -46,6 +48,7 @@ public class buttonOpenGate : MonoBehaviour
     }
     public void changetoDown()
     {
+        if (oriLeft) coll.enabled = false;
         isOpening = false;
         isDown = true;
         
@@ -77,16 +80,34 @@ public class buttonOpenGate : MonoBehaviour
         else {
             float X_diff;
             X_diff = transform.position.x - OpenPoint.position.x;
-            if (X_diff < 0)
+
+            if (oriLeft)
             {
-                isOpening = false;
-                transform.position = new Vector3(OpenPoint.position.x, transform.position.y, transform.position.z);
-                if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisOpen();
+                if (X_diff > 0)
+                {
+                    isOpening = false;
+                    transform.position = new Vector3(OpenPoint.position.x, transform.position.y, transform.position.z);
+                    coll.enabled = true;
+                    if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisOpen();
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(stepSpeed * Time.deltaTime, 0, 0);
+                }
             }
-            else
-            {
-                transform.position = transform.position - new Vector3(stepSpeed * Time.deltaTime, 0, 0);
+            else {
+                if (X_diff < 0)
+                {
+                    isOpening = false;
+                    transform.position = new Vector3(OpenPoint.position.x, transform.position.y, transform.position.z);
+                    if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisOpen();
+                }
+                else
+                {
+                    transform.position = transform.position - new Vector3(stepSpeed * Time.deltaTime, 0, 0);
+                }
             }
+            
         }
 
         
@@ -119,16 +140,32 @@ public class buttonOpenGate : MonoBehaviour
         else {
             float X_diff;
             X_diff = transform.position.x - startPoint.position.x;
-            if (X_diff > 0 )
+            if (oriLeft)
             {
-                isDown = false;
-                transform.position = new Vector3(startPoint.position.x, transform.position.y, transform.position.z);
+                if (X_diff <= 0.1)
+                {
+                    isDown = false;
+                    transform.position = new Vector3(startPoint.position.x, transform.position.y, transform.position.z);
+                }
+                else
+                {
+                    transform.position = transform.position - new Vector3(stepSpeed * Time.deltaTime, 0, 0);
+                    if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisnotOpen();
+                }
             }
-            else
-            {
-                transform.position = transform.position + new Vector3(stepSpeed * Time.deltaTime, 0, 0);
-                if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisnotOpen();
+            else {
+                if (X_diff >= 0.1)
+                {
+                    isDown = false;
+                    transform.position = new Vector3(startPoint.position.x, transform.position.y, transform.position.z);
+                }
+                else
+                {
+                    transform.position = transform.position + new Vector3(stepSpeed * Time.deltaTime, 0, 0);
+                    if (b_controllGear) workGear.GetComponent<UpGear>().SetGateisnotOpen();
+                }
             }
+            
         }
     }
 }

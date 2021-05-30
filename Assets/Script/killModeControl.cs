@@ -199,7 +199,6 @@ public class killModeControl : MonoBehaviour
 
     public void PlayerAdd() {
         PlayerCount = PlayerCount + 1;
-        Debug.Log("PlayerAdd");
     }
 
     public void PlayerSub() {

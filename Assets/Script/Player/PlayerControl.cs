@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     bool canTurnoffLight = false;
     bool canTurnoffLaser = false;
     bool canPushFloatButton = false;
+    bool canSwitchGear = false;
     bool EatMagnet = false;
     public bool Magnetic = true;
 
@@ -23,6 +24,7 @@ public class PlayerControl : MonoBehaviour
     public float FloatSpeed = 1f;
     public float Floatforce = 10f;
     public float rbgravity = 0.1f;
+    public float ori_gravity;
 
     [Header("環境檢測")]
     public LayerMask groundLayer;
@@ -96,7 +98,7 @@ public class PlayerControl : MonoBehaviour
 
     public void setstopFloat()
     {
-        rb.gravityScale = 5;
+        rb.gravityScale = ori_gravity;
         FloatTrigger = false;
     }
 
@@ -104,6 +106,12 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.tag == "Button_DetectLight") {
             canTurnoffLight = true;
+            GearTriggering = collision.gameObject;
+        }
+
+        if (collision.tag == "SwitchGear")
+        {
+            canSwitchGear = true;
             GearTriggering = collision.gameObject;
         }
 
@@ -129,12 +137,16 @@ public class PlayerControl : MonoBehaviour
         }
         if (collision.tag == "LaserTrigger")
         {
-            Debug.Log("Playerleave");
             canTurnoffLaser = false;
             GearTriggering = null;
         }
         if (collision.tag == "Button_Float") {
             canPushFloatButton = false;
+            GearTriggering = null;
+        }
+        if (collision.tag == "SwitchGear")
+        {
+            canSwitchGear = false;
             GearTriggering = null;
         }
     }
@@ -154,12 +166,15 @@ public class PlayerControl : MonoBehaviour
 
             if (canTurnoffLaser)
             {
-                Debug.Log("PlayerPush");
                 GearTriggering.GetComponent<Button_LaserControll>().TriggerLaser();
             }
 
             if (canPushFloatButton) {
                 GearTriggering.GetComponent<button_Floatcontrol>().PushFloatButton();
+            }
+
+            if (canSwitchGear) {
+                GearTriggering.GetComponent<wasd_RLcontrol>().SwitchButton();
             }
         }
 

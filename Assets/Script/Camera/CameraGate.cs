@@ -23,7 +23,6 @@ public class CameraGate : MonoBehaviour
     public void Closegate() {
         closeGate = true;
         upGateOK = false; downGateOK = false;
-        Debug.Log(upGateOK);
     }
 
     private void Start()
@@ -50,13 +49,11 @@ public class CameraGate : MonoBehaviour
             {
                 if (!upGateOK)
                 {
-                    Debug.Log("我沒進來");
                     UpGate.transform.position = UpGate.transform.position + new Vector3(0, -2 * Time.deltaTime, 0);
                     if (UpGate.transform.position.y - UpGateTrans.y <= 0.05f)
                     {
                         UpGate.transform.position = UpGateTrans;
                         upGateOK = true;
-                        Debug.Log("不小心進來了");
                     }
                 }
                 if (!downGateOK)

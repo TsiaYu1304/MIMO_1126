@@ -19,10 +19,12 @@ public class Button_LaserControll : MonoBehaviour
 
     public bool canPushed = false;  //可以正常開關
 
-    float time = 2.1f;  
+    float time = 2.1f;
 
+    public GameObject fivelasercontroll;
     public float partytime; //party的總共時間
     public bool HaveTrigger = false;
+    public GameObject movelaserControll;
     public GameObject Trigger;
     public GameObject EnemyTurnTrigger;
     [Header("元件控制")]
@@ -91,25 +93,32 @@ public class Button_LaserControll : MonoBehaviour
     public void SetcanPush() { //玩家可以push_button
         
         canPushed = true;
-        if (TurnOn)
+
+        if (fivelasercontroll != null)
         {
-            rend.sprite = Laser_Turnon;
-            rend.material = Laser_Turnon_material;
-            LaserFire.SetActive(true);
-            LaserFire.GetComponent<LaserTut>().openLaser();
+            fivelasercontroll.SetActive(true);
+
         }
         else {
-            rend.sprite = Laser_Turnoff;
-            rend.material = Laser_Turnoff_material;
+            if (TurnOn)
+            {
+                rend.sprite = Laser_Turnon;
+                rend.material = Laser_Turnon_material;
+                LaserFire.SetActive(true);
+                LaserFire.GetComponent<LaserTut>().openLaser();
+            }
+            else
+            {
+                rend.sprite = Laser_Turnoff;
+                rend.material = Laser_Turnoff_material;
+            }
+            myLight.SetActive(true);
+            if (killlRay != null)
+            {
+                killlRay.GetComponent<KillerRayControll>().setAnimOpen();
+            }
         }
-        myLight.SetActive(true);
-        if (killlRay != null)
-        {
-            killlRay.GetComponent<KillerRayControll>().setAnimOpen();
-        }
-        else {
-            Debug.Log("killRay == null");
-        }
+        
         
     }
 
@@ -125,8 +134,16 @@ public class Button_LaserControll : MonoBehaviour
         canPushed = false;
         //rend.sprite = Laser_Turnoff;
         myLight.SetActive(false);
-        killlRay.GetComponent<KillerRayControll>().setAnimClose();
-        LaserFire.GetComponent<LaserTut>().closeLaser();
+        if (fivelasercontroll != null)
+        {
+
+            fivelasercontroll.GetComponent<laserfive_Controll>().closeLaser();
+        }
+        else {
+
+            killlRay.GetComponent<KillerRayControll>().setAnimClose();
+            LaserFire.GetComponent<LaserTut>().closeLaser();
+        }
         TurnOn = false;
         rend.sprite = Laser_Turnoff;
         rend.material = defaultMaterial;
@@ -145,7 +162,7 @@ public class Button_LaserControll : MonoBehaviour
         
     }
 
-    public void TriggerLaser()
+    public void TriggerLaser()   //玩家按按鈕會呼叫這個函式
     {
         if (!Getparty && canPushed)
         {
@@ -164,7 +181,14 @@ public class Button_LaserControll : MonoBehaviour
         {
             if (PlayerTriggerme)
             {
-                LaserFire.GetComponent<LaserTut>().closeLaser();
+                if (movelaserControll != null)
+                {
+                    movelaserControll.GetComponent<MoveLaserControll>().CloseMoveLaser();
+                }
+                else {
+                    LaserFire.GetComponent<LaserTut>().closeLaser();
+                }
+                
                 TurnOn = false;
                 rend.sprite = Laser_Turnoff;
                 rend.material = Laser_Turnoff_material;

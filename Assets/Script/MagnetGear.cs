@@ -65,7 +65,7 @@ public class MagnetGear : MonoBehaviour
         }
         else if(transform.position.y == Down_Point.position.y) canAttract = false;
 
-        Debug.Log(gameObject.name+"吸引");
+
     }
 
     public void RepelMove()
@@ -85,7 +85,7 @@ public class MagnetGear : MonoBehaviour
             canRepel = false;
         }
         else if (transform.position.y == Up_Point.position.y) canRepel = false;
-        Debug.Log(gameObject.name + "排斥");
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

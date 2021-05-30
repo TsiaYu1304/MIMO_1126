@@ -17,6 +17,9 @@ TagManager:
   - EnemyDie
   - MagnetProps
   - Thronball
+  - SwitchGear
+  - Ground
+  - flowGear
   layers:
   - Default
   - TransparentFX

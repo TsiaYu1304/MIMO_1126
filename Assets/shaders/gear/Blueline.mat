@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blueline
+  m_Shader: {fileID: -6465566751694194690, guid: cd4919296a9c9d540bdc9d1e123d7fd0,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MaainTex:
+        m_Texture: {fileID: 2800000, guid: 7dbc91e6e887e824ab89fc563907b569, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_103C88A9: {r: 7.5755277, g: 3.767933, b: 4.000056, a: 0}
+    - Vector2_365D872C: {r: 100.23, g: 27.61, b: 1.21, a: 0}

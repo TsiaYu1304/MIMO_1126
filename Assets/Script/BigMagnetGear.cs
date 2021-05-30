@@ -14,7 +14,7 @@ public class BigMagnetGear : MonoBehaviour
     public bool NeedRamdom = false;
     public bool isBlue = true;
     
-    public float gravityscale;
+    float gravityscale  = 3.5f;
 
     [Header("render用")]
     public Sprite Blue;
@@ -165,7 +165,7 @@ public class BigMagnetGear : MonoBehaviour
         {
             Debug.Log(gameObject.name + " " + collision.gameObject.name);
 
-            if (islast) CombinePlayer.GetComponent<Rigidbody2D>().gravityScale = 7;
+            if (islast) CombinePlayer.GetComponent<Rigidbody2D>().gravityScale = 3.5f;
             CombinePlayer = null;
             canMagnet = false; ;
 

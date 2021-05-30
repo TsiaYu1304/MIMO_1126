@@ -281,7 +281,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4a50371c-791a-4c5a-890f-83ca6f4d5dfe"",
-                    ""path"": ""<Joystick>/stick"",
+                    ""path"": ""<HID::54C-5C4>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -303,7 +303,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""68ac8e76-1bad-458c-89ae-bed30a43358a"",
-                    ""path"": ""<Keyboard>/1"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -507,7 +507,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""1172b8c2-7dff-470d-903d-54b6e8f39762"",
-                    ""path"": ""<Gamepad>/leftStick"",
+                    ""path"": ""<XInputController>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -573,7 +573,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""01069123-9f6a-4a11-815f-47d749e582ac"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<XInputController>/buttonSouth"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": """",
@@ -606,7 +606,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f91d8037-f016-44cc-a42f-25713b916a6c"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<XInputController>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -639,7 +639,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""abd7fea5-24a3-4352-aa76-6d335d9c1302"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<XInputController>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -777,7 +777,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""a36aec50-8310-47ee-8056-bddd0e5735b1"",
-                    ""path"": ""<Joystick>/stick"",
+                    ""path"": ""<HID::54C-5C4>/stick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -909,7 +909,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cb89bc77-1364-474f-95cc-086fe191968b"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<XInputController>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -931,7 +931,7 @@ public class @PlayerActionControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ecbf0a6a-a511-4513-b8ab-7e43bcd1a9ab"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<XInputController>/buttonEast"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

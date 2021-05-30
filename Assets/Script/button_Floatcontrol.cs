@@ -7,8 +7,9 @@ public class button_Floatcontrol : MonoBehaviour
     public GameObject FloatFan;
     public GameObject wind;
     public int FloatType = 1;
-    bool ToZero = true;
+    public bool ToZero = true;
     bool ToTwo = false;
+    public AudioSource playerpush;
 
     SpriteRenderer rend;
     public Sprite type0, type1, type2;
@@ -56,9 +57,17 @@ public class button_Floatcontrol : MonoBehaviour
         setSprite();
         
         FloatFan.GetComponent<FloatTrigger>().setFloatType(FloatType);
-        Debug.Log(FloatType);
         wind.GetComponent<WindControl>().SetFloatType(FloatType);
         
+    }
+
+    public void ResetFlow() {
+
+        FloatType = 1;
+        setSprite();
+
+        FloatFan.GetComponent<FloatTrigger>().setFloatType(FloatType);
+        wind.GetComponent<WindControl>().SetFloatType(FloatType);
     }
 
     void setSprite() {
@@ -77,8 +86,11 @@ public class button_Floatcontrol : MonoBehaviour
                 break;
             default:
                 break;
-        }    
+        }
+        playerpush.Play();
     }
 
+
+    
 
 }

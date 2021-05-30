@@ -30,6 +30,7 @@ public class EnemyControlltest : MonoBehaviour
 
     [Header("環境檢測")]
     public LayerMask TriggerLayer;
+    private GameObject UpGear ;
 
     // Start is called before the first frame update
     void Start()
@@ -70,16 +71,35 @@ public class EnemyControlltest : MonoBehaviour
     }
 
     public void setDirection(bool isLeft,GameObject Controller) {
+
+       
         leftDirection = isLeft;
         isControled = true;
         killmodeConrol = Controller;
         changeDirection();
     }
-    void OntheGear() {
+    void OntheGear() {  // 在機關上面
+        bool gearismoving;
+        gearismoving = UpGear.GetComponent<UpGear>().ismoving();
+        if (gearismoving)
+        {
+            canmove = false;
+            print("不准動");
+        }
+        else {
+            canmove = true;
+        }
 
-        f_y = Gearobject.transform.position.y - GearPos.position.y;
+
+        //float f_xx = transform.position.x - Gearobject.transform.position.x;
+        //if (Mathf.Abs(f_xx) < 0.1f)
+        //{
+        //    print("敵人踩在機關囉");
+        //    canmove = false;
+        //}
+        //f_y = Gearobject.transform.position.y - GearPos.position.y;
         //transform.position = new Vector3(transform.position.x, transform.position.y + f_y, transform.position.z);
-        GearPos = Gearobject.transform;
+        //GearPos = Gearobject.transform;
 
 
     }
@@ -113,7 +133,7 @@ public class EnemyControlltest : MonoBehaviour
         
         if (collision.tag == "EnemyTrigger")
         {
-           changeDirection();
+            if (canmove) changeDirection();
         }
 
         if (collision.tag == "EnemyDie") {
@@ -125,11 +145,12 @@ public class EnemyControlltest : MonoBehaviour
             }
         }
 
-        if (collision.tag == "UpGear") {
-            TriggerGear = true;
-            Gearobject = collision.gameObject;
-            GearPos = Gearobject.transform;
-        }
+        //if (collision.tag == "UpGear") {
+        //    TriggerGear = true;
+        //    Gearobject = collision.gameObject;
+        //    GearPos = Gearobject.transform;
+        //    canmove = false;
+        //}
 
 
         if (collision.tag == "Player" && !collision.isTrigger)
@@ -144,16 +165,28 @@ public class EnemyControlltest : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "UpGear")
+        if (collision.gameObject.tag == "UpGear")
         {
-            TriggerGear = false ;
+            print("敵人踩在機關囉");
+
+            UpGear = collision.gameObject;
+            TriggerGear = true;
+            GearPos = collision.gameObject.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "UpGear") {
+            TriggerGear = false;
+            canmove = true;
             f_y = 0;
         }
-
-
     }
+
+   
 
 
 }
